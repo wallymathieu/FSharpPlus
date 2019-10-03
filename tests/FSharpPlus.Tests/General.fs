@@ -803,8 +803,9 @@ module Indexable =
         let a = Map.ofSeq [1, "one"; 2, "two"]
         let a1 = tryItem 1 a
 
-        let b = Map.ofSeq [1, "one"; 2, "two"] :> IDictionary<_,_>
+        let b = Map.ofSeq [1, "one"; 2, "two"] :> IDictionary<int,string>
         let b1 = tryItem 1 b
+        areEqual b1 (Some "one")
 
         let c = "two"
         let c1 = tryItem 1 c
@@ -833,6 +834,10 @@ module Indexable =
 
         let w = WrappedListA [1, "one"; 2, "two"]
         let w1 = tryItem 1 w
+
+        let v = Dictionary<int,string>(Map.ofSeq [1, "one"; 2, "two"])
+        let v1 = tryItem 1 v
+        areEqual v1 (Some "one")
 
         ()
 
