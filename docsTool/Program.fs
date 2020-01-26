@@ -83,7 +83,7 @@ module ProjInfo =
         loader.LoadProjects [ projPath ]
         let fcsBinder = FCSBinder(netFwInfo, loader, fcs)
         match fcsBinder.GetProjectOptions(projPath) with
-        | Some options ->
+        | Ok options ->
             let references =
                 options.OtherOptions
                 |> Array.filter(fun s ->
@@ -102,8 +102,8 @@ module ProjInfo =
             let targetPath = findTargetPath dpwPo.ExtraProjectInfo.TargetPath
             { References = references ; TargetPath = targetPath}
 
-        | None ->
-            failwithf "Couldn't read project %s" projPath 
+        | Error e ->
+            failwithf "Couldn't read project %s %A" projPath e 
 
 
 module GenerateDocs =

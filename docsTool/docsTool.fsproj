@@ -23,13 +23,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.App" Version="2.2.7" />
     <PackageReference Include="Argu" Version="6.0.0" />
-    <PackageReference Include="Dotnet.ProjInfo.Workspace.FCS" Version="0.33.0" />
+    <PackageReference Include="Dotnet.ProjInfo.Workspace.FCS" Version="0.37.0" />
     <PackageReference Include="Fable.React" Version="5.3.5" />
     <PackageReference Include="FSharp.Core" Version="4.7.0"  />
     <PackageReference Include="Fake.DotNet.Cli" Version="5.18.3" />
     <PackageReference Include="Fake.IO.FileSystem" Version="5.18.3" />
-    <PackageReference Include="FSharp.Compiler.Service" Version="27.0.1" />
+    <PackageReference Include="FSharp.Compiler.Service" Version="32.0.0" />
     <PackageReference Include="FSharp.Literate" Version="3.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="2.2.0" />
