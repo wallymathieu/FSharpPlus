@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>@Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--<meta name="description" content="@Description"/>-->
+    <meta name="author" content="Gusty"/>
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet"/>
+
+    <link type="text/css" rel="stylesheet" href="/FSharpPlus/content/style.css" />
+    <script type="text/javascript" src="/FSharpPlus/content/tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
+        </ul>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          <div>
+  <h1>
+    Internals Module
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus.html">
+      FSharpPlus
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <span>
+    Parent Module: 
+    <a href="/FSharpPlusreference/fsharpplus-parsing.html">
+      Parsing
+    </a>
+  </span>
+  <div class="fsdocs-xmldoc">
+    
+ [omit]
+
+  </div>
+  <div>
+    <h3>
+      Types
+    </h3>
+    <table class="table outer-list fsdocs-entity-list">
+      <thead>
+        <tr>
+          <td>
+            Type
+          </td>
+          <td>
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-entity-name">
+            <p>
+              <a name="ParseArray">
+                <a href="/FSharpPlusreference/fsharpplus-parsing-internals-parsearray.html">
+                  ParseArray
+                </a>
+              </a>
+            </p>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p>
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Parsing.fs#L35-35" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-entity-name">
+            <p>
+              <a name="TryParseArray">
+                <a href="/FSharpPlusreference/fsharpplus-parsing-internals-tryparsearray.html">
+                  TryParseArray
+                </a>
+              </a>
+            </p>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p>
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Parsing.fs#L69-69" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Functions and values
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Function or value
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '421', 421)" onmouseover="showTip(event, '421', 421)">
+                <p>
+                  <a id="formatters">
+                    <a href="#formatters">
+                      <code><span>formatters&#32;<span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="421">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>formatters&#32;<span></span></span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>string[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Parsing.fs#L21-21" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>string[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '422', 422)" onmouseover="showTip(event, '422', 422)">
+                <p>
+                  <a id="getGroups">
+                    <a href="#getGroups">
+                      <code><span>getGroups&#32;<span>pf&#32;s</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="422">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>getGroups&#32;<span>pf&#32;s</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        pf
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.printfformat-5">PrintfFormat</a>&lt;<span>'a,&#32;'b,&#32;'c,&#32;'d,&#32;'e</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        s
+                      </b>
+                      :
+                      <code>string</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>string[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Parsing.fs#L23-23" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  pf
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.printfformat-5">PrintfFormat</a>&lt;<span>'a,&#32;'b,&#32;'c,&#32;'d,&#32;'e</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  s
+                </span>
+                :
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>string[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '423', 423)" onmouseover="showTip(event, '423', 423)">
+                <p>
+                  <a id="tryParseElemAt">
+                    <a href="#tryParseElemAt">
+                      <code><span>tryParseElemAt&#32;<span>i&#32;g</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="423">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>tryParseElemAt&#32;<span>i&#32;g</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        g
+                      </b>
+                      :
+                      <code><span>string[]</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>^a&#32;option</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Parsing.fs#L65-65" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  g
+                </span>
+                :
+                <code><span>string[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>^a&#32;option</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+          
+        </div>
+        <div class="span3">
+          <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
+		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
+		  	<li class="nav-header">@Properties["project-name"]</li>
+		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
+		  <li><a href="/FSharpPlus/license.html">License</a></li>
+		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
+
+		  <li class="nav-header">Getting started</li>
+		  <li><a href="/FSharpPlus/tutorial.html">Tutorial</a></li>
+
+		  <li class="nav-header">Documentation</li>
+		  <li><a href="/FSharpPlus/reference/index.html">API Reference</a></li>
+      <li><a href="/FSharpPlus/types.html">Types</a></li>
+		  <li><a href="/FSharpPlus/abstractions.html">Abstractions</a></li>
+		  <li><a href="/FSharpPlus/computation-expressions.html">Computation Expressions</a></li>
+		  <li><a href="/FSharpPlus/numerics.html">Numerics</a></li>
+		  </ul>
+        </div>
+      </div>
+    </div>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+  </body>
+  </html>

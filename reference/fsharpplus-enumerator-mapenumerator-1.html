@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>MapEnumerator<'T> - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,155 +24,368 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
+          <div>
+  <h1>
+    Enumerator.MapEnumerator<'T> Type
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus.html">
+      FSharpPlus
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <span>
+    Parent Module: 
+    <a href="/FSharpPlusreference/fsharpplus-enumerator.html">
+      Enumerator
+    </a>
+  </span>
+  <p>
+    Base Type: 
+    <code>obj</code>
+  </p>
+  <p>
+    All Interfaces: 
+    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;'T&gt;</span></code>
+    , 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></code>
+    , 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></code>
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+ An abstract enumerator, useful when mapping over enumerators.
+ 
+ It maintains a mutable `curr` item, and a process MapEnumeratorState `state`.
+ 
+ Implement DoMoveNext such that `curr` is set after calling, and return
+ whether the enumerator actually moved next.
+ [omit]
 
-<h1>MapEnumerator<'T></h1>
-<p>
-
-    <span>Namespace: FSharpPlus</span><br />
-        <span>Parent Module: <a href="fsharpplus-enumerator.html">Enumerator</a></span><br />
-            <span>
-            Attributes: <br />
-[&lt;AbstractClass&gt;]<br />
-            
-        </span>
-</p>
-<div class="xmldoc">
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Record fields
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Record Field
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1138', 1138)" onmouseover="showTip(event, '1138', 1138)">
+                <p>
+                  <a id="curr">
+                    <a href="#curr">
+                      <code>curr</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1138">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>curr</code>
+                  <br/>
+                  <br/>
+                  Modifiers: 
+                  mutable
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L219-219" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1139', 1139)" onmouseover="showTip(event, '1139', 1139)">
+                <p>
+                  <a id="( .ctor )">
+                    <a href="#( .ctor )">
+                      <code><span>MapEnumerator<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1139">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapEnumerator<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-enumerator-mapenumerator-1.html">MapEnumerator</a>&lt;'T&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L216-216" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-enumerator-mapenumerator-1.html">MapEnumerator</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1140', 1140)" onmouseover="showTip(event, '1140', 1140)">
+                <p>
+                  <a id="Dispose">
+                    <a href="#Dispose">
+                      <code><span>this.Dispose<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1140">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.Dispose<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L229-229" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1141', 1141)" onmouseover="showTip(event, '1141', 1141)">
+                <p>
+                  <a id="DoMoveNext">
+                    <a href="#DoMoveNext">
+                      <code><span>this.DoMoveNext<span><span>(<span>arg1</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1141">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.DoMoveNext<span><span>(<span>arg1</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>byref&lt;'T&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                  Modifiers: 
+                  abstract
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L228-228" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>byref&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1142', 1142)" onmouseover="showTip(event, '1142', 1142)">
+                <p>
+                  <a id="GetCurrent">
+                    <a href="#GetCurrent">
+                      <code><span>this.GetCurrent<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1142">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.GetCurrent<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'T</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L221-221" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
 </div>
-  <h3>Record Fields</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Record Field</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '997', 997)" onmouseover="showTip(event, '997', 997)">
-            curr
-          </code>
-          <div class="tip" id="997">
-            <strong>Signature:</strong> &#39;T<br />
-              <strong>Modifiers:</strong> mutable<br />
-                                    <span>
-            <strong>Attributes:</strong><br />
-[&lt;DefaultValue(false)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L180-180" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Constructors</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Constructor</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '998', 998)" onmouseover="showTip(event, '998', 998)">
-            new()
-          </code>
-          <div class="tip" id="998">
-            <strong>Signature:</strong> unit -&gt; MapEnumerator&lt;&#39;T&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L177-177" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>.ctor</code></p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Instance members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Instance member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '999', 999)" onmouseover="showTip(event, '999', 999)">
-            x.Dispose()
-          </code>
-          <div class="tip" id="999">
-            <strong>Signature:</strong> unit -&gt; unit<br />
-              <strong>Modifiers:</strong> abstract<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L190-190" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1000', 1000)" onmouseover="showTip(event, '1000', 1000)">
-            x.DoMoveNext(arg1)
-          </code>
-          <div class="tip" id="1000">
-            <strong>Signature:</strong> byref&lt;&#39;T&gt; -&gt; bool<br />
-              <strong>Modifiers:</strong> abstract<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L189-189" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1001', 1001)" onmouseover="showTip(event, '1001', 1001)">
-            x.GetCurrent()
-          </code>
-          <div class="tip" id="1001">
-            <strong>Signature:</strong> unit -&gt; &#39;T<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Enumerator.fs#L182-182" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -189,6 +402,6 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

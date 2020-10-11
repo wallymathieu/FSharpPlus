@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Tuple2 - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,83 +24,275 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
+          <div>
+  <h1>
+    Tuple2 Module
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus.html">
+      FSharpPlus
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+ Additional operations on Tuple (,)
 
-<h1>Tuple2</h1>
-<p>
-  <span>Namespace: FSharpPlus</span><br />
-        <span>
-          Attributes:<br />
-[&lt;RequireQualifiedAccess&gt;]<br />
-          
-      </span>
-</p>
-<div class="xmldoc">
-<p>Additional operations on Tuple (,)</p>
-
+  </div>
+  <div>
+    <h3>
+      Functions and values
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Function or value
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '509', 509)" onmouseover="showTip(event, '509', 509)">
+                <p>
+                  <a id="mapItem1">
+                    <a href="#mapItem1">
+                      <code><span>Tuple2.mapItem1&#32;<span>f&#32;<span>(<span>x,&#32;y</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="509">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Tuple2.mapItem1&#32;<span>f&#32;<span>(<span>x,&#32;y</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'a&#32;->&#32;'b</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>'a</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        y
+                      </b>
+                      :
+                      <code>'c</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'b&#32;*&#32;'c</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Tuple.fs#L6-6" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'a&#32;->&#32;'b</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  y
+                </span>
+                :
+                <code>'c</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'b&#32;*&#32;'c</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '510', 510)" onmouseover="showTip(event, '510', 510)">
+                <p>
+                  <a id="mapItem2">
+                    <a href="#mapItem2">
+                      <code><span>Tuple2.mapItem2&#32;<span>f&#32;<span>(<span>x,&#32;y</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="510">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Tuple2.mapItem2&#32;<span>f&#32;<span>(<span>x,&#32;y</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'a&#32;->&#32;'b</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>'c</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        y
+                      </b>
+                      :
+                      <code>'a</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'c&#32;*&#32;'b</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Tuple.fs#L7-7" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'a&#32;->&#32;'b</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>'c</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  y
+                </span>
+                :
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'c&#32;*&#32;'b</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </div>
-
-<!-- Render nested types and modules, if there are any -->
-
-  <h3>Functions and values</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Function or value</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '506', 506)" onmouseover="showTip(event, '506', 506)">
-            Tuple2.mapItem1 f (x, y)
-          </code>
-          <div class="tip" id="506">
-            <strong>Signature:</strong> f:(&#39;a -&gt; &#39;b) -&gt; (x:&#39;a * y:&#39;c) -&gt; &#39;b * &#39;c<br />
-                          <strong>Type parameters:</strong> 'a, 'b, 'c                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Tuple.fs#L6-6" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '507', 507)" onmouseover="showTip(event, '507', 507)">
-            Tuple2.mapItem2 f (x, y)
-          </code>
-          <div class="tip" id="507">
-            <strong>Signature:</strong> f:(&#39;?24933 -&gt; &#39;?24934) -&gt; (x:&#39;?24935 * y:&#39;?24933) -&gt; &#39;?24935 * &#39;?24934<br />
-                          <strong>Type parameters:</strong> '?24933, '?24934, '?24935                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Extensions/Tuple.fs#L7-7" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -117,6 +309,6 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

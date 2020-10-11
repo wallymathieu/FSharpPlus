@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>AcLeft - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,142 +24,613 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
-
-<h1>AcLeft</h1>
-<p>
-
-    <span>Namespace: FSharpPlus.Control</span><br />
-    </p>
-<div class="xmldoc">
+          <div>
+  <h1>
+    AcLeft Type
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus-control.html">
+      FSharpPlus.Control
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <p>
+    Base Type: 
+    <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1190', 1190)" onmouseover="showTip(event, '1190', 1190)">
+                <p>
+                  <a id="Invoke">
+                    <a href="#Invoke">
+                      <code><span>AcLeft.Invoke<span><span>(<span>f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1190">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>AcLeft.Invoke<span><span>(<span>f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code>^ArrowChoice<'T,'U></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L51-51" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code>^ArrowChoice<'T,'U></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1191', 1191)" onmouseover="showTip(event, '1191', 1191)">
+                <p>
+                  <a id="InvokeOnInstance">
+                    <a href="#InvokeOnInstance">
+                      <code><span>AcLeft.InvokeOnInstance<span><span>(<span>f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1191">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>AcLeft.InvokeOnInstance<span><span>(<span>f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code>^ArrowChoice<'T,'U></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L55-55" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code>^ArrowChoice<'T,'U></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1192', 1192)" onmouseover="showTip(event, '1192', 1192)">
+                <p>
+                  <a id="Left">
+                    <a href="#Left">
+                      <code><span>AcLeft.Left<span><span>(<span>arg1,&#32;_output,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1192">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>AcLeft.Left<span><span>(<span>arg1,&#32;_output,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code>'ArrowChoice<'T,'U></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _output
+                      </b>
+                      :
+                      <code>^t</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'a&#32;->&#32;'a</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L59-59" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code>'ArrowChoice<'T,'U></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _output
+                </span>
+                :
+                <code>^t</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'a&#32;->&#32;'a</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1193', 1193)" onmouseover="showTip(event, '1193', 1193)">
+                <p>
+                  <a id="Left">
+                    <a href="#Left">
+                      <code><span>AcLeft.Left<span><span>(<span>f,&#32;_output,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1193">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>AcLeft.Left<span><span>(<span>f,&#32;_output,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code>^ArrowChoice<'T,'U></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _output
+                      </b>
+                      :
+                      <code>^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L58-58" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code>^ArrowChoice<'T,'U></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _output
+                </span>
+                :
+                <code>^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1194', 1194)" onmouseover="showTip(event, '1194', 1194)">
+                <p>
+                  <a id="Left">
+                    <a href="#Left">
+                      <code><span>AcLeft.Left<span><span>(<span>f,&#32;?_output,&#32;?_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1194">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>AcLeft.Left<span><span>(<span>f,&#32;?_output,&#32;?_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'T,&#32;'U</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_output
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'T</span>&gt;</span>,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'U</span>&gt;</span></span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-acleft.html">AcLeft</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'T</span>&gt;</span>,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'U</span>&gt;</span></span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L49-49" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'T,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_output
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'T</span>&gt;</span>,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'U</span>&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-acleft.html">AcLeft</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'T</span>&gt;</span>,&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'U</span>&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1195', 1195)" onmouseover="showTip(event, '1195', 1195)">
+                <p>
+                  <a id="Left">
+                    <a href="#Left">
+                      <code><span>AcLeft.Left<span><span>(<span>f,&#32;?_output,&#32;?_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1195">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>AcLeft.Left<span><span>(<span>f,&#32;?_output,&#32;?_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_output
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'T</span>&gt;</span>&#32;->&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'U</span>&gt;</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-acleft.html">AcLeft</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'T</span>&gt;</span>&#32;->&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'U</span>&gt;</span></span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L48-48" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_output
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'T</span>&gt;</span>&#32;->&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'U</span>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-acleft.html">AcLeft</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'T</span>&gt;</span>&#32;->&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'V,&#32;'U</span>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-  <h3>Static members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1020', 1020)" onmouseover="showTip(event, '1020', 1020)">
-            AcLeft.Invoke(f)
-          </code>
-          <div class="tip" id="1020">
-            <strong>Signature:</strong> f:^ArrowChoice&lt;&#39;T,&#39;U&gt; -&gt; ^ArrowChoice&lt;Choice&lt;&#39;V,&#39;T&gt;,Choice&lt;&#39;V,&#39;U&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^ArrowChoice<'T,'U>, ^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L51-51" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1021', 1021)" onmouseover="showTip(event, '1021', 1021)">
-            AcLeft.InvokeOnInstance(f)
-          </code>
-          <div class="tip" id="1021">
-            <strong>Signature:</strong> f:^ArrowChoice&lt;&#39;T,&#39;U&gt; -&gt; ^ArrowChoice&lt;Choice&lt;&#39;V,&#39;T&gt;,Choice&lt;&#39;V,&#39;U&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^ArrowChoice<'T,'U>, ^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L55-55" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1022', 1022)" onmouseover="showTip(event, '1022', 1022)">
-            AcLeft.Left(arg1, _output, _mthd)
-          </code>
-          <div class="tip" id="1022">
-            <strong>Signature:</strong> (&#39;ArrowChoice&lt;&#39;T,&#39;U&gt; * _output:^t * _mthd:Default1) -&gt; &#39;?18172 -&gt; &#39;?18172<br />
-                          <strong>Type parameters:</strong> 'ArrowChoice<'T,'U>, ^t, '?18172                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L59-59" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1023', 1023)" onmouseover="showTip(event, '1023', 1023)">
-            AcLeft.Left(f, _output, _mthd)
-          </code>
-          <div class="tip" id="1023">
-            <strong>Signature:</strong> (f:^ArrowChoice&lt;&#39;T,&#39;U&gt; * _output:^ArrowChoice&lt;Choice&lt;&#39;V,&#39;T&gt;,Choice&lt;&#39;V,&#39;U&gt;&gt; * _mthd:Default1) -&gt; ^ArrowChoice&lt;Choice&lt;&#39;V,&#39;T&gt;,Choice&lt;&#39;V,&#39;U&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^ArrowChoice<'T,'U>, ^ArrowChoice<Choice<'V,'T>,Choice<'V,'U>>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L58-58" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1024', 1024)" onmouseover="showTip(event, '1024', 1024)">
-            AcLeft.Left(f, _output, _mthd)
-          </code>
-          <div class="tip" id="1024">
-            <strong>Signature:</strong> (f:Func&lt;&#39;T,&#39;U&gt; * _output:Func&lt;Choice&lt;&#39;V,&#39;T&gt;,Choice&lt;&#39;V,&#39;U&gt;&gt; * _mthd:AcLeft) -&gt; Func&lt;Choice&lt;&#39;V,&#39;T&gt;,Choice&lt;&#39;V,&#39;U&gt;&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U, 'V                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L49-49" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1025', 1025)" onmouseover="showTip(event, '1025', 1025)">
-            AcLeft.Left(f, _output, _mthd)
-          </code>
-          <div class="tip" id="1025">
-            <strong>Signature:</strong> (f:(&#39;T -&gt; &#39;U) * _output:(Choice&lt;&#39;V,&#39;T&gt; -&gt; Choice&lt;&#39;V,&#39;U&gt;) * _mthd:AcLeft) -&gt; Choice&lt;&#39;V,&#39;T&gt; -&gt; Choice&lt;&#39;V,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U, 'V                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/ArrowChoice.fs#L48-48" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -176,6 +647,6 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

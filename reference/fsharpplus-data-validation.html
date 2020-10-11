@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Validation - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,659 +24,2281 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
-
-<h1>Validation</h1>
-<p>
-  <span>Namespace: FSharpPlus.Data</span><br />
+          <div>
+  <h1>
+    Validation Module
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus-data.html">
+      FSharpPlus.Data
+    </a>
   </p>
-<div class="xmldoc">
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+  </div>
+  <div>
+    <h3>
+      Functions and values
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Function or value
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '864', 864)" onmouseover="showTip(event, '864', 864)">
+                <p>
+                  <a id="_Failure">
+                    <a href="#_Failure">
+                      <code><span>_Failure&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="864">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>_Failure&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>'a&#32;->&#32;^b</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'a,&#32;'c</span>&gt;</span>&#32;->&#32;^e</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L188-188" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>'a&#32;->&#32;^b</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'a,&#32;'c</span>&gt;</span>&#32;->&#32;^e</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '865', 865)" onmouseover="showTip(event, '865', 865)">
+                <p>
+                  <a id="_Success">
+                    <a href="#_Success">
+                      <code><span>_Success&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="865">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>_Success&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>'a&#32;->&#32;^b</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'d,&#32;'a</span>&gt;</span>&#32;->&#32;^e</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L187-187" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>'a&#32;->&#32;^b</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'d,&#32;'a</span>&gt;</span>&#32;->&#32;^e</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '866', 866)" onmouseover="showTip(event, '866', 866)">
+                <p>
+                  <a id="appValidation">
+                    <a href="#appValidation">
+                      <code><span>appValidation&#32;<span>combine&#32;e1'&#32;e2'</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="866">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>appValidation&#32;<span>combine&#32;e1'&#32;e2'</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        combine
+                      </b>
+                      :
+                      <code><span>'err&#32;->&#32;'err&#32;->&#32;'err</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        e1'
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'err,&#32;'a</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        e2'
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'err,&#32;'a</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'err,&#32;'a</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L139-139" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Takes two Validations and returns the first Success.
+ If both are Failures it returns both Failures combined with the supplied function.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  combine
+                </span>
+                :
+                <code><span>'err&#32;->&#32;'err&#32;->&#32;'err</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  e1'
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'err,&#32;'a</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  e2'
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'err,&#32;'a</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'err,&#32;'a</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '867', 867)" onmouseover="showTip(event, '867', 867)">
+                <p>
+                  <a id="apply">
+                    <a href="#apply">
+                      <code><span>apply&#32;<span>f&#32;x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="867">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>apply&#32;<span>f&#32;x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L40-40" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Applies the wrapped value to the wrapped function when both are Success and returns a wrapped result or the Failure(s).
+ <param name="f">The function wrapped in a Success or a Failure.</param>
+ <param name="x">The value wrapped in a Success or a Failure.</param>
+ <returns>A Success of the function applied to the value when both are Success, or the Failure(s) if more than one, combined with the Semigroup (++) operation of the Error type.</returns>
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '868', 868)" onmouseover="showTip(event, '868', 868)">
+                <p>
+                  <a id="bifoldBack">
+                    <a href="#bifoldBack">
+                      <code><span>bifoldBack&#32;<span>f&#32;g&#32;source&#32;state</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="868">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>bifoldBack&#32;<span>f&#32;g&#32;source&#32;state</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'Error&#32;->&#32;'State&#32;->&#32;'State</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        g
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'State&#32;->&#32;'State</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        state
+                      </b>
+                      :
+                      <code>'State</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'State</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L84-84" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'Error&#32;->&#32;'State&#32;->&#32;'State</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  g
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'State&#32;->&#32;'State</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  state
+                </span>
+                :
+                <code>'State</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'State</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '869', 869)" onmouseover="showTip(event, '869', 869)">
+                <p>
+                  <a id="bimap">
+                    <a href="#bimap">
+                      <code><span>bimap&#32;<span>f&#32;g&#32;_arg1</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="869">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>bimap&#32;<span>f&#32;g&#32;_arg1</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T1&#32;->&#32;'U1</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        g
+                      </b>
+                      :
+                      <code><span>'T2&#32;->&#32;'U2</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _arg1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'T1,&#32;'T2</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'U1,&#32;'U2</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L80-80" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T1&#32;->&#32;'U1</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  g
+                </span>
+                :
+                <code><span>'T2&#32;->&#32;'U2</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _arg1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'T1,&#32;'T2</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'U1,&#32;'U2</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '870', 870)" onmouseover="showTip(event, '870', 870)">
+                <p>
+                  <a id="bind">
+                    <a href="#bind">
+                      <code><span>bind&#32;<span>f&#32;x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="870">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>bind&#32;<span>f&#32;x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'U</span>&gt;</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L112-112" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Binds through a Validation, which is useful for
+ composing Validations sequentially. Note that despite having a bind
+ function of the correct type, Validation is not a monad.
+ The reason is, this bind does not accumulate errors, so it does not
+ agree with the Applicative instance.
+
+ There is nothing wrong with using this function, it just does not make a
+ valid Monad instance.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'U</span>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '871', 871)" onmouseover="showTip(event, '871', 871)">
+                <p>
+                  <a id="bisequence">
+                    <a href="#bisequence">
+                      <code><span>bisequence&#32;<span>source</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="871">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>bisequence&#32;<span>source</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Functor<'Error>,&#32;^Functor<'T></span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^Functor<Validation<'Error,'T>></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L102-102" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Like sequence but traversing the Failure part as well.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Functor<'Error>,&#32;^Functor<'T></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^Functor<Validation<'Error,'T>></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '872', 872)" onmouseover="showTip(event, '872', 872)">
+                <p>
+                  <a id="bitraverse">
+                    <a href="#bitraverse">
+                      <code><span>bitraverse&#32;<span>f&#32;g&#32;source</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="872">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>bitraverse&#32;<span>f&#32;g&#32;source</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'Error1&#32;->&#32;^Functor<'Error2></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        g
+                      </b>
+                      :
+                      <code><span>'T1&#32;->&#32;^Functor<'T2></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error1,&#32;'T1</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^Functor<Validation<'Error2,'T2>></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L96-96" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Like traverse but taking an additional function to traverse the Failure part as well.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'Error1&#32;->&#32;^Functor<'Error2></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  g
+                </span>
+                :
+                <code><span>'T1&#32;->&#32;^Functor<'T2></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error1,&#32;'T1</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^Functor<Validation<'Error2,'T2>></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '873', 873)" onmouseover="showTip(event, '873', 873)">
+                <p>
+                  <a id="defaultValue">
+                    <a href="#defaultValue">
+                      <code><span>defaultValue&#32;<span>value&#32;source</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="873">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>defaultValue&#32;<span>value&#32;source</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        value
+                      </b>
+                      :
+                      <code>'T</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'T</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L121-121" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Extracts the Success value or use the supplied default value when it's a Failure.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  value
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '874', 874)" onmouseover="showTip(event, '874', 874)">
+                <p>
+                  <a id="defaultWith">
+                    <a href="#defaultWith">
+                      <code><span>defaultWith&#32;<span>compensation&#32;source</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="874">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>defaultWith&#32;<span>compensation&#32;source</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        compensation
+                      </b>
+                      :
+                      <code><span>'Error&#32;->&#32;'T</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'T</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L124-124" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Extracts the Success value or applies the compensation function over the Failure.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  compensation
+                </span>
+                :
+                <code><span>'Error&#32;->&#32;'T</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '875', 875)" onmouseover="showTip(event, '875', 875)">
+                <p>
+                  <a id="either">
+                    <a href="#either">
+                      <code><span>either&#32;<span>fSuccess&#32;fFailure&#32;source</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="875">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>either&#32;<span>fSuccess&#32;fFailure&#32;source</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        fSuccess
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U</span></code>
+                       - 
+                      Function to be applied to source, if it contains a Success value.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        fFailure
+                      </b>
+                      :
+                      <code><span>'Error&#32;->&#32;'U</span></code>
+                       - 
+                      Function to be applied to source, if it contains a Failure value.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                       - 
+                      The source value, containing a Success or a Failure.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'U</code>
+                  </span>
+                  The result of applying either functions.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L163-163" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+               Extracts a value from either side of a Validation.
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fSuccess
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to be applied to source, if it contains a Success value.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  fFailure
+                </span>
+                :
+                <code><span>'Error&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  Function to be applied to source, if it contains a Failure value.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The source value, containing a Success or a Failure.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'U</code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  The result of applying either functions.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '876', 876)" onmouseover="showTip(event, '876', 876)">
+                <p>
+                  <a id="foldBack">
+                    <a href="#foldBack">
+                      <code><span>foldBack&#32;<span>folder&#32;source&#32;state</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="876">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>foldBack&#32;<span>folder&#32;source&#32;state</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        folder
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'State&#32;->&#32;'State</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        state
+                      </b>
+                      :
+                      <code>'State</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'State</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L62-62" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  folder
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'State&#32;->&#32;'State</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  state
+                </span>
+                :
+                <code>'State</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'State</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '877', 877)" onmouseover="showTip(event, '877', 877)">
+                <p>
+                  <a id="isoValidationResult">
+                    <a href="#isoValidationResult">
+                      <code><span>isoValidationResult&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="877">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>isoValidationResult&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>^a</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^b</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L190-190" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>^a</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^b</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '878', 878)" onmouseover="showTip(event, '878', 878)">
+                <p>
+                  <a id="liftChoice">
+                    <a href="#liftChoice">
+                      <code><span>liftChoice&#32;<span>f</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="878">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>liftChoice&#32;<span>f</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'b&#32;->&#32;'Semigroup</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'b,&#32;'T</span>&gt;</span>&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Semigroup,&#32;'T</span>&gt;</span></span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L135-135" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Converting a 'Choice' to a 'Validation'
+ when the 'Choice2Of2' of the 'Choice' needs to be lifted into a 'Semigroup'.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'b&#32;->&#32;'Semigroup</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'b,&#32;'T</span>&gt;</span>&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Semigroup,&#32;'T</span>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '879', 879)" onmouseover="showTip(event, '879', 879)">
+                <p>
+                  <a id="liftResult">
+                    <a href="#liftResult">
+                      <code><span>liftResult&#32;<span>f&#32;_arg1</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="879">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>liftResult&#32;<span>f&#32;_arg1</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'Error&#32;->&#32;'Semigroup</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _arg1
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Semigroup,&#32;'T</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L131-131" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Converts a 'Result' to a 'Validation'
+ when the 'Error' of the 'Result' needs to be lifted into a 'Semigroup'.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'Error&#32;->&#32;'Semigroup</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _arg1
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Semigroup,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '880', 880)" onmouseover="showTip(event, '880', 880)">
+                <p>
+                  <a id="map">
+                    <a href="#map">
+                      <code><span>map&#32;<span>f&#32;source</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="880">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>map&#32;<span>f&#32;source</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L31-31" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '881', 881)" onmouseover="showTip(event, '881', 881)">
+                <p>
+                  <a id="map2">
+                    <a href="#map2">
+                      <code><span>map2&#32;<span>f&#32;x&#32;y</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="881">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>map2&#32;<span>f&#32;x&#32;y</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U&#32;->&#32;'V</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        y
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'U</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'V</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L51-51" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U&#32;->&#32;'V</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  y
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>^Error,&#32;'V</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '882', 882)" onmouseover="showTip(event, '882', 882)">
+                <p>
+                  <a id="ofChoice">
+                    <a href="#ofChoice">
+                      <code><span>ofChoice&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="882">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ofChoice&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L156-156" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Creates a Validation<'Error,'T> from a Choice<'T,'Error>.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '883', 883)" onmouseover="showTip(event, '883', 883)">
+                <p>
+                  <a id="ofResult">
+                    <a href="#ofResult">
+                      <code><span>ofResult&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="883">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>ofResult&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L150-150" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Creates a Validation<'Error,'T> from a Result<'T,'Error>.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '884', 884)" onmouseover="showTip(event, '884', 884)">
+                <p>
+                  <a id="protect">
+                    <a href="#protect">
+                      <code><span>protect&#32;<span>f&#32;x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="884">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>protect&#32;<span>f&#32;x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>'T</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>exn,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L181-181" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Creates a safe version of the supplied function, which returns a Validation<exn,'U> instead of throwing exceptions.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>exn,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '885', 885)" onmouseover="showTip(event, '885', 885)">
+                <p>
+                  <a id="sequence">
+                    <a href="#sequence">
+                      <code><span>sequence&#32;<span>source</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="885">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>sequence&#32;<span>source</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;^Functor<'T></span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^Functor<Validation<'Error,'T>></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L76-76" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Traverse the Success case.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;^Functor<'T></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^Functor<Validation<'Error,'T>></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '886', 886)" onmouseover="showTip(event, '886', 886)">
+                <p>
+                  <a id="toChoice">
+                    <a href="#toChoice">
+                      <code><span>toChoice&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="886">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>toChoice&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L153-153" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Converts a Validation<'Error,'T> to a Choice<'T,'Error>.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '887', 887)" onmouseover="showTip(event, '887', 887)">
+                <p>
+                  <a id="toResult">
+                    <a href="#toResult">
+                      <code><span>toResult&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="887">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>toResult&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L147-147" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Converts a Validation<'Error,'T> to a Result<'T,'Error>.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'T,&#32;'Error</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '888', 888)" onmouseover="showTip(event, '888', 888)">
+                <p>
+                  <a id="traverse">
+                    <a href="#traverse">
+                      <code><span>traverse&#32;<span>f&#32;source</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="888">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>traverse&#32;<span>f&#32;source</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;^Functor<'U></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^Functor<Validation<'Error,'U>></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L70-70" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ Traverse the Success case with the supplied function.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T&#32;->&#32;^Functor<'U></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span>'Error,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^Functor<Validation<'Error,'U>></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '889', 889)" onmouseover="showTip(event, '889', 889)">
+                <p>
+                  <a id="validationNel">
+                    <a href="#validationNel">
+                      <code><span>validationNel&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="889">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>validationNel&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'a,&#32;'e</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span><span><a href="/FSharpPlusreference/fsharpplus-data-nonemptylist-1.html">NonEmptyList</a>&lt;'e&gt;</span>,&#32;'a</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L172-172" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ validationNel : Result<'a,'e> -> Validation (NonEmptyList<'e>) a
+ This is 'liftError' specialized to 'NonEmptyList', since
+ they are a common semigroup to use.
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'a,&#32;'e</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-validation-2.html">Validation</a>&lt;<span><span><a href="/FSharpPlusreference/fsharpplus-data-nonemptylist-1.html">NonEmptyList</a>&lt;'e&gt;</span>,&#32;'a</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </div>
-
-<!-- Render nested types and modules, if there are any -->
-
-  <h3>Functions and values</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Function or value</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '726', 726)" onmouseover="showTip(event, '726', 726)">
-            _Failure(x)
-          </code>
-          <div class="tip" id="726">
-            <strong>Signature:</strong> x:(&#39;?12319 -&gt; ^?12320) -&gt; Validation&lt;&#39;?12319,&#39;?12321&gt; -&gt; ^?12323<br />
-                          <strong>Type parameters:</strong> '?12319, ^?12320, '?12321, '?12322, ^?12323                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L188-188" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '727', 727)" onmouseover="showTip(event, '727', 727)">
-            _Success(x)
-          </code>
-          <div class="tip" id="727">
-            <strong>Signature:</strong> x:(&#39;?12313 -&gt; ^?12314) -&gt; Validation&lt;&#39;?12316,&#39;?12313&gt; -&gt; ^?12317<br />
-                          <strong>Type parameters:</strong> '?12313, ^?12314, '?12315, '?12316, ^?12317                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L187-187" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '728', 728)" onmouseover="showTip(event, '728', 728)">
-            apply f x
-          </code>
-          <div class="tip" id="728">
-            <strong>Signature:</strong> f:Validation&lt;^Error,(&#39;T -&gt; &#39;U)&gt; -&gt; x:Validation&lt;^Error,&#39;T&gt; -&gt; Validation&lt;^Error,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> ^Error, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L40-40" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Applies the wrapped value to the wrapped function when both are Success and returns a wrapped result or the Failure(s).
-<param name="f">The function wrapped in a Success or a Failure.</param>
-<param name="x">The value wrapped in a Success or a Failure.</param>
-<returns>A Success of the function applied to the value when both are Success, or the Failure(s) if more than one, combined with the Semigroup (++) operation of the Error type.</returns></p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '729', 729)" onmouseover="showTip(event, '729', 729)">
-            appValidation combine e1&#39; e2&#39;
-          </code>
-          <div class="tip" id="729">
-            <strong>Signature:</strong> combine:(&#39;err -&gt; &#39;err -&gt; &#39;err) -&gt; e1&#39;:Validation&lt;&#39;err,&#39;a&gt; -&gt; e2&#39;:Validation&lt;&#39;err,&#39;a&gt; -&gt; Validation&lt;&#39;err,&#39;a&gt;<br />
-                          <strong>Type parameters:</strong> 'err, 'a                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L139-139" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Takes two Validations and returns the first Success.
-If both are Failures it returns both Failures combined with the supplied function.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '730', 730)" onmouseover="showTip(event, '730', 730)">
-            bifoldBack f g source state
-          </code>
-          <div class="tip" id="730">
-            <strong>Signature:</strong> f:(&#39;Error -&gt; &#39;State -&gt; &#39;State) -&gt; g:(&#39;T -&gt; &#39;State -&gt; &#39;State) -&gt; source:Validation&lt;&#39;Error,&#39;T&gt; -&gt; state:&#39;State -&gt; &#39;State<br />
-                          <strong>Type parameters:</strong> 'Error, 'State, 'T                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L84-84" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '731', 731)" onmouseover="showTip(event, '731', 731)">
-            biFoldBack f g state x
-          </code>
-          <div class="tip" id="731">
-            <strong>Signature:</strong> f:(&#39;?12239 -&gt; &#39;?12240 -&gt; &#39;?12241) -&gt; g:(&#39;?12242 -&gt; &#39;?12240 -&gt; &#39;?12241) -&gt; state:Validation&lt;&#39;?12239,&#39;?12242&gt; -&gt; x:&#39;?12240 -&gt; &#39;?12241<br />
-                          <strong>Type parameters:</strong> '?12239, '?12240, '?12241, '?12242                        <span>
-            <strong>Attributes:</strong><br />
-[&lt;Obsolete(&quot;Use Validation.bifoldBack instead.&quot;)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-              <div class="alert alert-warning">
-              <strong>WARNING: </strong> This API is obsolete
-              <p>Use Validation.bifoldBack instead.</p>
-              </div> 
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L90-90" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '732', 732)" onmouseover="showTip(event, '732', 732)">
-            bimap f g _arg1
-          </code>
-          <div class="tip" id="732">
-            <strong>Signature:</strong> f:(&#39;T1 -&gt; &#39;U1) -&gt; g:(&#39;T2 -&gt; &#39;U2) -&gt; _arg1:Validation&lt;&#39;T1,&#39;T2&gt; -&gt; Validation&lt;&#39;U1,&#39;U2&gt;<br />
-                          <strong>Type parameters:</strong> 'T1, 'U1, 'T2, 'U2                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L80-80" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '733', 733)" onmouseover="showTip(event, '733', 733)">
-            bind f x
-          </code>
-          <div class="tip" id="733">
-            <strong>Signature:</strong> f:(&#39;T -&gt; Validation&lt;&#39;Error,&#39;U&gt;) -&gt; x:Validation&lt;&#39;Error,&#39;T&gt; -&gt; Validation&lt;&#39;Error,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'Error, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L112-112" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Binds through a Validation, which is useful for
-composing Validations sequentially. Note that despite having a bind
-function of the correct type, Validation is not a monad.
-The reason is, this bind does not accumulate errors, so it does not
-agree with the Applicative instance.</p>
-<p>There is nothing wrong with using this function, it just does not make a
-valid Monad instance.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '734', 734)" onmouseover="showTip(event, '734', 734)">
-            bisequence(source)
-          </code>
-          <div class="tip" id="734">
-            <strong>Signature:</strong> source:Validation&lt;^Functor&lt;&#39;Error&gt;,^Functor&lt;&#39;T&gt;&gt; -&gt; ^Functor&lt;Validation&lt;&#39;Error,&#39;T&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^Functor<'Error>, ^Functor<Validation<'Error,'T>>, ^Functor<'T>, '?12255, '?12256                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L102-102" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Like sequence but traversing the Failure part as well.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '735', 735)" onmouseover="showTip(event, '735', 735)">
-            bitraverse f g source
-          </code>
-          <div class="tip" id="735">
-            <strong>Signature:</strong> f:(&#39;Error1 -&gt; ^Functor&lt;&#39;Error2&gt;) -&gt; g:(&#39;T1 -&gt; ^Functor&lt;&#39;T2&gt;) -&gt; source:Validation&lt;&#39;Error1,&#39;T1&gt; -&gt; ^Functor&lt;Validation&lt;&#39;Error2,&#39;T2&gt;&gt;<br />
-                          <strong>Type parameters:</strong> 'Error1, ^Functor<'Error2>, ^Functor<Validation<'Error2,'T2>>, ^Functor<'T2>, 'T2, 'Error2, 'T1                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L96-96" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Like traverse but taking an additional function to traverse the Failure part as well.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '736', 736)" onmouseover="showTip(event, '736', 736)">
-            defaultValue value source
-          </code>
-          <div class="tip" id="736">
-            <strong>Signature:</strong> value:&#39;T -&gt; source:Validation&lt;&#39;Error,&#39;T&gt; -&gt; &#39;T<br />
-                          <strong>Type parameters:</strong> 'T, 'Error                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L121-121" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Extracts the Success value or use the supplied default value when it's a Failure.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '737', 737)" onmouseover="showTip(event, '737', 737)">
-            defaultWith compensation source
-          </code>
-          <div class="tip" id="737">
-            <strong>Signature:</strong> compensation:(&#39;Error -&gt; &#39;T) -&gt; source:Validation&lt;&#39;Error,&#39;T&gt; -&gt; &#39;T<br />
-                          <strong>Type parameters:</strong> 'Error, 'T                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L124-124" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Extracts the Success value or applies the compensation function over the Failure.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '738', 738)" onmouseover="showTip(event, '738', 738)">
-            either fSuccess fFailure source
-          </code>
-          <div class="tip" id="738">
-            <strong>Signature:</strong> fSuccess:(&#39;T -&gt; &#39;U) -&gt; fFailure:(&#39;Error -&gt; &#39;U) -&gt; source:Validation&lt;&#39;Error,&#39;T&gt; -&gt; &#39;U<br />
-                          <strong>Type parameters:</strong> 'T, 'U, 'Error                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L163-163" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Extracts a value from either side of a Validation.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '739', 739)" onmouseover="showTip(event, '739', 739)">
-            ensure e p _arg1
-          </code>
-          <div class="tip" id="739">
-            <strong>Signature:</strong> e:&#39;e -&gt; p:(&#39;a -&gt; bool) -&gt; _arg1:Validation&lt;&#39;e,&#39;a&gt; -&gt; Validation&lt;&#39;e,&#39;a&gt;<br />
-                          <strong>Type parameters:</strong> 'e, 'a                        <span>
-            <strong>Attributes:</strong><br />
-[&lt;Obsolete(&quot;This function will not be supported in future versions.&quot;)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-              <div class="alert alert-warning">
-              <strong>WARNING: </strong> This API is obsolete
-              <p>This function will not be supported in future versions.</p>
-              </div> 
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L176-176" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '740', 740)" onmouseover="showTip(event, '740', 740)">
-            foldBack folder source state
-          </code>
-          <div class="tip" id="740">
-            <strong>Signature:</strong> folder:(&#39;T -&gt; &#39;State -&gt; &#39;State) -&gt; source:Validation&lt;&#39;Error,&#39;T&gt; -&gt; state:&#39;State -&gt; &#39;State<br />
-                          <strong>Type parameters:</strong> 'T, 'State, 'Error                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L62-62" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '741', 741)" onmouseover="showTip(event, '741', 741)">
-            isoValidationResult(x)
-          </code>
-          <div class="tip" id="741">
-            <strong>Signature:</strong> x:^?12325 -&gt; ^?12326<br />
-                          <strong>Type parameters:</strong> ^?12325, ^?12326, '?12327, '?12328, ^?12329, '?12330, '?12331, '?12332                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L190-190" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '742', 742)" onmouseover="showTip(event, '742', 742)">
-            liftChoice(f)
-          </code>
-          <div class="tip" id="742">
-            <strong>Signature:</strong> f:(&#39;b -&gt; &#39;Semigroup) -&gt; Choice&lt;&#39;b,&#39;T&gt; -&gt; Validation&lt;&#39;Semigroup,&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'b, 'Semigroup, 'T                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L135-135" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Converting a 'Choice' to a 'Validation'
-when the 'Choice2Of2' of the 'Choice' needs to be lifted into a 'Semigroup'.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '743', 743)" onmouseover="showTip(event, '743', 743)">
-            liftResult f _arg1
-          </code>
-          <div class="tip" id="743">
-            <strong>Signature:</strong> f:(&#39;Error -&gt; &#39;Semigroup) -&gt; _arg1:Result&lt;&#39;T,&#39;Error&gt; -&gt; Validation&lt;&#39;Semigroup,&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'Error, 'Semigroup, 'T                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L131-131" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Converts a 'Result' to a 'Validation'
-when the 'Error' of the 'Result' needs to be lifted into a 'Semigroup'.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '744', 744)" onmouseover="showTip(event, '744', 744)">
-            map f source
-          </code>
-          <div class="tip" id="744">
-            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;U) -&gt; source:Validation&lt;&#39;Error,&#39;T&gt; -&gt; Validation&lt;&#39;Error,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U, 'Error                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L31-31" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '745', 745)" onmouseover="showTip(event, '745', 745)">
-            map2 f x y
-          </code>
-          <div class="tip" id="745">
-            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;U -&gt; &#39;V) -&gt; x:Validation&lt;^Error,&#39;T&gt; -&gt; y:Validation&lt;^Error,&#39;U&gt; -&gt; Validation&lt;^Error,&#39;V&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U, 'V, ^Error                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L51-51" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '746', 746)" onmouseover="showTip(event, '746', 746)">
-            ofChoice(x)
-          </code>
-          <div class="tip" id="746">
-            <strong>Signature:</strong> x:Choice&lt;&#39;T,&#39;Error&gt; -&gt; Validation&lt;&#39;Error,&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'Error                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L156-156" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Creates a Validation<'Error,'T> from a Choice<'T,'Error>.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '747', 747)" onmouseover="showTip(event, '747', 747)">
-            ofResult(x)
-          </code>
-          <div class="tip" id="747">
-            <strong>Signature:</strong> x:Result&lt;&#39;T,&#39;Error&gt; -&gt; Validation&lt;&#39;Error,&#39;T&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'Error                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L150-150" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Creates a Validation<'Error,'T> from a Result<'T,'Error>.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '748', 748)" onmouseover="showTip(event, '748', 748)">
-            orElse v a
-          </code>
-          <div class="tip" id="748">
-            <strong>Signature:</strong> v:Validation&lt;&#39;?12262,&#39;a&gt; -&gt; a:&#39;a -&gt; &#39;a<br />
-                          <strong>Type parameters:</strong> '?12262, 'a                        <span>
-            <strong>Attributes:</strong><br />
-[&lt;Obsolete(&quot;Use Validation.defaultValue instead.&quot;)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-              <div class="alert alert-warning">
-              <strong>WARNING: </strong> This API is obsolete
-              <p>Use Validation.defaultValue instead.</p>
-              </div> 
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L118-118" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '749', 749)" onmouseover="showTip(event, '749', 749)">
-            protect f x
-          </code>
-          <div class="tip" id="749">
-            <strong>Signature:</strong> f:(&#39;T -&gt; &#39;U) -&gt; x:&#39;T -&gt; Validation&lt;exn,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L181-181" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Creates a safe version of the supplied function, which returns a Validation<exn,'U> instead of throwing exceptions.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '750', 750)" onmouseover="showTip(event, '750', 750)">
-            sequence(source)
-          </code>
-          <div class="tip" id="750">
-            <strong>Signature:</strong> source:Validation&lt;&#39;Error,^Functor&lt;&#39;T&gt;&gt; -&gt; ^Functor&lt;Validation&lt;&#39;Error,&#39;T&gt;&gt;<br />
-                          <strong>Type parameters:</strong> 'Error, ^Functor<'T>, ^Functor<Validation<'Error,'T>>, '?12228                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L76-76" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Traverse the Success case.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '751', 751)" onmouseover="showTip(event, '751', 751)">
-            toChoice(x)
-          </code>
-          <div class="tip" id="751">
-            <strong>Signature:</strong> x:Validation&lt;&#39;Error,&#39;T&gt; -&gt; Choice&lt;&#39;T,&#39;Error&gt;<br />
-                          <strong>Type parameters:</strong> 'Error, 'T                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L153-153" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Converts a Validation<'Error,'T> to a Choice<'T,'Error>.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '752', 752)" onmouseover="showTip(event, '752', 752)">
-            toResult(x)
-          </code>
-          <div class="tip" id="752">
-            <strong>Signature:</strong> x:Validation&lt;&#39;Error,&#39;T&gt; -&gt; Result&lt;&#39;T,&#39;Error&gt;<br />
-                          <strong>Type parameters:</strong> 'Error, 'T                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L147-147" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Converts a Validation<'Error,'T> to a Result<'T,'Error>.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '753', 753)" onmouseover="showTip(event, '753', 753)">
-            traverse f source
-          </code>
-          <div class="tip" id="753">
-            <strong>Signature:</strong> f:(&#39;T -&gt; ^Functor&lt;&#39;U&gt;) -&gt; source:Validation&lt;&#39;Error,&#39;T&gt; -&gt; ^Functor&lt;Validation&lt;&#39;Error,&#39;U&gt;&gt;<br />
-                          <strong>Type parameters:</strong> 'T, ^Functor<'U>, ^Functor<Validation<'Error,'U>>, 'U, 'Error                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L70-70" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>Traverse the Success case with the supplied function.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '754', 754)" onmouseover="showTip(event, '754', 754)">
-            validate e p a
-          </code>
-          <div class="tip" id="754">
-            <strong>Signature:</strong> e:&#39;e -&gt; p:(&#39;a -&gt; bool) -&gt; a:&#39;a -&gt; Validation&lt;&#39;e,&#39;a&gt;<br />
-                          <strong>Type parameters:</strong> 'e, 'a                        <span>
-            <strong>Attributes:</strong><br />
-[&lt;Obsolete(&quot;This function will not be supported in future versions.&quot;)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-              <div class="alert alert-warning">
-              <strong>WARNING: </strong> This API is obsolete
-              <p>This function will not be supported in future versions.</p>
-              </div> 
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L166-166" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '755', 755)" onmouseover="showTip(event, '755', 755)">
-            validationNel(x)
-          </code>
-          <div class="tip" id="755">
-            <strong>Signature:</strong> x:Result&lt;&#39;a,&#39;e&gt; -&gt; Validation&lt;NonEmptyList&lt;&#39;e&gt;,&#39;a&gt;<br />
-                          <strong>Type parameters:</strong> 'a, 'e                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L172-172" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>validationNel : Result<'a,'e> -&gt; Validation (NonEmptyList<'e>) a
-This is 'liftError' specialized to 'NonEmptyList', since
-they are a common semigroup to use.</p>
-
-
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '756', 756)" onmouseover="showTip(event, '756', 756)">
-            valueOr ea v
-          </code>
-          <div class="tip" id="756">
-            <strong>Signature:</strong> ea:(&#39;e -&gt; &#39;a) -&gt; v:Validation&lt;&#39;e,&#39;a&gt; -&gt; &#39;a<br />
-                          <strong>Type parameters:</strong> 'e, 'a                        <span>
-            <strong>Attributes:</strong><br />
-[&lt;Obsolete(&quot;Use Validation.defaultWith instead.&quot;)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-              <div class="alert alert-warning">
-              <strong>WARNING: </strong> This API is obsolete
-              <p>Use Validation.defaultWith instead.</p>
-              </div> 
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Validation.fs#L127-127" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -693,6 +2315,6 @@ they are a common semigroup to use.</p>
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

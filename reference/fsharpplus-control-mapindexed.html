@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>MapIndexed - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,176 +24,1031 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
-
-<h1>MapIndexed</h1>
-<p>
-
-    <span>Namespace: FSharpPlus.Control</span><br />
-    </p>
-<div class="xmldoc">
+          <div>
+  <h1>
+    MapIndexed Type
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus-control.html">
+      FSharpPlus.Control
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <p>
+    Base Type: 
+    <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1910', 1910)" onmouseover="showTip(event, '1910', 1910)">
+                <p>
+                  <a id="Invoke">
+                    <a href="#Invoke">
+                      <code><span>MapIndexed.Invoke<span><span>(<span>mapping</span>)</span>&#32;<span>(<span>source</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1910">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.Invoke<span><span>(<span>mapping</span>)</span>&#32;<span>(<span>source</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        mapping
+                      </b>
+                      :
+                      <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code>^Indexable<'T></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'d</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L73-73" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mapping
+                </span>
+                :
+                <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code>^Indexable<'T></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'d</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1911', 1911)" onmouseover="showTip(event, '1911', 1911)">
+                <p>
+                  <a id="InvokeOnInstance">
+                    <a href="#InvokeOnInstance">
+                      <code><span>MapIndexed.InvokeOnInstance<span><span>(<span>mapping</span>)</span>&#32;<span>(<span>source</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1911">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.InvokeOnInstance<span><span>(<span>mapping</span>)</span>&#32;<span>(<span>source</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        mapping
+                      </b>
+                      :
+                      <code><span>'K&#32;->&#32;'T&#32;->&#32;'Key</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code>^Indexable<'T></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'Indexable<'U></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L77-77" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mapping
+                </span>
+                :
+                <code><span>'K&#32;->&#32;'T&#32;->&#32;'Key</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code>^Indexable<'T></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'Indexable<'U></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1912', 1912)" onmouseover="showTip(event, '1912', 1912)">
+                <p>
+                  <a id="MapIndexed">
+                    <a href="#MapIndexed">
+                      <code><span>MapIndexed.MapIndexed<span><span>(<span>arg1,&#32;arg2,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1912">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.MapIndexed<span><span>(<span>arg1,&#32;arg2,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code>^t</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L81-81" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code>^t</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1913', 1913)" onmouseover="showTip(event, '1913', 1913)">
+                <p>
+                  <a id="MapIndexed">
+                    <a href="#MapIndexed">
+                      <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;_impl</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1913">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;_impl</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>^I<'T></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _impl
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'I<'U></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L80-80" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>^I<'T></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _impl
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'I<'U></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1914', 1914)" onmouseover="showTip(event, '1914', 1914)">
+                <p>
+                  <a id="MapIndexed">
+                    <a href="#MapIndexed">
+                      <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;_impl</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1914">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;_impl</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>seq&lt;'T&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>int&#32;->&#32;'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _impl
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>seq&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L79-79" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>seq&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>int&#32;->&#32;'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _impl
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>seq&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1915', 1915)" onmouseover="showTip(event, '1915', 1915)">
+                <p>
+                  <a id="MapIndexed">
+                    <a href="#MapIndexed">
+                      <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1915">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpmap-2">Map</a>&lt;<span>'K,&#32;'T</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_impl
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpmap-2">Map</a>&lt;<span>'K,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L71-71" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpmap-2">Map</a>&lt;<span>'K,&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_impl
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpmap-2">Map</a>&lt;<span>'K,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1916', 1916)" onmouseover="showTip(event, '1916', 1916)">
+                <p>
+                  <a id="MapIndexed">
+                    <a href="#MapIndexed">
+                      <code><span>MapIndexed.MapIndexed<span><span>(<span>g,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1916">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.MapIndexed<span><span>(<span>g,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        g
+                      </b>
+                      :
+                      <code><span>'K&#32;->&#32;'T</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_impl
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'K&#32;->&#32;'U</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L70-70" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  g
+                </span>
+                :
+                <code><span>'K&#32;->&#32;'T</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_impl
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'K&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1917', 1917)" onmouseover="showTip(event, '1917', 1917)">
+                <p>
+                  <a id="MapIndexed">
+                    <a href="#MapIndexed">
+                      <code><span>MapIndexed.MapIndexed<span><span>(<span>arg1,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1917">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.MapIndexed<span><span>(<span>arg1,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'K&#32;*&#32;'T</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_impl
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'K&#32;*&#32;'U</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L69-69" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'K&#32;*&#32;'T</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'K&#32;->&#32;'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_impl
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'K&#32;*&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1918', 1918)" onmouseover="showTip(event, '1918', 1918)">
+                <p>
+                  <a id="MapIndexed">
+                    <a href="#MapIndexed">
+                      <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1918">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>'T[]</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>int&#32;->&#32;'T&#32;->&#32;'a</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_impl
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'a[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L68-68" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>'T[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>int&#32;->&#32;'T&#32;->&#32;'a</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_impl
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'a[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1919', 1919)" onmouseover="showTip(event, '1919', 1919)">
+                <p>
+                  <a id="MapIndexed">
+                    <a href="#MapIndexed">
+                      <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1919">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>MapIndexed.MapIndexed<span><span>(<span>x,&#32;f,&#32;?_impl</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span>'T&#32;list</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>int&#32;->&#32;'T&#32;->&#32;'a</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_impl
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'a&#32;list</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L67-67" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span>'T&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>int&#32;->&#32;'T&#32;->&#32;'a</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_impl
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-mapindexed.html">MapIndexed</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'a&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-  <h3>Static members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1719', 1719)" onmouseover="showTip(event, '1719', 1719)">
-            MapIndexed.Invoke mapping source
-          </code>
-          <div class="tip" id="1719">
-            <strong>Signature:</strong> (mapping:(&#39;K -&gt; &#39;T -&gt; &#39;U)) -&gt; source:^Indexable&lt;&#39;T&gt; -&gt; ^Indexable&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'K, 'T, 'U, ^Indexable<'T>, ^Indexable<'U>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L74-74" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1720', 1720)" onmouseover="showTip(event, '1720', 1720)">
-            MapIndexed.MapIndexed(x, f, _impl)
-          </code>
-          <div class="tip" id="1720">
-            <strong>Signature:</strong> (x:Map&lt;&#39;K,&#39;T&gt; * f:(&#39;K -&gt; &#39;T -&gt; &#39;U) * _impl:MapIndexed) -&gt; Map&lt;&#39;K,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'K, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L72-72" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1721', 1721)" onmouseover="showTip(event, '1721', 1721)">
-            MapIndexed.MapIndexed(g, f, _impl)
-          </code>
-          <div class="tip" id="1721">
-            <strong>Signature:</strong> (g:(&#39;K -&gt; &#39;T) * f:(&#39;K -&gt; &#39;T -&gt; &#39;U) * _impl:MapIndexed) -&gt; &#39;K -&gt; &#39;U<br />
-                          <strong>Type parameters:</strong> 'K, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L71-71" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1722', 1722)" onmouseover="showTip(event, '1722', 1722)">
-            MapIndexed.MapIndexed(arg1, f, _impl)
-          </code>
-          <div class="tip" id="1722">
-            <strong>Signature:</strong> ((&#39;K * &#39;T) * f:(&#39;K -&gt; &#39;T -&gt; &#39;U) * _impl:MapIndexed) -&gt; &#39;K * &#39;U<br />
-                          <strong>Type parameters:</strong> 'K, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L70-70" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1723', 1723)" onmouseover="showTip(event, '1723', 1723)">
-            MapIndexed.MapIndexed(x, f, _impl)
-          </code>
-          <div class="tip" id="1723">
-            <strong>Signature:</strong> (x:&#39;T [] * f:(int -&gt; &#39;T -&gt; &#39;?17526) * _impl:MapIndexed) -&gt; &#39;?17526 []<br />
-                          <strong>Type parameters:</strong> 'T, '?17526                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L69-69" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1724', 1724)" onmouseover="showTip(event, '1724', 1724)">
-            MapIndexed.MapIndexed(x, f, _impl)
-          </code>
-          <div class="tip" id="1724">
-            <strong>Signature:</strong> (x:&#39;T list * f:(int -&gt; &#39;T -&gt; &#39;?17523) * _impl:MapIndexed) -&gt; &#39;?17523 list<br />
-                          <strong>Type parameters:</strong> 'T, '?17523                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L68-68" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1725', 1725)" onmouseover="showTip(event, '1725', 1725)">
-            MapIndexed.MapIndexed(x, f, _impl)
-          </code>
-          <div class="tip" id="1725">
-            <strong>Signature:</strong> (x:seq&lt;&#39;T&gt; * f:(int -&gt; &#39;T -&gt; &#39;?17520) * _impl:MapIndexed) -&gt; seq&lt;&#39;?17520&gt;<br />
-                          <strong>Type parameters:</strong> 'T, '?17520                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L67-67" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1726', 1726)" onmouseover="showTip(event, '1726', 1726)">
-            MapIndexed.MapIndexed(x, f, _impl)
-          </code>
-          <div class="tip" id="1726">
-            <strong>Signature:</strong> (x:Id&lt;&#39;T&gt; * f:(unit -&gt; &#39;T -&gt; &#39;U) * _impl:MapIndexed) -&gt; &#39;U<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Indexable.fs#L66-66" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -210,6 +1065,6 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

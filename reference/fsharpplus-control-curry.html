@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Curry - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,193 +24,817 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
-
-<h1>Curry</h1>
-<p>
-
-    <span>Namespace: FSharpPlus.Control</span><br />
-    </p>
-<div class="xmldoc">
+          <div>
+  <h1>
+    Curry Type
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus-control.html">
+      FSharpPlus.Control
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <p>
+    Base Type: 
+    <code>obj</code>
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1413', 1413)" onmouseover="showTip(event, '1413', 1413)">
+                <p>
+                  <a id="Curry">
+                    <a href="#Curry">
+                      <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1413">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e&#32;*&#32;'f&#32;*&#32;'g</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span><span>'h&#32;*&#32;'i&#32;*&#32;'j&#32;*&#32;'k&#32;*&#32;'l&#32;*&#32;'m&#32;*&#32;'n</span>&#32;->&#32;'o</span>)</span>&#32;->&#32;'h&#32;->&#32;'i&#32;->&#32;'j&#32;->&#32;'k&#32;->&#32;'l&#32;->&#32;'m&#32;->&#32;'n&#32;->&#32;'o</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L183-183" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e&#32;*&#32;'f&#32;*&#32;'g</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span><span>'h&#32;*&#32;'i&#32;*&#32;'j&#32;*&#32;'k&#32;*&#32;'l&#32;*&#32;'m&#32;*&#32;'n</span>&#32;->&#32;'o</span>)</span>&#32;->&#32;'h&#32;->&#32;'i&#32;->&#32;'j&#32;->&#32;'k&#32;->&#32;'l&#32;->&#32;'m&#32;->&#32;'n&#32;->&#32;'o</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1414', 1414)" onmouseover="showTip(event, '1414', 1414)">
+                <p>
+                  <a id="Curry">
+                    <a href="#Curry">
+                      <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1414">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e&#32;*&#32;'f</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span><span>'g&#32;*&#32;'h&#32;*&#32;'i&#32;*&#32;'j&#32;*&#32;'k&#32;*&#32;'l</span>&#32;->&#32;'m</span>)</span>&#32;->&#32;'g&#32;->&#32;'h&#32;->&#32;'i&#32;->&#32;'j&#32;->&#32;'k&#32;->&#32;'l&#32;->&#32;'m</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L182-182" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e&#32;*&#32;'f</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span><span>'g&#32;*&#32;'h&#32;*&#32;'i&#32;*&#32;'j&#32;*&#32;'k&#32;*&#32;'l</span>&#32;->&#32;'m</span>)</span>&#32;->&#32;'g&#32;->&#32;'h&#32;->&#32;'i&#32;->&#32;'j&#32;->&#32;'k&#32;->&#32;'l&#32;->&#32;'m</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1415', 1415)" onmouseover="showTip(event, '1415', 1415)">
+                <p>
+                  <a id="Curry">
+                    <a href="#Curry">
+                      <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1415">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span><span>'f&#32;*&#32;'g&#32;*&#32;'h&#32;*&#32;'i&#32;*&#32;'j</span>&#32;->&#32;'k</span>)</span>&#32;->&#32;'f&#32;->&#32;'g&#32;->&#32;'h&#32;->&#32;'i&#32;->&#32;'j&#32;->&#32;'k</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L181-181" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span><span>'f&#32;*&#32;'g&#32;*&#32;'h&#32;*&#32;'i&#32;*&#32;'j</span>&#32;->&#32;'k</span>)</span>&#32;->&#32;'f&#32;->&#32;'g&#32;->&#32;'h&#32;->&#32;'i&#32;->&#32;'j&#32;->&#32;'k</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1416', 1416)" onmouseover="showTip(event, '1416', 1416)">
+                <p>
+                  <a id="Curry">
+                    <a href="#Curry">
+                      <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1416">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span><span>'e&#32;*&#32;'f&#32;*&#32;'g&#32;*&#32;'h</span>&#32;->&#32;'i</span>)</span>&#32;->&#32;'e&#32;->&#32;'f&#32;->&#32;'g&#32;->&#32;'h&#32;->&#32;'i</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L180-180" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span><span>'e&#32;*&#32;'f&#32;*&#32;'g&#32;*&#32;'h</span>&#32;->&#32;'i</span>)</span>&#32;->&#32;'e&#32;->&#32;'f&#32;->&#32;'g&#32;->&#32;'h&#32;->&#32;'i</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1417', 1417)" onmouseover="showTip(event, '1417', 1417)">
+                <p>
+                  <a id="Curry">
+                    <a href="#Curry">
+                      <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1417">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span><span>'d&#32;*&#32;'e&#32;*&#32;'f</span>&#32;->&#32;'g</span>)</span>&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;'f&#32;->&#32;'g</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L179-179" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span><span>'d&#32;*&#32;'e&#32;*&#32;'f</span>&#32;->&#32;'g</span>)</span>&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;'f&#32;->&#32;'g</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1418', 1418)" onmouseover="showTip(event, '1418', 1418)">
+                <p>
+                  <a id="Curry">
+                    <a href="#Curry">
+                      <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1418">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span><span>'c&#32;*&#32;'d</span>&#32;->&#32;'e</span>)</span>&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L178-178" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span><span>'c&#32;*&#32;'d</span>&#32;->&#32;'e</span>)</span>&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1419', 1419)" onmouseover="showTip(event, '1419', 1419)">
+                <p>
+                  <a id="Curry">
+                    <a href="#Curry">
+                      <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1419">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Curry.Curry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.tuple-1">Tuple</a>&lt;'t1&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span><span><a href="https://docs.microsoft.com/dotnet/api/system.tuple-1">Tuple</a>&lt;'a&gt;</span>&#32;->&#32;'b</span>)</span>&#32;->&#32;'a&#32;->&#32;'b</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L177-177" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.tuple-1">Tuple</a>&lt;'t1&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span><span><a href="https://docs.microsoft.com/dotnet/api/system.tuple-1">Tuple</a>&lt;'a&gt;</span>&#32;->&#32;'b</span>)</span>&#32;->&#32;'a&#32;->&#32;'b</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1420', 1420)" onmouseover="showTip(event, '1420', 1420)">
+                <p>
+                  <a id="Curry">
+                    <a href="#Curry">
+                      <code><span>Curry.Curry<span><span>(<span>t,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1420">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Curry.Curry<span><span>(<span>t,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        t
+                      </b>
+                      :
+                      <code>^t</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span>'c&#32;->&#32;'a</span>)</span>&#32;->&#32;'t1&#32;->&#32;'t2&#32;->&#32;'t3&#32;->&#32;'t4&#32;->&#32;'t5&#32;->&#32;'t6&#32;->&#32;'t7&#32;->&#32;'b</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L172-172" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  t
+                </span>
+                :
+                <code>^t</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-curry.html">Curry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span>'c&#32;->&#32;'a</span>)</span>&#32;->&#32;'t1&#32;->&#32;'t2&#32;->&#32;'t3&#32;->&#32;'t4&#32;->&#32;'t5&#32;->&#32;'t6&#32;->&#32;'t7&#32;->&#32;'b</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1421', 1421)" onmouseover="showTip(event, '1421', 1421)">
+                <p>
+                  <a id="Invoke">
+                    <a href="#Invoke">
+                      <code><span>Curry.Invoke<span><span>(<span>f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1421">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Curry.Invoke<span><span>(<span>f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>^t&#32;->&#32;'r</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'args</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L168-168" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>^t&#32;->&#32;'r</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'args</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-  <h3>Static members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1240', 1240)" onmouseover="showTip(event, '1240', 1240)">
-            Curry.Curry(arg1, arg2)
-          </code>
-          <div class="tip" id="1240">
-            <strong>Signature:</strong> ((&#39;?16641 * &#39;?16642 * &#39;?16643 * &#39;?16644 * &#39;?16645 * &#39;?16646 * &#39;?16647) * Curry) -&gt; (&#39;?16648 * &#39;?16649 * &#39;?16650 * &#39;?16651 * &#39;?16652 * &#39;?16653 * &#39;?16654 -&gt; &#39;?16655) -&gt; &#39;?16648 -&gt; &#39;?16649 -&gt; &#39;?16650 -&gt; &#39;?16651 -&gt; &#39;?16652 -&gt; &#39;?16653 -&gt; &#39;?16654 -&gt; &#39;?16655<br />
-                          <strong>Type parameters:</strong> '?16641, '?16642, '?16643, '?16644, '?16645, '?16646, '?16647, '?16648, '?16649, '?16650, '?16651, '?16652, '?16653, '?16654, '?16655                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L183-183" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1241', 1241)" onmouseover="showTip(event, '1241', 1241)">
-            Curry.Curry(arg1, arg2)
-          </code>
-          <div class="tip" id="1241">
-            <strong>Signature:</strong> ((&#39;?16627 * &#39;?16628 * &#39;?16629 * &#39;?16630 * &#39;?16631 * &#39;?16632) * Curry) -&gt; (&#39;?16633 * &#39;?16634 * &#39;?16635 * &#39;?16636 * &#39;?16637 * &#39;?16638 -&gt; &#39;?16639) -&gt; &#39;?16633 -&gt; &#39;?16634 -&gt; &#39;?16635 -&gt; &#39;?16636 -&gt; &#39;?16637 -&gt; &#39;?16638 -&gt; &#39;?16639<br />
-                          <strong>Type parameters:</strong> '?16627, '?16628, '?16629, '?16630, '?16631, '?16632, '?16633, '?16634, '?16635, '?16636, '?16637, '?16638, '?16639                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L182-182" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1242', 1242)" onmouseover="showTip(event, '1242', 1242)">
-            Curry.Curry(arg1, arg2)
-          </code>
-          <div class="tip" id="1242">
-            <strong>Signature:</strong> ((&#39;?16615 * &#39;?16616 * &#39;?16617 * &#39;?16618 * &#39;?16619) * Curry) -&gt; (&#39;?16620 * &#39;?16621 * &#39;?16622 * &#39;?16623 * &#39;?16624 -&gt; &#39;?16625) -&gt; &#39;?16620 -&gt; &#39;?16621 -&gt; &#39;?16622 -&gt; &#39;?16623 -&gt; &#39;?16624 -&gt; &#39;?16625<br />
-                          <strong>Type parameters:</strong> '?16615, '?16616, '?16617, '?16618, '?16619, '?16620, '?16621, '?16622, '?16623, '?16624, '?16625                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L181-181" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1243', 1243)" onmouseover="showTip(event, '1243', 1243)">
-            Curry.Curry(arg1, arg2)
-          </code>
-          <div class="tip" id="1243">
-            <strong>Signature:</strong> ((&#39;?16605 * &#39;?16606 * &#39;?16607 * &#39;?16608) * Curry) -&gt; (&#39;?16609 * &#39;?16610 * &#39;?16611 * &#39;?16612 -&gt; &#39;?16613) -&gt; &#39;?16609 -&gt; &#39;?16610 -&gt; &#39;?16611 -&gt; &#39;?16612 -&gt; &#39;?16613<br />
-                          <strong>Type parameters:</strong> '?16605, '?16606, '?16607, '?16608, '?16609, '?16610, '?16611, '?16612, '?16613                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L180-180" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1244', 1244)" onmouseover="showTip(event, '1244', 1244)">
-            Curry.Curry(arg1, arg2)
-          </code>
-          <div class="tip" id="1244">
-            <strong>Signature:</strong> ((&#39;?16597 * &#39;?16598 * &#39;?16599) * Curry) -&gt; (&#39;?16600 * &#39;?16601 * &#39;?16602 -&gt; &#39;?16603) -&gt; &#39;?16600 -&gt; &#39;?16601 -&gt; &#39;?16602 -&gt; &#39;?16603<br />
-                          <strong>Type parameters:</strong> '?16597, '?16598, '?16599, '?16600, '?16601, '?16602, '?16603                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L179-179" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1245', 1245)" onmouseover="showTip(event, '1245', 1245)">
-            Curry.Curry(arg1, arg2)
-          </code>
-          <div class="tip" id="1245">
-            <strong>Signature:</strong> ((&#39;?16591 * &#39;?16592) * Curry) -&gt; (&#39;?16593 * &#39;?16594 -&gt; &#39;?16595) -&gt; &#39;?16593 -&gt; &#39;?16594 -&gt; &#39;?16595<br />
-                          <strong>Type parameters:</strong> '?16591, '?16592, '?16593, '?16594, '?16595                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L178-178" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1246', 1246)" onmouseover="showTip(event, '1246', 1246)">
-            Curry.Curry(arg1, arg2)
-          </code>
-          <div class="tip" id="1246">
-            <strong>Signature:</strong> (Tuple&lt;&#39;t1&gt; * Curry) -&gt; (Tuple&lt;&#39;?16588&gt; -&gt; &#39;?16589) -&gt; &#39;?16588 -&gt; &#39;?16589<br />
-                          <strong>Type parameters:</strong> 't1, '?16588, '?16589                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L177-177" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1247', 1247)" onmouseover="showTip(event, '1247', 1247)">
-            Curry.Curry(t, arg2)
-          </code>
-          <div class="tip" id="1247">
-            <strong>Signature:</strong> (t:^t * Curry) -&gt; (&#39;?16585 -&gt; &#39;?16583) -&gt; &#39;t1 -&gt; &#39;t2 -&gt; &#39;t3 -&gt; &#39;t4 -&gt; &#39;t5 -&gt; &#39;t6 -&gt; &#39;t7 -&gt; &#39;?16584<br />
-                          <strong>Type parameters:</strong> ^t, 't1, 't2, 't3, 't4, 't5, 't6, 't7, ^tr, '?16583, '?16584, '?16585                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L172-172" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1248', 1248)" onmouseover="showTip(event, '1248', 1248)">
-            Curry.Invoke(f)
-          </code>
-          <div class="tip" id="1248">
-            <strong>Signature:</strong> (f:(^t -&gt; &#39;r)) -&gt; &#39;args<br />
-                          <strong>Type parameters:</strong> ^t, 'r, 'args                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L168-168" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -227,6 +851,6 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

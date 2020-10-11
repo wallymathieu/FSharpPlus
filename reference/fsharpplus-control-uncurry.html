@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Uncurry - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,193 +24,833 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
-
-<h1>Uncurry</h1>
-<p>
-
-    <span>Namespace: FSharpPlus.Control</span><br />
-    </p>
-<div class="xmldoc">
+          <div>
+  <h1>
+    Uncurry Type
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus-control.html">
+      FSharpPlus.Control
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <p>
+    Base Type: 
+    <code>obj</code>
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2609', 2609)" onmouseover="showTip(event, '2609', 2609)">
+                <p>
+                  <a id="Invoke">
+                    <a href="#Invoke">
+                      <code><span>Uncurry.Invoke<span><span>(<span>f</span>)</span>&#32;<span>(<span>t</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2609">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Uncurry.Invoke<span><span>(<span>f</span>)</span>&#32;<span>(<span>t</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code>'a</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        t
+                      </b>
+                      :
+                      <code>^b</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'r</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L186-186" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  t
+                </span>
+                :
+                <code>^b</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'r</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2610', 2610)" onmouseover="showTip(event, '2610', 2610)">
+                <p>
+                  <a id="Uncurry">
+                    <a href="#Uncurry">
+                      <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2610">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e&#32;*&#32;'f&#32;*&#32;'g</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;'f&#32;->&#32;'g&#32;->&#32;'h</span>)</span>&#32;->&#32;'h</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L207-207" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e&#32;*&#32;'f&#32;*&#32;'g</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;'f&#32;->&#32;'g&#32;->&#32;'h</span>)</span>&#32;->&#32;'h</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2611', 2611)" onmouseover="showTip(event, '2611', 2611)">
+                <p>
+                  <a id="Uncurry">
+                    <a href="#Uncurry">
+                      <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2611">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e&#32;*&#32;'f</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;'f&#32;->&#32;'g</span>)</span>&#32;->&#32;'g</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L206-206" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e&#32;*&#32;'f</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;'f&#32;->&#32;'g</span>)</span>&#32;->&#32;'g</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2612', 2612)" onmouseover="showTip(event, '2612', 2612)">
+                <p>
+                  <a id="Uncurry">
+                    <a href="#Uncurry">
+                      <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2612">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;'f</span>)</span>&#32;->&#32;'f</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L205-205" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d&#32;*&#32;'e</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e&#32;->&#32;'f</span>)</span>&#32;->&#32;'f</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2613', 2613)" onmouseover="showTip(event, '2613', 2613)">
+                <p>
+                  <a id="Uncurry">
+                    <a href="#Uncurry">
+                      <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2613">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e</span>)</span>&#32;->&#32;'e</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L204-204" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c&#32;*&#32;'d</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d&#32;->&#32;'e</span>)</span>&#32;->&#32;'e</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2614', 2614)" onmouseover="showTip(event, '2614', 2614)">
+                <p>
+                  <a id="Uncurry">
+                    <a href="#Uncurry">
+                      <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2614">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b&#32;*&#32;'c</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d</span>)</span>&#32;->&#32;'d</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L203-203" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b&#32;*&#32;'c</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c&#32;->&#32;'d</span>)</span>&#32;->&#32;'d</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2615', 2615)" onmouseover="showTip(event, '2615', 2615)">
+                <p>
+                  <a id="Uncurry">
+                    <a href="#Uncurry">
+                      <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2615">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Uncurry.Uncurry<span><span>(<span>arg1,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>'a&#32;*&#32;'b</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c</span>)</span>&#32;->&#32;'c</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L202-202" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>'a&#32;*&#32;'b</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span>'a&#32;->&#32;'b&#32;->&#32;'c</span>)</span>&#32;->&#32;'c</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2616', 2616)" onmouseover="showTip(event, '2616', 2616)">
+                <p>
+                  <a id="Uncurry">
+                    <a href="#Uncurry">
+                      <code><span>Uncurry.Uncurry<span><span>(<span>x,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2616">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Uncurry.Uncurry<span><span>(<span>x,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.tuple-1">Tuple</a>&lt;'t1&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span>'t1&#32;->&#32;'a</span>)</span>&#32;->&#32;'a</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L201-201" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.tuple-1">Tuple</a>&lt;'t1&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span>'t1&#32;->&#32;'a</span>)</span>&#32;->&#32;'a</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2617', 2617)" onmouseover="showTip(event, '2617', 2617)">
+                <p>
+                  <a id="Uncurry">
+                    <a href="#Uncurry">
+                      <code><span>Uncurry.Uncurry<span><span>(<span>t,&#32;arg2</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2617">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Uncurry.Uncurry<span><span>(<span>t,&#32;arg2</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        t
+                      </b>
+                      :
+                      <code>^t</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span>(<span>'t1&#32;->&#32;'t2&#32;->&#32;'t3&#32;->&#32;'t4&#32;->&#32;'t5&#32;->&#32;'t6&#32;->&#32;'t7&#32;->&#32;'a</span>)</span>&#32;->&#32;'b</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L190-190" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  t
+                </span>
+                :
+                <code>^t</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-uncurry.html">Uncurry</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span>(<span>'t1&#32;->&#32;'t2&#32;->&#32;'t3&#32;->&#32;'t4&#32;->&#32;'t5&#32;->&#32;'t6&#32;->&#32;'t7&#32;->&#32;'a</span>)</span>&#32;->&#32;'b</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-  <h3>Static members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2379', 2379)" onmouseover="showTip(event, '2379', 2379)">
-            Uncurry.Invoke f t
-          </code>
-          <div class="tip" id="2379">
-            <strong>Signature:</strong> f:&#39;a -&gt; t:^b -&gt; &#39;r<br />
-                          <strong>Type parameters:</strong> 'a, ^b, 'r                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L186-186" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2380', 2380)" onmouseover="showTip(event, '2380', 2380)">
-            Uncurry.Uncurry(arg1, arg2)
-          </code>
-          <div class="tip" id="2380">
-            <strong>Signature:</strong> ((&#39;?16706 * &#39;?16707 * &#39;?16708 * &#39;?16709 * &#39;?16710 * &#39;?16711 * &#39;?16712) * Uncurry) -&gt; (&#39;?16706 -&gt; &#39;?16707 -&gt; &#39;?16708 -&gt; &#39;?16709 -&gt; &#39;?16710 -&gt; &#39;?16711 -&gt; &#39;?16712 -&gt; &#39;?16713) -&gt; &#39;?16713<br />
-                          <strong>Type parameters:</strong> '?16706, '?16707, '?16708, '?16709, '?16710, '?16711, '?16712, '?16713                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L207-207" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2381', 2381)" onmouseover="showTip(event, '2381', 2381)">
-            Uncurry.Uncurry(arg1, arg2)
-          </code>
-          <div class="tip" id="2381">
-            <strong>Signature:</strong> ((&#39;?16698 * &#39;?16699 * &#39;?16700 * &#39;?16701 * &#39;?16702 * &#39;?16703) * Uncurry) -&gt; (&#39;?16698 -&gt; &#39;?16699 -&gt; &#39;?16700 -&gt; &#39;?16701 -&gt; &#39;?16702 -&gt; &#39;?16703 -&gt; &#39;?16704) -&gt; &#39;?16704<br />
-                          <strong>Type parameters:</strong> '?16698, '?16699, '?16700, '?16701, '?16702, '?16703, '?16704                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L206-206" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2382', 2382)" onmouseover="showTip(event, '2382', 2382)">
-            Uncurry.Uncurry(arg1, arg2)
-          </code>
-          <div class="tip" id="2382">
-            <strong>Signature:</strong> ((&#39;?16691 * &#39;?16692 * &#39;?16693 * &#39;?16694 * &#39;?16695) * Uncurry) -&gt; (&#39;?16691 -&gt; &#39;?16692 -&gt; &#39;?16693 -&gt; &#39;?16694 -&gt; &#39;?16695 -&gt; &#39;?16696) -&gt; &#39;?16696<br />
-                          <strong>Type parameters:</strong> '?16691, '?16692, '?16693, '?16694, '?16695, '?16696                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L205-205" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2383', 2383)" onmouseover="showTip(event, '2383', 2383)">
-            Uncurry.Uncurry(arg1, arg2)
-          </code>
-          <div class="tip" id="2383">
-            <strong>Signature:</strong> ((&#39;?16685 * &#39;?16686 * &#39;?16687 * &#39;?16688) * Uncurry) -&gt; (&#39;?16685 -&gt; &#39;?16686 -&gt; &#39;?16687 -&gt; &#39;?16688 -&gt; &#39;?16689) -&gt; &#39;?16689<br />
-                          <strong>Type parameters:</strong> '?16685, '?16686, '?16687, '?16688, '?16689                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L204-204" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2384', 2384)" onmouseover="showTip(event, '2384', 2384)">
-            Uncurry.Uncurry(arg1, arg2)
-          </code>
-          <div class="tip" id="2384">
-            <strong>Signature:</strong> ((&#39;?16680 * &#39;?16681 * &#39;?16682) * Uncurry) -&gt; (&#39;?16680 -&gt; &#39;?16681 -&gt; &#39;?16682 -&gt; &#39;?16683) -&gt; &#39;?16683<br />
-                          <strong>Type parameters:</strong> '?16680, '?16681, '?16682, '?16683                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L203-203" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2385', 2385)" onmouseover="showTip(event, '2385', 2385)">
-            Uncurry.Uncurry(arg1, arg2)
-          </code>
-          <div class="tip" id="2385">
-            <strong>Signature:</strong> ((&#39;?16676 * &#39;?16677) * Uncurry) -&gt; (&#39;?16676 -&gt; &#39;?16677 -&gt; &#39;?16678) -&gt; &#39;?16678<br />
-                          <strong>Type parameters:</strong> '?16676, '?16677, '?16678                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L202-202" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2386', 2386)" onmouseover="showTip(event, '2386', 2386)">
-            Uncurry.Uncurry(x, arg2)
-          </code>
-          <div class="tip" id="2386">
-            <strong>Signature:</strong> (x:Tuple&lt;&#39;t1&gt; * Uncurry) -&gt; (&#39;t1 -&gt; &#39;?16674) -&gt; &#39;?16674<br />
-                          <strong>Type parameters:</strong> 't1, '?16674                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L201-201" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2387', 2387)" onmouseover="showTip(event, '2387', 2387)">
-            Uncurry.Uncurry(t, arg2)
-          </code>
-          <div class="tip" id="2387">
-            <strong>Signature:</strong> (t:^t * Uncurry) -&gt; (&#39;t1 -&gt; &#39;t2 -&gt; &#39;t3 -&gt; &#39;t4 -&gt; &#39;t5 -&gt; &#39;t6 -&gt; &#39;t7 -&gt; &#39;?16663) -&gt; &#39;?16664<br />
-                          <strong>Type parameters:</strong> ^t, ^tr, '?16663, '?16664, 't7, 't6, 't5, 't4, 't3, 't2, 't1                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Tuple.fs#L190-190" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -227,6 +867,6 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

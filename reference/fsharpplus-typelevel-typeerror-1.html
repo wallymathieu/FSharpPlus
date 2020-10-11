@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>TypeError<'a> - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,148 +24,304 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
+          <div>
+  <h1>
+    TypeError<'a> Type
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus-typelevel.html">
+      FSharpPlus.TypeLevel
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <p>
+    Base Type: 
+    <code>obj</code>
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+ Base class for type-level errors.
 
-<h1>TypeError<'a></h1>
-<p>
+ For every type (kind) of type-level literals, the corresponding type-error class should be created
+ and it should provide all the methods the literals have to offer.
 
-    <span>Namespace: FSharpPlus.TypeLevel</span><br />
-    </p>
-<div class="xmldoc">
-<p>Base class for type-level errors.</p>
-<p>For every type (kind) of type-level literals, the corresponding type-error class should be created
-and it should provide all the methods the literals have to offer.</p>
-<p>TypeError should not implement <a href="fsharpplus-typelevel-itypeliteral.html" title="ITypeLiteral"><code>ITypeLiteral</code></a> but should provide <code>Singleton</code> and <code>RuntimeValue</code>.
-This is important for making type-level error-handling work correctly.</p>
-<p>TypeError should implement the same <code>IErrorLiftable&lt;TypeErrorLifter&gt;</code> as the corresponding kind do.
-For example, if <code>TypeFoo</code> implements <code>IErrorLiftable&lt;FooTypeErrorLifter&gt;</code>, <code>FooTypeError</code> should also implement it.
-So, the implementation will look like below:</p>
-<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
-<span class="l"> 2: </span>
-<span class="l"> 3: </span>
-<span class="l"> 4: </span>
-<span class="l"> 5: </span>
-<span class="l"> 6: </span>
-<span class="l"> 7: </span>
-<span class="l"> 8: </span>
-<span class="l"> 9: </span>
-<span class="l">10: </span>
-<span class="l">11: </span>
-<span class="l">12: </span>
-<span class="l">13: </span>
-<span class="l">14: </span>
-</pre></td>
-<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">type</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="if">FooTypeError</span><span class="pn">&lt;</span><span class="ta">&#39;</span><span class="id">a</span><span class="pn">&gt;</span> <span class="o">=</span>
-  <span class="k">inherit</span> <span class="id">TypeError</span><span class="pn">&lt;</span><span class="id">&#39;</span><span class="id">a</span><span class="pn">&gt;</span>
-  <span class="k">interface</span> <span class="id">IErrorLiftable</span><span class="pn">&lt;</span><span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="id">FooTypeErrorLifter</span><span class="pn">&gt;</span>
-  <span class="c">(* members related to Foo *)</span>
+ TypeError should not implement `ITypeLiteral` but should provide `Singleton` and `RuntimeValue`.
+ This is important for making type-level error-handling work correctly.
 
-<span class="k">and</span> <span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="rt">AggregatedFooTypeError</span><span class="pn">&lt;</span><span class="ta">&#39;</span><span class="id">a</span><span class="pn">&gt;</span><span class="pn">(</span><span class="pn">)</span> <span class="o">=</span>
-  <span class="k">inherit</span> <span onmouseout="hideTip(event, 'fs1', 4)" onmouseover="showTip(event, 'fs1', 4)" class="if">FooTypeError</span><span class="pn">&lt;</span><span onmouseout="hideTip(event, 'fs3', 5)" onmouseover="showTip(event, 'fs3', 5)" class="rt">AggregatedFooTypeError</span><span class="pn">&lt;</span><span class="ta">&#39;</span><span class="id">a</span><span class="pn">&gt;</span><span class="pn">&gt;</span><span class="pn">(</span><span class="pn">)</span>
+ TypeError should implement the same `IErrorLiftable<TypeErrorLifter>` as the corresponding kind do.
+ For example, if `TypeFoo` implements `IErrorLiftable<FooTypeErrorLifter>`, `FooTypeError` should also implement it.
+ So, the implementation will look like below:
 
-<span class="k">and</span> <span onmouseout="hideTip(event, 'fs2', 6)" onmouseover="showTip(event, 'fs2', 6)" class="rt">FooTypeErrorLifter</span> <span class="o">=</span>
-  <span class="k">static</span> <span class="k">member</span> <span class="k">inline</span> <span class="fn">Lift</span> <span class="pn">(</span><span class="id">_</span><span class="pn">:</span> <span class="ta">&#39;</span><span onmouseout="hideTip(event, 'fs4', 7)" onmouseover="showTip(event, 'fs4', 7)" class="id">Error</span><span class="pn">)</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs5', 8)" onmouseover="showTip(event, 'fs5', 8)" class="id">Unchecked</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs6', 9)" onmouseover="showTip(event, 'fs6', 9)" class="id">defaultof</span><span class="pn">&lt;</span><span onmouseout="hideTip(event, 'fs3', 10)" onmouseover="showTip(event, 'fs3', 10)" class="id">AggregatedFooTypeError</span><span class="pn">&lt;</span><span class="id">&#39;</span><span onmouseout="hideTip(event, 'fs4', 11)" onmouseover="showTip(event, 'fs4', 11)" class="id">Error</span><span class="pn">&gt;</span><span class="pn">&gt;</span>
+     type FooTypeError<'a> =
+       inherit TypeError<'a>
+       interface IErrorLiftable<FooTypeErrorLifter>
+       (* members related to Foo *)
 
-<span class="k">type</span> <span onmouseout="hideTip(event, 'fs7', 12)" onmouseover="showTip(event, 'fs7', 12)" class="if">ITypeFoo</span> <span class="o">=</span>
-  <span class="k">inherit</span> <span class="id">ITypeLiteral</span>
-  <span class="k">inherit</span> <span class="id">IErrorLiftable</span><span class="pn">&lt;</span><span onmouseout="hideTip(event, 'fs2', 13)" onmouseover="showTip(event, 'fs2', 13)" class="id">FooTypeErrorLifter</span><span class="pn">&gt;</span>
-</code></pre></td>
-</tr>
-</table>
-<div class="tip" id="fs1">type FooTypeError&lt;&#39;a&gt; =<br />&#160;&#160;interface<br />&#160;&#160;&#160;&#160;inherit obj<br />&#160;&#160;&#160;&#160;inherit obj<br />&#160;&#160;end</div>
-<div class="tip" id="fs2">type FooTypeErrorLifter =<br />&#160;&#160;static member Lift : &#39;Error -&gt; &#39;a</div>
-<div class="tip" id="fs3">Multiple items<br />type AggregatedFooTypeError&lt;&#39;a&gt; =<br />&#160;&#160;inherit FooTypeError&lt;AggregatedFooTypeError&lt;&#39;a&gt;&gt;<br />&#160;&#160;new : unit -&gt; AggregatedFooTypeError&lt;&#39;a&gt;<br /><br />--------------------<br />new : unit -&gt; AggregatedFooTypeError&lt;&#39;a&gt;</div>
-<div class="tip" id="fs4">union case Result.Error: ErrorValue: &#39;TError -&gt; Result&lt;&#39;T,&#39;TError&gt;</div>
-<div class="tip" id="fs5">module Unchecked<br /><br />from Microsoft.FSharp.Core.Operators</div>
-<div class="tip" id="fs6">val defaultof&lt;&#39;T&gt; : &#39;T</div>
-<div class="tip" id="fs7">type ITypeFoo =<br />&#160;&#160;interface<br />&#160;&#160;&#160;&#160;inherit obj<br />&#160;&#160;&#160;&#160;inherit obj<br />&#160;&#160;end</div>
+     and AggregatedFooTypeError<'a>() =
+       inherit FooTypeError<AggregatedFooTypeError<'a>>()
+    
+     and FooTypeErrorLifter =
+       static member inline Lift (_: 'Error) = Unchecked.defaultof<AggregatedFooTypeError<'Error>>
 
+     type ITypeFoo =
+       inherit ITypeLiteral
+       inherit IErrorLiftable<FooTypeErrorLifter>
+
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Constructors
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Constructor
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3323', 3323)" onmouseover="showTip(event, '3323', 3323)">
+                <p>
+                  <a id="( .ctor )">
+                    <a href="#( .ctor )">
+                      <code><span>TypeError<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3323">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TypeError<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-typelevel-typeerror-1.html">TypeError</a>&lt;'a&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/TypeLevel/TypeLevelOperators.fs#L48-48" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-typelevel-typeerror-1.html">TypeError</a>&lt;'a&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3324', 3324)" onmouseover="showTip(event, '3324', 3324)">
+                <p>
+                  <a id="RuntimeValue">
+                    <a href="#RuntimeValue">
+                      <code><span>TypeError.RuntimeValue<span><span>(<span>arg1</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3324">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TypeError.RuntimeValue<span><span>(<span>arg1</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code>'a</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'b</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/TypeLevel/TypeLevelOperators.fs#L50-50" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'b</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3325', 3325)" onmouseover="showTip(event, '3325', 3325)">
+                <p>
+                  <a id="Singleton">
+                    <a href="#Singleton">
+                      <code><span>TypeError.Singleton<span><span>(<span>arg1</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3325">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>TypeError.Singleton<span><span>(<span>arg1</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code>'b</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'a</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/TypeLevel/TypeLevelOperators.fs#L49-49" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code>'b</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-  <h3>Constructors</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Constructor</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '3037', 3037)" onmouseover="showTip(event, '3037', 3037)">
-            new()
-          </code>
-          <div class="tip" id="3037">
-            <strong>Signature:</strong> unit -&gt; TypeError&lt;&#39;a&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/TypeLevel/TypeLevelOperators.fs#L48-48" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-              <p>CompiledName: <code>.ctor</code></p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Static members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '3038', 3038)" onmouseover="showTip(event, '3038', 3038)">
-            TypeError.RuntimeValue(arg1)
-          </code>
-          <div class="tip" id="3038">
-            <strong>Signature:</strong> &#39;?24621 -&gt; &#39;?24622<br />
-                          <strong>Type parameters:</strong> '?24622                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/TypeLevel/TypeLevelOperators.fs#L50-50" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '3039', 3039)" onmouseover="showTip(event, '3039', 3039)">
-            TypeError.Singleton(arg1)
-          </code>
-          <div class="tip" id="3039">
-            <strong>Signature:</strong> &#39;?24618 -&gt; &#39;a<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/TypeLevel/TypeLevelOperators.fs#L49-49" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -182,6 +338,6 @@ So, the implementation will look like below:</p>
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

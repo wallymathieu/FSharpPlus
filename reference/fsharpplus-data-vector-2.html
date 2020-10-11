@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Vector<'Item, 'Length> - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,530 +24,2102 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
+          <div>
+  <h1>
+    Vector<'Item, 'Length> Type
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus-data.html">
+      FSharpPlus.Data
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <p>
+    Base Type: 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.valuetype">ValueType</a></code>
+  </p>
+  <p>
+    All Interfaces: 
+    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'Item,&#32;'Length</span>&gt;</span>&gt;</span></code>
+    , 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.collections.istructuralequatable">IStructuralEquatable</a></code>
+    , 
+    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'Item,&#32;'Length</span>&gt;</span>&gt;</span></code>
+    , 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.icomparable">IComparable</a></code>
+    , 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.collections.istructuralcomparable">IStructuralComparable</a></code>
+  </p>
+  <p>
+    Kind: Struct
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Record fields
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Record Field
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3141', 3141)" onmouseover="showTip(event, '3141', 3141)">
+                <p>
+                  <a id="Items">
+                    <a href="#Items">
+                      <code>Items</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3141">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>Items</code>
+                  <br/>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L33-33" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Instance members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Instance member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3142', 3142)" onmouseover="showTip(event, '3142', 3142)">
+                <p>
+                  <a id="UnsafeGet">
+                    <a href="#UnsafeGet">
+                      <code><span>this.UnsafeGet<span><span>(<span>i</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3142">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.UnsafeGet<span><span>(<span>i</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'Item</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L35-35" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'Item</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3143', 3143)" onmouseover="showTip(event, '3143', 3143)">
+                <p>
+                  <a id="( %* )">
+                    <a href="#( %* )">
+                      <code><span><span>v1</span>&#32;%*&#32;<span>v2</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3143">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>v1</span>&#32;%*&#32;<span>v2</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span>&gt;</span>&gt;</span></span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        v2
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span>&gt;</span>&gt;</span></span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^d,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span>&gt;</span>&gt;</span></span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L593-593" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ cross product
 
-<h1>Vector<'Item, 'Length></h1>
-<p>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span>&gt;</span>&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v2
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span>&gt;</span>&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^d,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span>&gt;</span>&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3144', 3144)" onmouseover="showTip(event, '3144', 3144)">
+                <p>
+                  <a id="( * )">
+                    <a href="#( * )">
+                      <code><span><span>v1</span>&#32;*&#32;<span>v2</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3144">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>v1</span>&#32;*&#32;<span>v2</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        v2
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^c,&#32;'n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L595-595" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ hadamard (element-wise) product
 
-    <span>Namespace: FSharpPlus.Data</span><br />
-            <span>
-            Attributes: <br />
-[&lt;Struct&gt;]<br />
-[&lt;StructuredFormatDisplay(&quot;{Items}&quot;)&gt;]<br />
-            
-        </span>
-</p>
-<div class="xmldoc">
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v2
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^c,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3145', 3145)" onmouseover="showTip(event, '3145', 3145)">
+                <p>
+                  <a id="( + )">
+                    <a href="#( + )">
+                      <code><span><span>v1</span>&#32;+&#32;<span>v2</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3145">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>v1</span>&#32;+&#32;<span>v2</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        v2
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^c,&#32;'n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L586-586" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v2
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^c,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3146', 3146)" onmouseover="showTip(event, '3146', 3146)">
+                <p>
+                  <a id="( - )">
+                    <a href="#( - )">
+                      <code><span><span>v1</span>&#32;-&#32;<span>v2</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3146">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>v1</span>&#32;-&#32;<span>v2</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        v2
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^c,&#32;'n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L587-587" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v2
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^c,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3147', 3147)" onmouseover="showTip(event, '3147', 3147)">
+                <p>
+                  <a id="( / )">
+                    <a href="#( / )">
+                      <code><span><span>v1</span>&#32;/&#32;<span>v2</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3147">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>v1</span>&#32;/&#32;<span>v2</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        v2
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^c,&#32;'n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L596-596" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v2
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^c,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3148', 3148)" onmouseover="showTip(event, '3148', 3148)">
+                <p>
+                  <a id="( <*> )">
+                    <a href="#( <*> )">
+                      <code><span><span>f</span>&#32;<*>&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3148">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>f</span>&#32;<*>&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span><span>(<span>'x&#32;->&#32;'y</span>)</span>,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'y,&#32;'n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L583-583" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span><span>(<span>'x&#32;->&#32;'y</span>)</span>,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'y,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3149', 3149)" onmouseover="showTip(event, '3149', 3149)">
+                <p>
+                  <a id="( @* )">
+                    <a href="#( @* )">
+                      <code><span><span>v1</span>&#32;@*&#32;<span>v2</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3149">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>v1</span>&#32;@*&#32;<span>v2</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^b</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        v2
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^c</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-matrix-3.html">Matrix</a>&lt;<span>^a,&#32;^b,&#32;^c</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L591-591" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ direct (tensor) product
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^b</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v2
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^c</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-matrix-3.html">Matrix</a>&lt;<span>^a,&#32;^b,&#32;^c</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3150', 3150)" onmouseover="showTip(event, '3150', 3150)">
+                <p>
+                  <a id="( @@ )">
+                    <a href="#( @@ )">
+                      <code><span><span>v1</span>&#32;@@&#32;<span>v2</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3150">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>v1</span>&#32;@@&#32;<span>v2</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;^m</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        v2
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;^n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;^m+^n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L598-598" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;^m</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v2
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;^n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;^m+^n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3151', 3151)" onmouseover="showTip(event, '3151', 3151)">
+                <p>
+                  <a id="( |*| )">
+                    <a href="#( |*| )">
+                      <code><span><span>v1</span>&#32;|*|&#32;<span>v2</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3151">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>v1</span>&#32;|*|&#32;<span>v2</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;'d&gt;</span></span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        v2
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;'d&gt;</span></span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^c</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L589-589" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+ dot (inner) product
+
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;'d&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v2
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^b,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;'d&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^c</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3152', 3152)" onmouseover="showTip(event, '3152', 3152)">
+                <p>
+                  <a id="( ~- )">
+                    <a href="#( ~- )">
+                      <code><span>~-<span>v</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3152">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>~-<span>v</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L597-597" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3153', 3153)" onmouseover="showTip(event, '3153', 3153)">
+                <p>
+                  <a id="FoldBack">
+                    <a href="#FoldBack">
+                      <code><span>Vector.FoldBack<span><span>(<span>v,&#32;f,&#32;z</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3153">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.FoldBack<span><span>(<span>v,&#32;f,&#32;z</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'x&#32;->&#32;'a&#32;->&#32;'a</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        z
+                      </b>
+                      :
+                      <code>'a</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'a</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L600-600" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'x&#32;->&#32;'a&#32;->&#32;'a</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  z
+                </span>
+                :
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3154', 3154)" onmouseover="showTip(event, '3154', 3154)">
+                <p>
+                  <a id="FromBigInt">
+                    <a href="#FromBigInt">
+                      <code><span>Vector.FromBigInt<span><span>(<span>i</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3154">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.FromBigInt<span><span>(<span>i</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>bigint</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^b</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L608-608" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>bigint</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^b</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3155', 3155)" onmouseover="showTip(event, '3155', 3155)">
+                <p>
+                  <a id="FromInt32">
+                    <a href="#FromInt32">
+                      <code><span>Vector.FromInt32<span><span>(<span>i</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3155">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.FromInt32<span><span>(<span>i</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^b</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L606-606" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^b</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3156', 3156)" onmouseover="showTip(event, '3156', 3156)">
+                <p>
+                  <a id="FromInt64">
+                    <a href="#FromInt64">
+                      <code><span>Vector.FromInt64<span><span>(<span>i</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3156">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.FromInt64<span><span>(<span>i</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>int64</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^b</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L607-607" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>int64</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^a,&#32;^b</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3157', 3157)" onmouseover="showTip(event, '3157', 3157)">
+                <p>
+                  <a id="Item">
+                    <a href="#Item">
+                      <code><span>Vector.Item<span><span>(<span>v,&#32;i</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3157">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.Item<span><span>(<span>v,&#32;i</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;^n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        i
+                      </b>
+                      :
+                      <code>^b</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'a</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L580-580" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;^n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  i
+                </span>
+                :
+                <code>^b</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3158', 3158)" onmouseover="showTip(event, '3158', 3158)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Vector.Map<span><span>(<span>v,&#32;f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3158">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.Map<span><span>(<span>v,&#32;f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'a&#32;->&#32;'b</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'b,&#32;'n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L581-581" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'a&#32;->&#32;'b</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'b,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3159', 3159)" onmouseover="showTip(event, '3159', 3159)">
+                <p>
+                  <a id="Reduce">
+                    <a href="#Reduce">
+                      <code><span>Vector.Reduce<span><span>(<span>v,&#32;f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3159">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.Reduce<span><span>(<span>v,&#32;f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;'n&gt;</span></span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'x&#32;->&#32;'x&#32;->&#32;'x</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'x</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L601-601" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;'n&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'x&#32;->&#32;'x&#32;->&#32;'x</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'x</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3160', 3160)" onmouseover="showTip(event, '3160', 3160)">
+                <p>
+                  <a id="Return">
+                    <a href="#Return">
+                      <code><span>Vector.Return<span><span>(<span>x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3160">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.Return<span><span>(<span>x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>'x</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;^n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L582-582" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>'x</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;^n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3161', 3161)" onmouseover="showTip(event, '3161', 3161)">
+                <p>
+                  <a id="ToSeq">
+                    <a href="#ToSeq">
+                      <code><span>Vector.ToSeq<span><span>(<span>v</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3161">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.ToSeq<span><span>(<span>v</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>seq&lt;'x&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L599-599" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>seq&lt;'x&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3162', 3162)" onmouseover="showTip(event, '3162', 3162)">
+                <p>
+                  <a id="UnsafeCreate">
+                    <a href="#UnsafeCreate">
+                      <code><span>Vector.UnsafeCreate<span><span>(<span>_length,&#32;items</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3162">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.UnsafeCreate<span><span>(<span>_length,&#32;items</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        _length
+                      </b>
+                      :
+                      <code>'n</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        items
+                      </b>
+                      :
+                      <code><span>'a[]</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;'n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L37-37" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _length
+                </span>
+                :
+                <code>'n</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  items
+                </span>
+                :
+                <code><span>'a[]</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3163', 3163)" onmouseover="showTip(event, '3163', 3163)">
+                <p>
+                  <a id="Zip">
+                    <a href="#Zip">
+                      <code><span>Vector.Zip<span><span>(<span>x,&#32;y</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3163">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.Zip<span><span>(<span>x,&#32;y</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;'b</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        y
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'c,&#32;'b</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span><span>(<span>'a&#32;*&#32;'c</span>)</span>,&#32;'b</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L584-584" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'a,&#32;'b</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  y
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'c,&#32;'b</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span><span>(<span>'a&#32;*&#32;'c</span>)</span>,&#32;'b</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3164', 3164)" onmouseover="showTip(event, '3164', 3164)">
+                <p>
+                  <a id="get_Zero">
+                    <a href="#get_Zero">
+                      <code><span>Vector.get_Zero&#32;<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3164">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Vector.get_Zero&#32;<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^x,&#32;^n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L585-585" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>^x,&#32;^n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3165', 3165)" onmouseover="showTip(event, '3165', 3165)">
+                <p>
+                  <a id="op_Explicit">
+                    <a href="#op_Explicit">
+                      <code><span>op_Explicit<span>v</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3165">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>op_Explicit<span>v</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-matrix-3.html">Matrix</a>&lt;<span>'x,&#32;'n,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span></span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L603-603" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-matrix-3.html">Matrix</a>&lt;<span>'x,&#32;'n,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span></span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3166', 3166)" onmouseover="showTip(event, '3166', 3166)">
+                <p>
+                  <a id="op_Explicit">
+                    <a href="#op_Explicit">
+                      <code><span>op_Explicit<span>v</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3166">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>op_Explicit<span>v</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        v
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-matrix-3.html">Matrix</a>&lt;<span>'x,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span>,&#32;'n</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L602-602" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  v
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-vector-2.html">Vector</a>&lt;<span>'x,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-matrix-3.html">Matrix</a>&lt;<span>'x,&#32;<span><a href="/FSharpPlusreference/fsharpplus-typelevel-s-1.html">S</a>&lt;<a href="/FSharpPlusreference/fsharpplus-typelevel-z.html">Z</a>&gt;</span>,&#32;'n</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-  <h3>Record Fields</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Record Field</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2863', 2863)" onmouseover="showTip(event, '2863', 2863)">
-            Items
-          </code>
-          <div class="tip" id="2863">
-            <strong>Signature:</strong> &#39;Item []<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L33-33" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Instance members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Instance member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2864', 2864)" onmouseover="showTip(event, '2864', 2864)">
-            x.UnsafeGet(i)
-          </code>
-          <div class="tip" id="2864">
-            <strong>Signature:</strong> i:int -&gt; &#39;Item<br />
-                                    <span>
-            <strong>Attributes:</strong><br />
-[&lt;MethodImpl(256)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L35-35" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Static members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2865', 2865)" onmouseover="showTip(event, '2865', 2865)">
-            Vector.( - )(v1, v2)
-          </code>
-          <div class="tip" id="2865">
-            <strong>Signature:</strong> (v1:Vector&lt;^?8475,&#39;n&gt; * v2:Vector&lt;^?8476,&#39;n&gt;) -&gt; Vector&lt;^?8477,&#39;n&gt;<br />
-                          <strong>Type parameters:</strong> ^?8477, 'n                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L587-587" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_Subtraction</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2866', 2866)" onmouseover="showTip(event, '2866', 2866)">
-            Vector.( @@ )(v1, v2)
-          </code>
-          <div class="tip" id="2866">
-            <strong>Signature:</strong> (v1:Vector&lt;&#39;?8521,^m&gt; * v2:Vector&lt;&#39;?8521,^n&gt;) -&gt; Vector&lt;&#39;?8521,^m + ^n&gt;<br />
-                          <strong>Type parameters:</strong> ^n, ^m + ^n                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L598-598" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_AtAt</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2867', 2867)" onmouseover="showTip(event, '2867', 2867)">
-            Vector.( @* )(v1, v2)
-          </code>
-          <div class="tip" id="2867">
-            <strong>Signature:</strong> (v1:Vector&lt;^?8489,^?8490&gt; * v2:Vector&lt;^?8489,^?8491&gt;) -&gt; Matrix&lt;^?8489,^?8490,^?8491&gt;<br />
-                          <strong>Type parameters:</strong> ^?8491                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L591-591" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>direct (tensor) product</p>
-
-
-              <p>CompiledName: <code>op_AtMultiply</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2868', 2868)" onmouseover="showTip(event, '2868', 2868)">
-            Vector.( * )(v1, v2)
-          </code>
-          <div class="tip" id="2868">
-            <strong>Signature:</strong> (v1:Vector&lt;^?8502,&#39;n&gt; * v2:Vector&lt;^?8503,&#39;n&gt;) -&gt; Vector&lt;^?8504,&#39;n&gt;<br />
-                          <strong>Type parameters:</strong> ^?8504, 'n                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L595-595" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>hadamard (element-wise) product</p>
-
-
-              <p>CompiledName: <code>op_Multiply</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2869', 2869)" onmouseover="showTip(event, '2869', 2869)">
-            Vector.( / )(v1, v2)
-          </code>
-          <div class="tip" id="2869">
-            <strong>Signature:</strong> (v1:Vector&lt;^?8509,&#39;n&gt; * v2:Vector&lt;^?8510,&#39;n&gt;) -&gt; Vector&lt;^?8511,&#39;n&gt;<br />
-                          <strong>Type parameters:</strong> ^?8511, 'n                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L596-596" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_Division</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2870', 2870)" onmouseover="showTip(event, '2870', 2870)">
-            Vector.( %* )(v1, v2)
-          </code>
-          <div class="tip" id="2870">
-            <strong>Signature:</strong> (v1:Vector&lt;^?8495,S&lt;S&lt;S&lt;Z&gt;&gt;&gt;&gt; * v2:Vector&lt;^?8496,S&lt;S&lt;S&lt;Z&gt;&gt;&gt;&gt;) -&gt; Vector&lt;^?8498,S&lt;S&lt;S&lt;Z&gt;&gt;&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^?8497, ^?8498                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L593-593" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>cross product</p>
-
-
-              <p>CompiledName: <code>op_PercentMultiply</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2871', 2871)" onmouseover="showTip(event, '2871', 2871)">
-            Vector.( + )(v1, v2)
-          </code>
-          <div class="tip" id="2871">
-            <strong>Signature:</strong> (v1:Vector&lt;^?8468,&#39;n&gt; * v2:Vector&lt;^?8469,&#39;n&gt;) -&gt; Vector&lt;^?8470,&#39;n&gt;<br />
-                          <strong>Type parameters:</strong> ^?8470, 'n                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L586-586" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_Addition</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2872', 2872)" onmouseover="showTip(event, '2872', 2872)">
-            Vector.( &lt;*&gt; )(f, x)
-          </code>
-          <div class="tip" id="2872">
-            <strong>Signature:</strong> (f:Vector&lt;(&#39;x -&gt; &#39;y),&#39;n&gt; * x:Vector&lt;&#39;x,&#39;n&gt;) -&gt; Vector&lt;&#39;y,&#39;n&gt;<br />
-                          <strong>Type parameters:</strong> 'n                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L583-583" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_LessMultiplyGreater</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2873', 2873)" onmouseover="showTip(event, '2873', 2873)">
-            Vector.( |*| )(v1, v2)
-          </code>
-          <div class="tip" id="2873">
-            <strong>Signature:</strong> (v1:Vector&lt;^?8482,S&lt;&#39;?8485&gt;&gt; * v2:Vector&lt;^?8483,S&lt;&#39;?8485&gt;&gt;) -&gt; ^?8484<br />
-                          <strong>Type parameters:</strong> ^?8484, '?8485                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L589-589" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          <p>dot (inner) product</p>
-
-
-              <p>CompiledName: <code>op_BarMultiplyBar</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2874', 2874)" onmouseover="showTip(event, '2874', 2874)">
-            Vector.( ~- )(v)
-          </code>
-          <div class="tip" id="2874">
-            <strong>Signature:</strong> v:Vector&lt;^?8516,&#39;n&gt; -&gt; Vector&lt;^?8516,&#39;n&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L597-597" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_UnaryNegation</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2875', 2875)" onmouseover="showTip(event, '2875', 2875)">
-            Vector.FoldBack(v, f, z)
-          </code>
-          <div class="tip" id="2875">
-            <strong>Signature:</strong> (v:Vector&lt;&#39;x,&#39;n&gt; * f:(&#39;x -&gt; &#39;?8535 -&gt; &#39;?8535) * z:&#39;?8535) -&gt; &#39;?8535<br />
-                          <strong>Type parameters:</strong> '?8535                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L600-600" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2876', 2876)" onmouseover="showTip(event, '2876', 2876)">
-            Vector.FromBigInt(i)
-          </code>
-          <div class="tip" id="2876">
-            <strong>Signature:</strong> i:bigint -&gt; Vector&lt;^?8564,^?8565&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L608-608" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2877', 2877)" onmouseover="showTip(event, '2877', 2877)">
-            Vector.FromInt32(i)
-          </code>
-          <div class="tip" id="2877">
-            <strong>Signature:</strong> i:int -&gt; Vector&lt;^?8554,^?8555&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L606-606" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2878', 2878)" onmouseover="showTip(event, '2878', 2878)">
-            Vector.FromInt64(i)
-          </code>
-          <div class="tip" id="2878">
-            <strong>Signature:</strong> i:int64 -&gt; Vector&lt;^?8559,^?8560&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L607-607" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2879', 2879)" onmouseover="showTip(event, '2879', 2879)">
-            Vector.get_Zero()
-          </code>
-          <div class="tip" id="2879">
-            <strong>Signature:</strong> unit -&gt; Vector&lt;^x,^n&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L585-585" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2880', 2880)" onmouseover="showTip(event, '2880', 2880)">
-            Vector.Item(v, i)
-          </code>
-          <div class="tip" id="2880">
-            <strong>Signature:</strong> (v:Vector&lt;&#39;a,^n&gt; * i:^?8436) -&gt; &#39;a<br />
-                          <strong>Type parameters:</strong> ^?8436                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L580-580" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2881', 2881)" onmouseover="showTip(event, '2881', 2881)">
-            Vector.Map(v, f)
-          </code>
-          <div class="tip" id="2881">
-            <strong>Signature:</strong> (v:Vector&lt;&#39;a,&#39;n&gt; * f:(&#39;a -&gt; &#39;b)) -&gt; Vector&lt;&#39;b,&#39;n&gt;<br />
-                          <strong>Type parameters:</strong> 'b                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L581-581" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2882', 2882)" onmouseover="showTip(event, '2882', 2882)">
-            Vector.op_Explicit(v)
-          </code>
-          <div class="tip" id="2882">
-            <strong>Signature:</strong> v:Vector&lt;&#39;x,&#39;n&gt; -&gt; Matrix&lt;&#39;x,&#39;n,S&lt;Z&gt;&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L603-603" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2883', 2883)" onmouseover="showTip(event, '2883', 2883)">
-            Vector.op_Explicit(v)
-          </code>
-          <div class="tip" id="2883">
-            <strong>Signature:</strong> v:Vector&lt;&#39;x,&#39;n&gt; -&gt; Matrix&lt;&#39;x,S&lt;Z&gt;,&#39;n&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L602-602" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2884', 2884)" onmouseover="showTip(event, '2884', 2884)">
-            Vector.Reduce(v, f)
-          </code>
-          <div class="tip" id="2884">
-            <strong>Signature:</strong> (v:Vector&lt;&#39;x,S&lt;&#39;n&gt;&gt; * f:(&#39;x -&gt; &#39;x -&gt; &#39;x)) -&gt; &#39;x<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L601-601" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2885', 2885)" onmouseover="showTip(event, '2885', 2885)">
-            Vector.Return(x)
-          </code>
-          <div class="tip" id="2885">
-            <strong>Signature:</strong> x:&#39;x -&gt; Vector&lt;&#39;x,^n&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L582-582" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2886', 2886)" onmouseover="showTip(event, '2886', 2886)">
-            Vector.ToSeq(v)
-          </code>
-          <div class="tip" id="2886">
-            <strong>Signature:</strong> v:Vector&lt;&#39;x,&#39;n&gt; -&gt; seq&lt;&#39;x&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L599-599" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2887', 2887)" onmouseover="showTip(event, '2887', 2887)">
-            Vector.UnsafeCreate(_length, items)
-          </code>
-          <div class="tip" id="2887">
-            <strong>Signature:</strong> (_length:&#39;n * items:&#39;?8282 []) -&gt; Vector&lt;&#39;?8282,&#39;n&gt;<br />
-                                    <span>
-            <strong>Attributes:</strong><br />
-[&lt;MethodImpl(256)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L37-37" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2888', 2888)" onmouseover="showTip(event, '2888', 2888)">
-            Vector.Zip(x, y)
-          </code>
-          <div class="tip" id="2888">
-            <strong>Signature:</strong> (x:Vector&lt;&#39;?8457,&#39;?8458&gt; * y:Vector&lt;&#39;?8459,&#39;?8458&gt;) -&gt; Vector&lt;(&#39;?8457 * &#39;?8459),&#39;?8458&gt;<br />
-                          <strong>Type parameters:</strong> '?8459                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Matrix.fs#L584-584" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -564,6 +2136,6 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

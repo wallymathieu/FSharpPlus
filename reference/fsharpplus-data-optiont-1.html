@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>OptionT<'monad<option<'t>>> - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,478 +24,1840 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
+          <div>
+  <h1>
+    OptionT<'monad<option<'t>>> Type
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus-data.html">
+      FSharpPlus.Data
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <p>
+    Base Type: 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.valuetype">ValueType</a></code>
+  </p>
+  <p>
+    All Interfaces: 
+    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;'monad<option<'t>>&gt;</span>&gt;</span></code>
+    , 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.collections.istructuralequatable">IStructuralEquatable</a></code>
+    , 
+    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;'monad<option<'t>>&gt;</span>&gt;</span></code>
+    , 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.icomparable">IComparable</a></code>
+    , 
+    <code><a href="https://docs.microsoft.com/dotnet/api/system.collections.istructuralcomparable">IStructuralComparable</a></code>
+  </p>
+  <p>
+    Kind: Struct
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+ Monad Transformer for Option<'T>
 
-<h1>OptionT<'monad<option<'t>>></h1>
-<p>
-
-    <span>Namespace: FSharpPlus.Data</span><br />
-            <span>
-            Attributes: <br />
-[&lt;Struct&gt;]<br />
-            
-        </span>
-</p>
-<div class="xmldoc">
-<p>Monad Transformer for Option<'T></p>
-
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Union cases
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Union case
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2979', 2979)" onmouseover="showTip(event, '2979', 2979)">
+                <p>
+                  <a id="OptionT">
+                    <a href="#OptionT">
+                      <code><span>OptionT&#32;'monad<option<'t>></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2979">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT&#32;'monad<option<'t>></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        Item
+                      </b>
+                      :
+                      <code>'monad<option<'t>></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L18-18" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  Item
+                </span>
+                :
+                <code>'monad<option<'t>></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2980', 2980)" onmouseover="showTip(event, '2980', 2980)">
+                <p>
+                  <a id="( <*> )">
+                    <a href="#( <*> )">
+                      <code><span><span>f</span>&#32;<*>&#32;<span>x</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2980">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>f</span>&#32;<*>&#32;<span>x</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<('T->'U)>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L48-48" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<('T->'U)>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2981', 2981)" onmouseover="showTip(event, '2981', 2981)">
+                <p>
+                  <a id="( <|> )">
+                    <a href="#( <|> )">
+                      <code><span><span>arg1</span>&#32;<|>&#32;<span>arg1</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2981">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>arg1</span>&#32;<|>&#32;<span>arg1</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^a&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        arg1
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadPlus<option<'T>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadPlus<option<'T>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L52-52" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^a&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg1
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadPlus<option<'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadPlus<option<'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2982', 2982)" onmouseover="showTip(event, '2982', 2982)">
+                <p>
+                  <a id="( >>= )">
+                    <a href="#( >>= )">
+                      <code><span><span>x</span>&#32;>>=&#32;<span>f</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2982">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span><span>x</span>&#32;>>=&#32;<span>f</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L49-49" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2983', 2983)" onmouseover="showTip(event, '2983', 2983)">
+                <p>
+                  <a id="CallCC">
+                    <a href="#CallCC">
+                      <code><span>OptionT.CallCC<span><span>(<span>f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2983">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.CallCC<span><span>(<span>f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span><span>(<span>'T&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;'MonadCont<'R,option<'U>>&gt;</span></span>)</span>&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadCont<'R,option<'T>>&gt;</span></span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadCont<'R,option<'T>>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L67-67" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span><span>(<span>'T&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;'MonadCont<'R,option<'U>>&gt;</span></span>)</span>&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadCont<'R,option<'T>>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadCont<'R,option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2984', 2984)" onmouseover="showTip(event, '2984', 2984)">
+                <p>
+                  <a id="Catch">
+                    <a href="#Catch">
+                      <code><span>OptionT.Catch<span><span>(<span>m,&#32;h</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2984">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Catch<span><span>(<span>m,&#32;h</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        m
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadError<'E1,'T>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        h
+                      </b>
+                      :
+                      <code><span>'E1&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadError<'E2,'T>&gt;</span></span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadError<'E2,'T>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L65-65" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  m
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadError<'E1,'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  h
+                </span>
+                :
+                <code><span>'E1&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadError<'E2,'T>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadError<'E2,'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2985', 2985)" onmouseover="showTip(event, '2985', 2985)">
+                <p>
+                  <a id="Delay">
+                    <a href="#Delay">
+                      <code><span>OptionT.Delay<span><span>(<span>body</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2985">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Delay<span><span>(<span>body</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        body
+                      </b>
+                      :
+                      <code><span>unit&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L57-57" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  body
+                </span>
+                :
+                <code><span>unit&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2986', 2986)" onmouseover="showTip(event, '2986', 2986)">
+                <p>
+                  <a id="Lift">
+                    <a href="#Lift">
+                      <code><span>OptionT.Lift<span><span>(<span>x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2986">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Lift<span><span>(<span>x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>^Monad<'T></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L60-60" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>^Monad<'T></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2987', 2987)" onmouseover="showTip(event, '2987', 2987)">
+                <p>
+                  <a id="Lift2">
+                    <a href="#Lift2">
+                      <code><span>OptionT.Lift2<span><span>(<span>f,&#32;x,&#32;y</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2987">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Lift2<span><span>(<span>f,&#32;x,&#32;y</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U&#32;->&#32;'V</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        y
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'V>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L46-46" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U&#32;->&#32;'V</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  y
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'V>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2988', 2988)" onmouseover="showTip(event, '2988', 2988)">
+                <p>
+                  <a id="LiftAsync">
+                    <a href="#LiftAsync">
+                      <code><span>OptionT.LiftAsync<span><span>(<span>x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2988">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.LiftAsync<span><span>(<span>x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.control.fsharpasync-1">Async</a>&lt;'T&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadAsync<'T>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L62-62" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.control.fsharpasync-1">Async</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadAsync<'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2989', 2989)" onmouseover="showTip(event, '2989', 2989)">
+                <p>
+                  <a id="Listen">
+                    <a href="#Listen">
+                      <code><span>OptionT.Listen<span><span>(<span>m</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2989">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Listen<span><span>(<span>m</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        m
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;'a&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^'MonadWriter<'Monoid,option<'T>>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L77-77" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  m
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;'a&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^'MonadWriter<'Monoid,option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2990', 2990)" onmouseover="showTip(event, '2990', 2990)">
+                <p>
+                  <a id="Local">
+                    <a href="#Local">
+                      <code><span>OptionT.Local<span><span>(<span>arg1,&#32;f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2990">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Local<span><span>(<span>arg1,&#32;f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadReader<'R2,'T>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'R1&#32;->&#32;'R2</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^a&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L73-73" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadReader<'R2,'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'R1&#32;->&#32;'R2</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^a&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2991', 2991)" onmouseover="showTip(event, '2991', 2991)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>OptionT.Map<span><span>(<span>x,&#32;f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2991">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Map<span><span>(<span>x,&#32;f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L43-43" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'U>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2992', 2992)" onmouseover="showTip(event, '2992', 2992)">
+                <p>
+                  <a id="Pass">
+                    <a href="#Pass">
+                      <code><span>OptionT.Pass<span><span>(<span>m</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2992">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Pass<span><span>(<span>m</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        m
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^a&gt;</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadWriter<'Monoid,option<'T>>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L81-81" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  m
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^a&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadWriter<'Monoid,option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2993', 2993)" onmouseover="showTip(event, '2993', 2993)">
+                <p>
+                  <a id="Put">
+                    <a href="#Put">
+                      <code><span>OptionT.Put<span><span>(<span>x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2993">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Put<span><span>(<span>x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>'S</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadState<unit,'S>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L70-70" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>'S</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadState<unit,'S>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2994', 2994)" onmouseover="showTip(event, '2994', 2994)">
+                <p>
+                  <a id="Return">
+                    <a href="#Return">
+                      <code><span>OptionT.Return<span><span>(<span>x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2994">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Return<span><span>(<span>x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>'T</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L40-40" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>'T</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2995', 2995)" onmouseover="showTip(event, '2995', 2995)">
+                <p>
+                  <a id="Tell">
+                    <a href="#Tell">
+                      <code><span>OptionT.Tell<span><span>(<span>w</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2995">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Tell<span><span>(<span>w</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        w
+                      </b>
+                      :
+                      <code>'Monoid</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadWriter<'Monoid,unit>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L75-75" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  w
+                </span>
+                :
+                <code>'Monoid</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadWriter<'Monoid,unit>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2996', 2996)" onmouseover="showTip(event, '2996', 2996)">
+                <p>
+                  <a id="Throw">
+                    <a href="#Throw">
+                      <code><span>OptionT.Throw<span><span>(<span>x</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2996">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Throw<span><span>(<span>x</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        x
+                      </b>
+                      :
+                      <code>'E</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^a&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L64-64" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  x
+                </span>
+                :
+                <code>'E</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^a&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2997', 2997)" onmouseover="showTip(event, '2997', 2997)">
+                <p>
+                  <a id="TryFinally">
+                    <a href="#TryFinally">
+                      <code><span>OptionT.TryFinally<span><span>(<span>computation,&#32;f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2997">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.TryFinally<span><span>(<span>computation,&#32;f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        computation
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>unit&#32;->&#32;unit</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L55-55" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  computation
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>unit&#32;->&#32;unit</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2998', 2998)" onmouseover="showTip(event, '2998', 2998)">
+                <p>
+                  <a id="TryWith">
+                    <a href="#TryWith">
+                      <code><span>OptionT.TryWith<span><span>(<span>source,&#32;f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2998">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.TryWith<span><span>(<span>source,&#32;f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>exn&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L54-54" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>exn&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '2999', 2999)" onmouseover="showTip(event, '2999', 2999)">
+                <p>
+                  <a id="Using">
+                    <a href="#Using">
+                      <code><span>OptionT.Using<span><span>(<span>resource,&#32;f</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="2999">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.Using<span><span>(<span>resource,&#32;f</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        resource
+                      </b>
+                      :
+                      <code>'a</code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        f
+                      </b>
+                      :
+                      <code><span>'a&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L56-56" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  resource
+                </span>
+                :
+                <code>'a</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  f
+                </span>
+                :
+                <code><span>'a&#32;->&#32;<span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^Monad<option<'T>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3000', 3000)" onmouseover="showTip(event, '3000', 3000)">
+                <p>
+                  <a id="get_Ask">
+                    <a href="#get_Ask">
+                      <code><span>OptionT.get_Ask&#32;<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3000">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.get_Ask&#32;<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadReader<'R,option<'R>>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L72-72" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadReader<'R,option<'R>>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3001', 3001)" onmouseover="showTip(event, '3001', 3001)">
+                <p>
+                  <a id="get_Empty">
+                    <a href="#get_Empty">
+                      <code><span>OptionT.get_Empty&#32;<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3001">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.get_Empty&#32;<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadPlus<option<'T>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L51-51" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadPlus<option<'T>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '3002', 3002)" onmouseover="showTip(event, '3002', 3002)">
+                <p>
+                  <a id="get_Get">
+                    <a href="#get_Get">
+                      <code><span>OptionT.get_Get&#32;<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="3002">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>OptionT.get_Get&#32;<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadState<'S,'S>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L69-69" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-optiont-1.html">OptionT</a>&lt;^MonadState<'S,'S>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-  <h3>Union Cases</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Union Case</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2702', 2702)" onmouseover="showTip(event, '2702', 2702)">
-            OptionT(&#39;monad&lt;option&lt;&#39;t&gt;&gt;)
-          </code>
-          <div class="tip" id="2702">
-            <strong>Signature:</strong> &#39;monad&lt;option&lt;&#39;t&gt;&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L18-18" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <h3>Static members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2703', 2703)" onmouseover="showTip(event, '2703', 2703)">
-            OptionT.( &lt;*&gt; )(f, x)
-          </code>
-          <div class="tip" id="2703">
-            <strong>Signature:</strong> (f:OptionT&lt;^Monad&lt;seq&lt;(&#39;T -&gt; &#39;U)&gt;&gt; * x:OptionT&lt;^Monad&lt;seq&lt;&#39;T&gt;&gt;) -&gt; OptionT&lt;^Monad&lt;seq&lt;&#39;U&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^?10595, '?10596, '?10597, ^Monad<seq<'T>, ^Monad<seq<'U>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L48-48" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_LessMultiplyGreater</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2704', 2704)" onmouseover="showTip(event, '2704', 2704)">
-            OptionT.( &lt;|&gt; )(arg1, arg2)
-          </code>
-          <div class="tip" id="2704">
-            <strong>Signature:</strong> (OptionT&lt;^?10612&gt; * OptionT&lt;^MonadPlus&lt;option&lt;&#39;T&gt;&gt;) -&gt; OptionT&lt;^MonadPlus&lt;option&lt;&#39;T&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^MonadPlus<option<'T>, '?10614                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L52-52" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_LessBarGreater</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2705', 2705)" onmouseover="showTip(event, '2705', 2705)">
-            OptionT.( &gt;&gt;= )(x, f)
-          </code>
-          <div class="tip" id="2705">
-            <strong>Signature:</strong> (x:OptionT&lt;^Monad&lt;seq&lt;&#39;T&gt;&gt; * f:(&#39;T -&gt; OptionT&lt;^Monad&lt;seq&lt;&#39;U&gt;&gt;)) -&gt; OptionT&lt;^Monad&lt;seq&lt;&#39;U&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^Monad<seq<'U>, 'T, '?10605                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L49-49" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-              <p>CompiledName: <code>op_GreaterGreaterEquals</code></p>
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2706', 2706)" onmouseover="showTip(event, '2706', 2706)">
-            OptionT.CallCC(f)
-          </code>
-          <div class="tip" id="2706">
-            <strong>Signature:</strong> (f:((&#39;T -&gt; OptionT&lt;&#39;MonadCont&lt;&#39;R,option&lt;&#39;U&gt;&gt;&gt;) -&gt; OptionT&lt;^MonadCont&lt;&#39;R,option&lt;&#39;T&gt;&gt;&gt;)) -&gt; OptionT&lt;^MonadCont&lt;&#39;R,option&lt;&#39;T&gt;&gt;&gt;<br />
-                          <strong>Type parameters:</strong> 'MonadCont<'R,option<'U>>, ^MonadCont<'R,option<'T>>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L67-67" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2707', 2707)" onmouseover="showTip(event, '2707', 2707)">
-            OptionT.Catch(m, h)
-          </code>
-          <div class="tip" id="2707">
-            <strong>Signature:</strong> (m:OptionT&lt;^MonadError&lt;&#39;E1,&#39;T&gt;&gt; * h:(&#39;E1 -&gt; OptionT&lt;^MonadError&lt;&#39;E2,&#39;T&gt;&gt;)) -&gt; OptionT&lt;^MonadError&lt;&#39;E2,&#39;T&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^MonadError<'E2,'T>, 'E1                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L65-65" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2708', 2708)" onmouseover="showTip(event, '2708', 2708)">
-            OptionT.Delay(body)
-          </code>
-          <div class="tip" id="2708">
-            <strong>Signature:</strong> (body:(unit -&gt; OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt;)) -&gt; OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L57-57" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2709', 2709)" onmouseover="showTip(event, '2709', 2709)">
-            OptionT.get_Ask()
-          </code>
-          <div class="tip" id="2709">
-            <strong>Signature:</strong> unit -&gt; OptionT&lt;^MonadReader&lt;&#39;R,option&lt;&#39;R&gt;&gt;&gt;<br />
-                          <strong>Type parameters:</strong> '?10675, ^?10676, '?10677                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L72-72" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2710', 2710)" onmouseover="showTip(event, '2710', 2710)">
-            OptionT.get_Empty()
-          </code>
-          <div class="tip" id="2710">
-            <strong>Signature:</strong> unit -&gt; OptionT&lt;^MonadPlus&lt;option&lt;&#39;T&gt;&gt;<br />
-                          <strong>Type parameters:</strong> '?10609                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L51-51" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2711', 2711)" onmouseover="showTip(event, '2711', 2711)">
-            OptionT.get_Get()
-          </code>
-          <div class="tip" id="2711">
-            <strong>Signature:</strong> unit -&gt; OptionT&lt;^MonadState&lt;&#39;S,&#39;S&gt;&gt;<br />
-                          <strong>Type parameters:</strong> '?10662, ^?10663, '?10664                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L69-69" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2712', 2712)" onmouseover="showTip(event, '2712', 2712)">
-            OptionT.Lift(x)
-          </code>
-          <div class="tip" id="2712">
-            <strong>Signature:</strong> x:^Monad&lt;&#39;T&gt; -&gt; OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^Monad<option<'T>>, '?10633, '?10634                        <span>
-            <strong>Attributes:</strong><br />
-[&lt;EditorBrowsable(1)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L60-60" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2713', 2713)" onmouseover="showTip(event, '2713', 2713)">
-            OptionT.Lift2(f, x, y)
-          </code>
-          <div class="tip" id="2713">
-            <strong>Signature:</strong> (f:(&#39;T -&gt; &#39;U -&gt; &#39;V) * x:OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt; * y:OptionT&lt;^Monad&lt;option&lt;&#39;U&gt;&gt;) -&gt; OptionT&lt;^Monad&lt;option&lt;&#39;V&gt;&gt;<br />
-                          <strong>Type parameters:</strong> 'U, 'V, ^Monad<option<'T>, ^Monad<option<'U>, ^Monad<option<'V>                        <span>
-            <strong>Attributes:</strong><br />
-[&lt;EditorBrowsable(1)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L46-46" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2714', 2714)" onmouseover="showTip(event, '2714', 2714)">
-            OptionT.LiftAsync(x)
-          </code>
-          <div class="tip" id="2714">
-            <strong>Signature:</strong> x:Async&lt;&#39;T&gt; -&gt; OptionT&lt;^MonadAsync&lt;&#39;T&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^MonadAsync<'T>, '?10639, ^?10640, '?10641                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L62-62" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2715', 2715)" onmouseover="showTip(event, '2715', 2715)">
-            OptionT.Listen(m)
-          </code>
-          <div class="tip" id="2715">
-            <strong>Signature:</strong> m:OptionT&lt;&#39;?10693&gt; -&gt; OptionT&lt;^&#39;MonadWriter&lt;&#39;Monoid, option&lt;&#39;T&gt;&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^'MonadWriter<'Monoid, option<'T>>, ^?10695, '?10696, '?10697                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L77-77" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2716', 2716)" onmouseover="showTip(event, '2716', 2716)">
-            OptionT.Local(arg1, f)
-          </code>
-          <div class="tip" id="2716">
-            <strong>Signature:</strong> (OptionT&lt;^MonadReader&lt;&#39;R2,&#39;T&gt;&gt; * f:(&#39;R1 -&gt; &#39;R2)) -&gt; OptionT&lt;^?10683&gt;<br />
-                          <strong>Type parameters:</strong> 'R1, 'R2, ^?10683                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L73-73" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2717', 2717)" onmouseover="showTip(event, '2717', 2717)">
-            OptionT.Map(x, f)
-          </code>
-          <div class="tip" id="2717">
-            <strong>Signature:</strong> (x:OptionT&lt;^Monad&lt;seq&lt;&#39;T&gt;&gt; * f:(&#39;T -&gt; &#39;U)) -&gt; OptionT&lt;^Monad&lt;seq&lt;&#39;U&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^Monad<seq<'U>, 'T, 'U                        <span>
-            <strong>Attributes:</strong><br />
-[&lt;EditorBrowsable(1)&gt;]<br />
-          </span>
-          </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L43-43" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2718', 2718)" onmouseover="showTip(event, '2718', 2718)">
-            OptionT.Pass(m)
-          </code>
-          <div class="tip" id="2718">
-            <strong>Signature:</strong> m:OptionT&lt;^?10700&gt; -&gt; OptionT&lt;^MonadWriter&lt;&#39;Monoid, option&lt;&#39;T&gt;&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^MonadWriter<'Monoid, option<'T>>, '?10702, ^?10703, ^?10704, '?10705, '?10706                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L81-81" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2719', 2719)" onmouseover="showTip(event, '2719', 2719)">
-            OptionT.Put(x)
-          </code>
-          <div class="tip" id="2719">
-            <strong>Signature:</strong> x:&#39;S -&gt; OptionT&lt;^MonadState&lt;unit,&#39;S&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^MonadState<unit,'S>, '?10669, ^?10670, '?10671                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L70-70" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2720', 2720)" onmouseover="showTip(event, '2720', 2720)">
-            OptionT.Return(x)
-          </code>
-          <div class="tip" id="2720">
-            <strong>Signature:</strong> x:&#39;T -&gt; OptionT&lt;^Monad&lt;seq&lt;&#39;T&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^Monad<seq<'T>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L40-40" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2721', 2721)" onmouseover="showTip(event, '2721', 2721)">
-            OptionT.Tell(w)
-          </code>
-          <div class="tip" id="2721">
-            <strong>Signature:</strong> w:&#39;Monoid -&gt; OptionT&lt;^MonadWriter&lt;&#39;Monoid, unit&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^MonadWriter<'Monoid, unit>, '?10688, ^?10689, '?10690                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L75-75" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2722', 2722)" onmouseover="showTip(event, '2722', 2722)">
-            OptionT.Throw(x)
-          </code>
-          <div class="tip" id="2722">
-            <strong>Signature:</strong> x:&#39;E -&gt; OptionT&lt;^?10645&gt;<br />
-                          <strong>Type parameters:</strong> ^?10645, '?10646, ^?10647, '?10648                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L64-64" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2723', 2723)" onmouseover="showTip(event, '2723', 2723)">
-            OptionT.TryFinally(computation, f)
-          </code>
-          <div class="tip" id="2723">
-            <strong>Signature:</strong> (computation:OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt; * f:(unit -&gt; unit)) -&gt; OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt;<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L55-55" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2724', 2724)" onmouseover="showTip(event, '2724', 2724)">
-            OptionT.TryWith(source, f)
-          </code>
-          <div class="tip" id="2724">
-            <strong>Signature:</strong> (source:OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt; * f:(exn -&gt; OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt;)) -&gt; OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt;<br />
-                          <strong>Type parameters:</strong> '?10618                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L54-54" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '2725', 2725)" onmouseover="showTip(event, '2725', 2725)">
-            OptionT.Using(resource, f)
-          </code>
-          <div class="tip" id="2725">
-            <strong>Signature:</strong> (resource:&#39;?10624 * f:(&#39;?10624 -&gt; OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt;)) -&gt; OptionT&lt;^Monad&lt;option&lt;&#39;T&gt;&gt;&gt;<br />
-                          <strong>Type parameters:</strong> ^Monad<option<'T>>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Data/Option.fs#L56-56" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -512,6 +1874,6 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>

@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Map - FSharpPlus</title>
+    <title>@Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content=""/>
+    <!--<meta name="description" content="@Description"/>-->
     <meta name="author" content="Gusty"/>
 
     <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
@@ -24,669 +24,3339 @@
       <div class="masthead">
         <ul class="nav nav-pills pull-right">
           <li><a href="http://fsharp.org">fsharp.org</a></li>
-          <li><a href="https://github.com/fsprojects/FSharpPlus">github page</a></li>
+          <!--
+          <li><a href="@Properties["project-github"]">github page</a></li>
+          -->
         </ul>
-        <h3 class="muted"><a href="/FSharpPlus/index.html">FSharpPlus</a></h3>
+        <!--
+        <h3 class="muted"><a href="/FSharpPlus/index.html">@Properties["project-name"]</a></h3>
+        -->
       </div>
       <hr />
       <div class="row">
         <div class="span9" id="main">
-          
-
-<h1>Map</h1>
-<p>
-
-    <span>Namespace: FSharpPlus.Control</span><br />
-    </p>
-<div class="xmldoc">
+          <div>
+  <h1>
+    Map Type
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharpPlusreference/fsharpplus-control.html">
+      FSharpPlus.Control
+    </a>
+  </p>
+  <p>
+    Assembly: FSharpPlus.dll
+  </p>
+  <p>
+    Base Type: 
+    <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+  </p>
+  <div class="fsdocs-xmldoc">
+    
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div>
+    <h3>
+      Static members
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Static member
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1862', 1862)" onmouseover="showTip(event, '1862', 1862)">
+                <p>
+                  <a id="Invoke">
+                    <a href="#Invoke">
+                      <code><span>Map.Invoke<span><span>(<span>mapping</span>)</span>&#32;<span>(<span>source</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1862">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Invoke<span><span>(<span>mapping</span>)</span>&#32;<span>(<span>source</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        mapping
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code>^Functor<'T></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^Functor<'U></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L87-87" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mapping
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code>^Functor<'T></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^Functor<'U></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1863', 1863)" onmouseover="showTip(event, '1863', 1863)">
+                <p>
+                  <a id="InvokeOnInstance">
+                    <a href="#InvokeOnInstance">
+                      <code><span>Map.InvokeOnInstance<span><span>(<span>mapping</span>)</span>&#32;<span>(<span>source</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1863">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.InvokeOnInstance<span><span>(<span>mapping</span>)</span>&#32;<span>(<span>source</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        mapping
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        source
+                      </b>
+                      :
+                      <code>^Functor<'T></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'Functor<'U></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L93-93" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mapping
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  source
+                </span>
+                :
+                <code>^Functor<'T></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'Functor<'U></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1864', 1864)" onmouseover="showTip(event, '1864', 1864)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;?_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1864">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;?_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>^Profunctor<'B,'C>&#32;*&#32;<span>(<span>'C&#32;->&#32;'D</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default5.html">Default5</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'Profunctor<'B,'D></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L295-295" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>^Profunctor<'B,'C>&#32;*&#32;<span>(<span>'C&#32;->&#32;'D</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default5.html">Default5</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'Profunctor<'B,'D></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1865', 1865)" onmouseover="showTip(event, '1865', 1865)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;?_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1865">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;?_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>^Bifunctor<'T,'V>&#32;*&#32;<span>(<span>'V&#32;->&#32;'W</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default6.html">Default6</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'b</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L241-241" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>^Bifunctor<'T,'V>&#32;*&#32;<span>(<span>'V&#32;->&#32;'W</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default6.html">Default6</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'b</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1866', 1866)" onmouseover="showTip(event, '1866', 1866)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1866">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>^t&#32;*&#32;'a</span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L117-117" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>^t&#32;*&#32;'a</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1867', 1867)" onmouseover="showTip(event, '1867', 1867)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1867">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>^Functor<'T>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>'Functor<'U></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L116-116" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>^Functor<'T>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>'Functor<'U></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1868', 1868)" onmouseover="showTip(event, '1868', 1868)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1868">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L115-115" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default1.html">Default1</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1869', 1869)" onmouseover="showTip(event, '1869', 1869)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1869">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L114-114" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1870', 1870)" onmouseover="showTip(event, '1870', 1870)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1870">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L113-113" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1871', 1871)" onmouseover="showTip(event, '1871', 1871)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1871">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<span>'Key,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<span>'Key,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L112-112" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<span>'Key,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<span>'Key,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1872', 1872)" onmouseover="showTip(event, '1872', 1872)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1872">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<span>'Key,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<span>'Key,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L111-111" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<span>'Key,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<span>'Key,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1873', 1873)" onmouseover="showTip(event, '1873', 1873)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1873">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L110-110" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1874', 1874)" onmouseover="showTip(event, '1874', 1874)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1874">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="/FSharpPlusreference/fsharpplus-data-nonemptyseq-1.html">NonEmptySeq</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-data-nonemptyseq-1.html">NonEmptySeq</a>&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L109-109" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="/FSharpPlusreference/fsharpplus-data-nonemptyseq-1.html">NonEmptySeq</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-data-nonemptyseq-1.html">NonEmptySeq</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1875', 1875)" onmouseover="showTip(event, '1875', 1875)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1875">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>seq&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>seq&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L108-108" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>seq&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default2.html">Default2</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>seq&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1876', 1876)" onmouseover="showTip(event, '1876', 1876)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;?_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1876">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;?_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>^Applicative<'T>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default3.html">Default3</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^Applicative<'U></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L104-104" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>^Applicative<'T>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default3.html">Default3</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^Applicative<'U></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1877', 1877)" onmouseover="showTip(event, '1877', 1877)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;?_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1877">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;?_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>^Monad<'T>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        ?_mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-internals-default4.html">Default4</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>^Monad<'U></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L100-100" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>^Monad<'T>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ?_mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-internals-default4.html">Default4</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>^Monad<'U></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1878', 1878)" onmouseover="showTip(event, '1878', 1878)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1878">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="/FSharpPlusreference/fsharpplus-internals-set2-1.html">Set2</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="/FSharpPlusreference/fsharpplus-internals-set2-1.html">Set2</a>&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L84-84" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="/FSharpPlusreference/fsharpplus-internals-set2-1.html">Set2</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="/FSharpPlusreference/fsharpplus-internals-set2-1.html">Set2</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1879', 1879)" onmouseover="showTip(event, '1879', 1879)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1879">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpset-1">Set</a>&lt;'a&gt;</span>&#32;*&#32;<span>(<span>'a&#32;->&#32;'b</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpset-1">Set</a>&lt;'b&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L83-83" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpset-1">Set</a>&lt;'a&gt;</span>&#32;*&#32;<span>(<span>'a&#32;->&#32;'b</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpset-1">Set</a>&lt;'b&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1880', 1880)" onmouseover="showTip(event, '1880', 1880)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1880">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>&#32;*&#32;<span>(<span>char&#32;->&#32;char</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="https://docs.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L82-82" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a>&#32;*&#32;<span>(<span>char&#32;->&#32;char</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><a href="https://docs.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1881', 1881)" onmouseover="showTip(event, '1881', 1881)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1881">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span>string&#32;*&#32;<span>(<span>char&#32;->&#32;char</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code>string</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L81-81" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span>string&#32;*&#32;<span>(<span>char&#32;->&#32;char</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code>string</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1882', 1882)" onmouseover="showTip(event, '1882', 1882)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1882">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>ResizeArray&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>ResizeArray&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L78-78" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>ResizeArray&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>ResizeArray&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1883', 1883)" onmouseover="showTip(event, '1883', 1883)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1883">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.quotations.fsharpexpr-1">Expr</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.quotations.fsharpexpr-1">Expr</a>&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L77-77" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.quotations.fsharpexpr-1">Expr</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.quotations.fsharpexpr-1">Expr</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1884', 1884)" onmouseover="showTip(event, '1884', 1884)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1884">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span>'Key,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span>'Key,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L76-76" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span>'Key,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span>'Key,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1885', 1885)" onmouseover="showTip(event, '1885', 1885)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1885">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpmap-2">Map</a>&lt;<span>'Key,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpmap-2">Map</a>&lt;<span>'Key,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L75-75" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpmap-2">Map</a>&lt;<span>'Key,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.collections.fsharpmap-2">Map</a>&lt;<span>'Key,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1886', 1886)" onmouseover="showTip(event, '1886', 1886)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1886">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<span>'a,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<span>'a,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L74-74" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<span>'a,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<span>'a,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1887', 1887)" onmouseover="showTip(event, '1887', 1887)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1887">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'T,&#32;'E</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'U,&#32;'E</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L73-73" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'T,&#32;'E</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'U,&#32;'E</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1888', 1888)" onmouseover="showTip(event, '1888', 1888)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1888">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'T,&#32;'E</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'U,&#32;'E</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L72-72" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'T,&#32;'E</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpresult-2">Result</a>&lt;<span>'U,&#32;'E</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1889', 1889)" onmouseover="showTip(event, '1889', 1889)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1889">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.control.fsharpasync-1">Async</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.control.fsharpasync-1">Async</a>&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L71-71" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.control.fsharpasync-1">Async</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.control.fsharpasync-1">Async</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1890', 1890)" onmouseover="showTip(event, '1890', 1890)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1890">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>'T[,,,]</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'U[,,,]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L70-70" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>'T[,,,]</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'U[,,,]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1891', 1891)" onmouseover="showTip(event, '1891', 1891)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1891">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>'T[,,]</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'U[,,]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L69-69" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>'T[,,]</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'U[,,]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1892', 1892)" onmouseover="showTip(event, '1892', 1892)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1892">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>'T[,]</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'U[,]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L68-68" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>'T[,]</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'U[,]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1893', 1893)" onmouseover="showTip(event, '1893', 1893)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1893">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>'T[]</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'U[]</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L67-67" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>'T[]</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'U[]</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1894', 1894)" onmouseover="showTip(event, '1894', 1894)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1894">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>(<span>'Monoid&#32;*&#32;'T</span>)</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'Monoid&#32;*&#32;'U</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L66-66" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>(<span>'Monoid&#32;*&#32;'T</span>)</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'Monoid&#32;*&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1895', 1895)" onmouseover="showTip(event, '1895', 1895)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1895">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'R,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'R,&#32;'U</span>&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L65-65" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'R,&#32;'T</span>&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span>'R,&#32;'U</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1896', 1896)" onmouseover="showTip(event, '1896', 1896)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1896">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>(<span>'R&#32;->&#32;'T</span>)</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'R&#32;->&#32;'U</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L64-64" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>(<span>'R&#32;->&#32;'T</span>)</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'R&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1897', 1897)" onmouseover="showTip(event, '1897', 1897)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1897">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>'T&#32;list</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'U&#32;list</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L63-63" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>'T&#32;list</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'U&#32;list</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1898', 1898)" onmouseover="showTip(event, '1898', 1898)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1898">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span>'T&#32;option</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>'U&#32;option</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L62-62" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span>'T&#32;option</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>'U&#32;option</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1899', 1899)" onmouseover="showTip(event, '1899', 1899)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1899">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L61-61" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '1900', 1900)" onmouseover="showTip(event, '1900', 1900)">
+                <p>
+                  <a id="Map">
+                    <a href="#Map">
+                      <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1900">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>Map.Map<span><span>(<span>arg1,&#32;_mthd</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        arg0
+                      </b>
+                      :
+                      <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.lazy-1">Lazy</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        _mthd
+                      </b>
+                      :
+                      <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span>Lazy&lt;'U&gt;</span></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L60-60" class="fsdocs-source-link">
+                <img src="/FSharpPluscontent/img/github.png" class="normal"/>
+                <img src="/FSharpPluscontent/img/github-blue.png" class="hover"/>
+              </a>
+              
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  arg0
+                </span>
+                :
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.lazy-1">Lazy</a>&lt;'T&gt;</span>&#32;*&#32;<span>(<span>'T&#32;->&#32;'U</span>)</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  _mthd
+                </span>
+                :
+                <code><a href="/FSharpPlusreference/fsharpplus-control-map.html">Map</a></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span>Lazy&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
-  <h3>Static members</h3>
-  <table class="table table-bordered member-list">
-    <thead>
-      <tr><td>Static member</td><td>Description</td></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1673', 1673)" onmouseover="showTip(event, '1673', 1673)">
-            Map.Invoke mapping source
-          </code>
-          <div class="tip" id="1673">
-            <strong>Signature:</strong> (mapping:(&#39;T -&gt; &#39;U)) -&gt; source:^Functor&lt;&#39;T&gt; -&gt; ^Functor&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U, ^Functor<'T>, ^Functor<'U>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L86-86" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
           
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1674', 1674)" onmouseover="showTip(event, '1674', 1674)">
-            Map.InvokeOnInstance mapping source
-          </code>
-          <div class="tip" id="1674">
-            <strong>Signature:</strong> (mapping:(&#39;T -&gt; &#39;U)) -&gt; source:^Functor&lt;&#39;T&gt; -&gt; &#39;Functor&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U, ^Functor<'T>, 'Functor<'U>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L92-92" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1675', 1675)" onmouseover="showTip(event, '1675', 1675)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1675">
-            <strong>Signature:</strong> ((^Profunctor&lt;&#39;B,&#39;C&gt; * (&#39;C -&gt; &#39;D)) * _mthd:Default5) -&gt; &#39;Profunctor&lt;&#39;B,&#39;D&gt;<br />
-                          <strong>Type parameters:</strong> ^Profunctor<'B,'C>, '?19001, 'C, 'D, 'Profunctor<'B,'D>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L290-290" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1676', 1676)" onmouseover="showTip(event, '1676', 1676)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1676">
-            <strong>Signature:</strong> ((^Bifunctor&lt;&#39;T,&#39;V&gt; * (&#39;V -&gt; &#39;W)) * _mthd:Default6) -&gt; &#39;?18911<br />
-                          <strong>Type parameters:</strong> ^Bifunctor<'T,'V>, '?18908, 'V, 'W, '?18911                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L236-236" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1677', 1677)" onmouseover="showTip(event, '1677', 1677)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1677">
-            <strong>Signature:</strong> ((^t * &#39;?18656) * _mthd:Default1) -&gt; unit<br />
-                          <strong>Type parameters:</strong> ^t, '?18656                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L114-114" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1678', 1678)" onmouseover="showTip(event, '1678', 1678)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1678">
-            <strong>Signature:</strong> ((^Functor&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Default1) -&gt; &#39;Functor&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> ^Functor<'T>, 'T, 'U, 'Functor<'U>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L113-113" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1679', 1679)" onmouseover="showTip(event, '1679', 1679)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1679">
-            <strong>Signature:</strong> ((Nullable&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Default2) -&gt; Nullable&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L112-112" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1680', 1680)" onmouseover="showTip(event, '1680', 1680)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1680">
-            <strong>Signature:</strong> ((IObservable&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Default2) -&gt; IObservable&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L111-111" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1681', 1681)" onmouseover="showTip(event, '1681', 1681)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1681">
-            <strong>Signature:</strong> ((IReadOnlyDictionary&lt;&#39;Key,&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Default2) -&gt; IReadOnlyDictionary&lt;&#39;Key,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L110-110" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1682', 1682)" onmouseover="showTip(event, '1682', 1682)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1682">
-            <strong>Signature:</strong> ((IDictionary&lt;&#39;Key,&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Default2) -&gt; IDictionary&lt;&#39;Key,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L109-109" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1683', 1683)" onmouseover="showTip(event, '1683', 1683)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1683">
-            <strong>Signature:</strong> ((IEnumerator&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Default2) -&gt; IEnumerator&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L108-108" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1684', 1684)" onmouseover="showTip(event, '1684', 1684)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1684">
-            <strong>Signature:</strong> ((seq&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Default2) -&gt; seq&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L107-107" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1685', 1685)" onmouseover="showTip(event, '1685', 1685)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1685">
-            <strong>Signature:</strong> ((^Applicative&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Default3) -&gt; ^Applicative&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> ^Applicative<'T>, ^Applicative<'T->'U>, 'T, 'U, ^Applicative<'U>                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L103-103" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1686', 1686)" onmouseover="showTip(event, '1686', 1686)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1686">
-            <strong>Signature:</strong> ((^Monad&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Default4) -&gt; ^Monad&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> ^Monad<'T>, 'T, ^Monad<'U>, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L99-99" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1687', 1687)" onmouseover="showTip(event, '1687', 1687)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1687">
-            <strong>Signature:</strong> ((Set2&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Set2&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L83-83" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1688', 1688)" onmouseover="showTip(event, '1688', 1688)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1688">
-            <strong>Signature:</strong> ((Set&lt;&#39;?18603&gt; * (&#39;?18603 -&gt; &#39;?18604)) * _mthd:Map) -&gt; Set&lt;&#39;?18604&gt;<br />
-                          <strong>Type parameters:</strong> '?18603, '?18604                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L82-82" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1689', 1689)" onmouseover="showTip(event, '1689', 1689)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1689">
-            <strong>Signature:</strong> ((StringBuilder * (char -&gt; char)) * _mthd:Map) -&gt; StringBuilder<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L81-81" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1690', 1690)" onmouseover="showTip(event, '1690', 1690)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1690">
-            <strong>Signature:</strong> ((string * (char -&gt; char)) * _mthd:Map) -&gt; string<br />
-                                  </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L80-80" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1691', 1691)" onmouseover="showTip(event, '1691', 1691)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1691">
-            <strong>Signature:</strong> ((ResizeArray&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; ResizeArray&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L77-77" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1692', 1692)" onmouseover="showTip(event, '1692', 1692)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1692">
-            <strong>Signature:</strong> ((Expr&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Expr&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L76-76" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1693', 1693)" onmouseover="showTip(event, '1693', 1693)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1693">
-            <strong>Signature:</strong> ((Dictionary&lt;&#39;Key,&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Dictionary&lt;&#39;Key,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L75-75" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1694', 1694)" onmouseover="showTip(event, '1694', 1694)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1694">
-            <strong>Signature:</strong> ((Map&lt;&#39;Key,&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Map&lt;&#39;Key,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'Key, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L74-74" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1695', 1695)" onmouseover="showTip(event, '1695', 1695)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1695">
-            <strong>Signature:</strong> ((KeyValuePair&lt;&#39;?18583,&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; KeyValuePair&lt;&#39;?18583,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> '?18583, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L73-73" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1696', 1696)" onmouseover="showTip(event, '1696', 1696)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1696">
-            <strong>Signature:</strong> ((Choice&lt;&#39;T,&#39;E&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Choice&lt;&#39;U,&#39;E&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'E, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L72-72" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1697', 1697)" onmouseover="showTip(event, '1697', 1697)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1697">
-            <strong>Signature:</strong> ((Result&lt;&#39;T,&#39;E&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Result&lt;&#39;U,&#39;E&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'E, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L71-71" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1698', 1698)" onmouseover="showTip(event, '1698', 1698)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1698">
-            <strong>Signature:</strong> ((Async&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Async&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L70-70" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1699', 1699)" onmouseover="showTip(event, '1699', 1699)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1699">
-            <strong>Signature:</strong> ((&#39;T [,,,] * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; &#39;U [,,,]<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L69-69" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1700', 1700)" onmouseover="showTip(event, '1700', 1700)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1700">
-            <strong>Signature:</strong> ((&#39;T [,,] * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; &#39;U [,,]<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L68-68" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1701', 1701)" onmouseover="showTip(event, '1701', 1701)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1701">
-            <strong>Signature:</strong> ((&#39;T [,] * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; &#39;U [,]<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L67-67" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1702', 1702)" onmouseover="showTip(event, '1702', 1702)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1702">
-            <strong>Signature:</strong> ((&#39;T [] * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; &#39;U []<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L66-66" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1703', 1703)" onmouseover="showTip(event, '1703', 1703)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1703">
-            <strong>Signature:</strong> (((&#39;Monoid * &#39;T) * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; &#39;Monoid * &#39;U<br />
-                          <strong>Type parameters:</strong> 'Monoid, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L65-65" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1704', 1704)" onmouseover="showTip(event, '1704', 1704)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1704">
-            <strong>Signature:</strong> ((Func&lt;&#39;R,&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Func&lt;&#39;R,&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'R, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L64-64" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1705', 1705)" onmouseover="showTip(event, '1705', 1705)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1705">
-            <strong>Signature:</strong> (((&#39;R -&gt; &#39;T) * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; &#39;R -&gt; &#39;U<br />
-                          <strong>Type parameters:</strong> 'R, 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L63-63" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1706', 1706)" onmouseover="showTip(event, '1706', 1706)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1706">
-            <strong>Signature:</strong> ((&#39;T list * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; &#39;U list<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L62-62" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1707', 1707)" onmouseover="showTip(event, '1707', 1707)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1707">
-            <strong>Signature:</strong> ((&#39;T option * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; &#39;U option<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L61-61" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1708', 1708)" onmouseover="showTip(event, '1708', 1708)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1708">
-            <strong>Signature:</strong> ((Task&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Task&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L60-60" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-      <tr>
-        <td class="member-name">
-          <code onmouseout="hideTip(event, '1709', 1709)" onmouseover="showTip(event, '1709', 1709)">
-            Map.Map(arg1, _mthd)
-          </code>
-          <div class="tip" id="1709">
-            <strong>Signature:</strong> ((Lazy&lt;&#39;T&gt; * (&#39;T -&gt; &#39;U)) * _mthd:Map) -&gt; Lazy&lt;&#39;U&gt;<br />
-                          <strong>Type parameters:</strong> 'T, 'U                      </div>
-        </td>
-        <td class="xmldoc">
-                      <a href="https://github.com/fsprojects/FSharpPlus/tree/master/src/FSharpPlus/Control/Functor.fs#L59-59" class="github-link">
-              <img src="../content/img/github.png" class="normal" />
-              <img src="../content/img/github-blue.png" class="hover" />
-            </a>
-          
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
         </div>
         <div class="span3">
           <img src="/FSharpPlus/img/logo-color.svg" alt="F# Project" style="width:150px;margin:10px" />  
 		  <ul class="nav nav-list" id="menu" style="margin-top: 20px;">
-		  	<li class="nav-header">FSharpPlus</li>
+		  	<li class="nav-header">@Properties["project-name"]</li>
 		  <li><a href="/FSharpPlus/index.html">Home page</a></li>
-		  <li class="divider"></li>
-		  <li><a href="http://nuget.org/packages/FSharpPlus">Get Library via NuGet</a></li>
-		  <li><a href="https://github.com/fsprojects/FSharpPlus">Source Code on GitHub</a></li>
+      <li class="divider"></li>
+      <!--
+		  <li><a href="@Properties["project-nuget"]">Get Library via NuGet</a></li>
+      <li><a href="@Properties["project-github"]">Source Code on GitHub</a></li>
+      -->
 		  <li><a href="/FSharpPlus/license.html">License</a></li>
 		  <li><a href="/FSharpPlus/release-notes.html">Release Notes</a></li>
 
@@ -703,6 +3373,6 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/fsprojects/FSharpPlus"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
+    <a href="@Properties["project-github"]"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"/></a>
   </body>
   </html>
