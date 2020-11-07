@@ -1,6 +1,6 @@
 namespace FSharpPlus.TypeLevel
 
-#if !FABLE_COMPILER2
+#if !FABLE_COMPILER
 
 /// Marker interface for type-level literals.
 ///

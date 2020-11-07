@@ -22,6 +22,10 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 
     <BaseOutputPath>..\bin</BaseOutputPath>
+
+    <Configurations>Debug;Release;Fable</Configurations>
+
+    <Platforms>AnyCPU;Fable</Platforms>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="../../../external/FSharp.TypeProviders.SDK/src/ProvidedTypes.fsi" />

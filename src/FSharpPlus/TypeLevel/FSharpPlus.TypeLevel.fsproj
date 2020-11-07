@@ -3,6 +3,8 @@
     <OutputType>Library</OutputType>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <DefineConstants>$(DefineConstants);TYPELEVEL_DEBUG</DefineConstants>
+    <Configurations>Debug;Release;Fable</Configurations>
+    <Platforms>AnyCPU;Fable</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
