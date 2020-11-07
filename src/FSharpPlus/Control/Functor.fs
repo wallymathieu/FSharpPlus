@@ -13,7 +13,7 @@ open FSharpPlus.Internals.Prelude
 open FSharpPlus
 open FSharpPlus.Data
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 // Functor class ----------------------------------------------------------
 
@@ -55,10 +55,12 @@ type Iterate =
 type Map =
     inherit Default1
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
     static member Map ((x: Lazy<_>             , f: 'T->'U), _mthd: Map) = Lazy.map f x
+#if !FABLE_COMPILER // Task
     static member Map ((x: Task<'T>            , f: 'T->'U), _mthd: Map) = Task.map f x : Task<'U>
+#endif
     static member Map ((x: option<_>           , f: 'T->'U), _mthd: Map) = Option.map  f x
     static member Map ((x: list<_>             , f: 'T->'U), _mthd: Map) = List.map    f x : list<'U>
     static member Map ((g: 'R->'T              , f: 'T->'U), _mthd: Map) = (>>) g f
@@ -74,7 +76,9 @@ type Map =
     static member Map ((KeyValue(k, x)         , f: 'T->'U), _mthd: Map) = KeyValuePair (k, f x)
     static member Map ((x: Map<'Key,'T>        , f: 'T->'U), _mthd: Map) = Map.map (const' f) x : Map<'Key,'U>
     static member Map ((x: Dictionary<_,_>     , f: 'T->'U), _mthd: Map) = Dictionary.map f x : Dictionary<'Key,'U>
+#if !FABLE_COMPILER // Expr
     static member Map ((x: Expr<'T>            , f: 'T->'U), _mthd: Map) = Expr.Cast<'U> (Expr.Application (Expr.Value (f), x))
+#endif
     static member Map ((x: ResizeArray<'T>     , f: 'T->'U), _mthd: Map) = ResizeArray.map f x
 
     // Restricted
@@ -93,7 +97,7 @@ type Map =
     static member inline InvokeOnInstance (mapping: 'T->'U) (source: '``Functor<'T>``) : '``Functor<'U>`` = 
         (^``Functor<'T>`` : (static member Map : _ * _ -> _) source, mapping)
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 
 type Map with
@@ -278,6 +282,7 @@ type Contramap =
         (^``Profunctor<'B,'C>`` : (static member Contramap : _*_ -> _) source, ab)
 
     static member Contramap (k: 'T -> 'C            , f: 'U -> 'T, [<Optional>]_mthd: Contramap) = f >> k : 'U->'C
+    #if !FABLE_COMPILER
     static member Contramap (k: Func<'T, 'C>        , f: 'U -> 'T, [<Optional>]_mthd: Contramap) = Func<'U, 'C> (f >> k.Invoke)
     static member Contramap (p: Predicate<_>        , f: 'U -> 'T, [<Optional>]_mthd: Contramap) = Predicate (fun x -> p.Invoke (f x))    
     static member Contramap (c: IComparer<_>        , f: 'U -> 'T, [<Optional>]_mthd: Contramap) = { new IComparer<'U> with member __.Compare (x, y) = c.Compare (f x, f y) }
@@ -285,7 +290,7 @@ type Contramap =
                     new IEqualityComparer<'U> with
                         member __.Equals (x, y) = c.Equals (f x, f y)
                         member __.GetHashCode x = c.GetHashCode (f x) }
-    
+    #endif
 type Contramap with
     static member inline Contramap (x: '``Profunctor<'B,'C>``, f: 'A->'B, [<Optional>]_mthd: Default2) = Dimap.InvokeOnInstance f id x : '``Profunctor<'A,'C>``
     static member inline Contramap (x: '``Contravariant<'T>``, f: 'U->'T, [<Optional>]_mthd: Default1) = Contramap.InvokeOnInstance f x: '``Contravariant<'U>``

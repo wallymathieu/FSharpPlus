@@ -1,6 +1,6 @@
 ﻿namespace FSharpPlus.Data
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 open FSharpPlus
 open System.ComponentModel

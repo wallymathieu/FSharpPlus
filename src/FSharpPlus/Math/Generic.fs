@@ -3,7 +3,7 @@ namespace FSharpPlus.Math
 open FSharpPlus
 open FSharpPlus.Control
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 /// <summary>
 /// Generic numbers, functions and operators.

@@ -6,7 +6,7 @@ namespace FSharpPlus.Math
 /// </summary>
 /// </namespacedoc>
  
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 open FSharpPlus
 

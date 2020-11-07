@@ -56,7 +56,7 @@ type Cont<'r,'t> with
     [<EditorBrowsable(EditorBrowsableState.Never)>]
     static member CallCC (f: ('T -> Cont<'R,'U>) -> _) = Cont.callCC f : Cont<'R,'T>
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
     static member inline Lift (m: '``Monad<'T>``) = Cont ((>>=) m) : ContT<'``Monad<'R>``,'T>
 
@@ -78,7 +78,7 @@ module ContT =
     /// The result of running a CPS computation with the identity function as the final continuation.
     let run (Cont x: ContT<'MR, 'T>) (continuation: 'T->'MR) = x continuation : 'MR
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
     /// The result of running a CPS computation with its inner monad's 'Return' function as the final continuation.
     let inline eval (Cont x: ContT<'MR, 'T>) = x result :' MR

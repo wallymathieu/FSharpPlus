@@ -18,7 +18,7 @@ open FSharpPlus.Internals.Prelude
 type Bind =
     static member        (>>=) (source: Lazy<'T>   , f: 'T -> Lazy<'U>    ) = lazy (f source.Value).Value                                   : Lazy<'U>
     static member        (>>=) (source: seq<'T>    , f: 'T -> seq<'U>     ) = Seq.bind f source                                             : seq<'U>
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     static member        (>>=) (source: Task<'T>   , f: 'T -> Task<'U>    ) = source.ContinueWith(fun (x: Task<_>) -> f x.Result).Unwrap () : Task<'U>
     static member        (>>=) (source             , f: 'T -> _           ) = Nullable.bind f source                                        : Nullable<'U>
     #endif
@@ -26,7 +26,7 @@ type Bind =
     static member        (>>=) (source             , f: 'T -> _           ) = List.collect  f source                                        : list<'U>
     static member        (>>=) (source             , f: 'T -> _           ) = Array.collect f source                                        : 'U []
     static member        (>>=) (source             , k: 'T -> _           ) = (fun r -> k (source r) r)                                     : 'R->'U
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     static member inline (>>=) ((w: 'Monoid, a: 'T), k: 'T -> 'Monoid * 'U) = let m, b = k a in (Plus.Invoke w m, b)                        : 'Monoid*'U
     #else
     static member inline (>>=) ((w: 'Monoid, a: 'T), k: 'T -> 'Monoid * 'U) = let m, b = k a in (w + m, b)                                  : 'Monoid*'U
@@ -53,7 +53,7 @@ type Bind =
 
     static member (>>=) (source: NonEmptySeq<'T>, f: 'T -> NonEmptySeq<'U>) = NonEmptySeq.collect f source : NonEmptySeq<'U>
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
     static member inline Invoke (source: '``Monad<'T>``) (binder: 'T -> '``Monad<'U>``) : '``Monad<'U>`` =
         let inline call (_mthd: 'M, input: 'I, _output: 'R, f) = ((^M or ^I or ^R) : (static member (>>=) : _*_ -> _) input, f)
         call (Unchecked.defaultof<Bind>, source, Unchecked.defaultof<'``Monad<'U>``>, binder)
@@ -62,7 +62,7 @@ type Bind =
     static member inline InvokeOnInstance (source: '``Monad<'T>``) (binder: 'T -> '``Monad<'U>``) : '``Monad<'U>`` =
         ((^``Monad<'T>`` or ^``Monad<'U>``) : (static member (>>=) : _*_ -> _) source, binder)
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 type Join =
     inherit Default1
@@ -110,7 +110,7 @@ type Return =
     inherit Default1
     static member inline InvokeOnInstance (x: 'T) = (^``Applicative<'T>`` : (static member Return : ^T -> ^``Applicative<'T>``) x)
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
     static member inline Invoke (x: 'T) : '``Applicative<'T>`` =
         let inline call (mthd: ^M, output: ^R) = ((^M or ^R) : (static member Return : _*_ -> _) output, mthd)

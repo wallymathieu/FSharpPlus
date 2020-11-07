@@ -67,7 +67,7 @@ type MapItem2 =
     static member MapItem2 ((a, b, c, d, e, f)   , fn) = (a, fn b, c, d, e, f)
     static member MapItem2 ((a, b, c, d, e, f, g), fn) = (a, fn b, c, d, e, f, g)
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
     static member inline Invoke f value = 
         let inline call_2 (_: ^a, b: ^b) = ((^a or ^b) : (static member MapItem2 : _ * _ -> _) b, f)
         let inline call   (a: 'a, b: 'b) = call_2 (a, b)
@@ -162,7 +162,7 @@ type MapItem5 =
         call (Unchecked.defaultof<MapItem5>, value)
 
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 open FSharpPlus.Internals.Prelude
 
@@ -175,8 +175,9 @@ type Curry =
         Curry.Invoke (fun tr ->
             let _f _ = Constraints.whenNestedTuple t : ('t1*'t2*'t3*'t4*'t5*'t6*'t7*'tr)
             f (Tuple<'t1,'t2,'t3,'t4,'t5,'t6,'t7,'tr> (t1, t2, t3, t4, t5, t6, t7, tr) |> retype))
-    
+    #if !FABLE_COMPILER
     static member Curry (_: Tuple<'t1>        , _: Curry) = fun f t1                   -> f (Tuple<_> t1)
+    #endif
     static member Curry ((_, _)               , _: Curry) = fun f t1 t2                -> f (t1, t2)
     static member Curry ((_, _, _)            , _: Curry) = fun f t1 t2 t3             -> f (t1, t2, t3)
     static member Curry ((_, _, _, _)         , _: Curry) = fun f t1 t2 t3 t4          -> f (t1, t2, t3, t4)
@@ -200,7 +201,9 @@ type Uncurry =
         let (t1: 't1) = (^t : (member Item1 : 't1) t)
         Uncurry.Invoke (f t1 t2 t3 t4 t5 t6 t7) tr
 
+    #if !FABLE_COMPILER
     static member Uncurry (x: Tuple<'t1>               , _: Uncurry) = fun f -> f x.Item1
+    #endif
     static member Uncurry ((t1, t2)                    , _: Uncurry) = fun f -> f t1 t2
     static member Uncurry ((t1, t2, t3)                , _: Uncurry) = fun f -> f t1 t2 t3
     static member Uncurry ((t1, t2, t3, t4)            , _: Uncurry) = fun f -> f t1 t2 t3 t4
@@ -221,7 +224,9 @@ type CountTuple =
     ((^TR or ^CountTuple): (static member CountTuple: _*_->_) tr,ct)
     |> S |> S |> S |> S |> S |> S |> S
 
+  #if !FABLE_COMPILER
   static member inline CountTuple (_: Tuple<_>, _: CountTuple) = S Z
+  #endif
   static member inline CountTuple ((_, _), _: CountTuple) = S Z |> S
   static member inline CountTuple ((_, _, _), _: CountTuple) = S Z |> S |> S
   static member inline CountTuple ((_, _, _, _), _: CountTuple) = S Z |> S |> S |> S
@@ -239,7 +244,9 @@ type TupleToList =
     let t1,t2,t3,t4,t5,t6,t7,tr : _*_*_*_*_*_*_* ^TR = Constraints.whenNestedTuple t
     t1::t2::t3::t4::t5::t6::t7::((^TR or ^TupleToList): (static member TupleToList: _*_->_) tr,ct)
 
+  #if !FABLE_COMPILER
   static member inline TupleToList (x: Tuple<_>, _: TupleToList) = [x.Item1]
+  #endif
   static member inline TupleToList ((x1,x2), _: TupleToList) = [x1;x2]
   static member inline TupleToList ((x1,x2,x3), _: TupleToList) = [x1;x2;x3]
   static member inline TupleToList ((x1,x2,x3,x4), _: TupleToList) = [x1;x2;x3;x4]
@@ -257,7 +264,9 @@ type AssertTupleType =
     let _,_,_,_,_,_,_,tr : 'x*'x*'x*'x*'x*'x*'x*_ = Constraints.whenNestedTuple xs
     AssertTupleType.Invoke (tr, x, S n)
 
+  #if !FABLE_COMPILER
   static member inline AssertTupleType (_: Tuple<'x>, _:'x,S Z) = ()
+  #endif
   static member inline AssertTupleType ((_:'x,_:'x),_:'x,S (S Z)) = ()
   static member inline AssertTupleType ((_:'x,_:'x,_:'x),_:'x, S(S(S Z))) = ()
   static member inline AssertTupleType ((_:'x,_:'x,_:'x,_:'x),_:'x,S(S(S(S Z)))) = ()

@@ -46,7 +46,7 @@ module String =
     /// not whitespace.
     let trimWhiteSpaces (source: string) = source.Trim ()
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
        
     /// Returns a new string whose textual value is the same as this string, but whose binary representation is in the specified Unicode normalization form.
     /// 

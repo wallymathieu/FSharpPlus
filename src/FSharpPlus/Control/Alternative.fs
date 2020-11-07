@@ -6,7 +6,7 @@ namespace FSharpPlus.Control
 /// </summary>
 /// </namespacedoc>
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 open System.Runtime.InteropServices
 open FSharpPlus

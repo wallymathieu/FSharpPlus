@@ -11,7 +11,7 @@
 
 #nowarn "40"
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 /// Constructs to express generic computations
 [<AutoOpenAttribute>]

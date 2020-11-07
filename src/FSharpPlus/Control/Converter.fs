@@ -4,13 +4,12 @@ namespace FSharpPlus.Control
 // Warn FS0077 -> Member constraints with the name 'op_Explicit' are given special status by the F# compiler as certain .NET types are implicitly augmented with this member. This may result in runtime failures if you attempt to invoke the member constraint from your own code.
 // But all simulated types are being handled so here Explicit is SAFE from runtime errors.
 
-#if !FABLE_COMPILER
-
 open System
 open System.Text
 open FSharpPlus.Internals
 open FSharpPlus.Internals.Prelude
 
+#if !FABLE_COMPILER
 
 type Explicit =
     inherit Default1
@@ -37,7 +36,9 @@ type Explicit =
         let inline call_2 (a: ^a, b: ^r) = ((^a or ^r or ^t) : (static member Explicit : _*_ -> ('t  -> ^r)) b, a)
         let inline call (a: 'a) = fun (x: 'x) -> call_2 (a, Unchecked.defaultof<'r>) x : 'r
         call Unchecked.defaultof<Explicit> value
+#endif
 
+#if !FABLE_COMPILER
 type OfBytes =
     static member OfBytes (_: bool   , _: OfBytes) = fun (x, i, _) -> BitConverter.ToBoolean(x, i)
 
@@ -58,8 +59,9 @@ type OfBytes =
         let inline call_2 (a: ^a, b: ^b) = ((^a or ^b) : (static member OfBytes : _*_ -> _) b, a)
         let inline call (a: 'a) = fun (x: 'x) -> call_2 (a, Unchecked.defaultof<'r>) x : 'r
         call Unchecked.defaultof<OfBytes> (value, startIndex, isLtEndian)
+#endif
 
-
+#if !FABLE_COMPILER
 type ToBytes =
     static member ToBytes (x: bool   , _, _: ToBytes) = BitConverter.GetBytes (x)
     static member ToBytes (x: char   , e, _: ToBytes) = BitConverter.GetBytes (x, BitConverter.IsLittleEndian = e)
@@ -77,13 +79,13 @@ type ToBytes =
         let inline call_2 (a: ^a, b: ^b, e) = ((^a or ^b) : (static member ToBytes : _*_*_ -> _) b, e, a)
         let inline call (a: 'a, b: 'b, e) = call_2 (a, b, e)
         call (Unchecked.defaultof<ToBytes>, value, isLittleEndian)
-
+#endif
 
 open System.Globalization
 
 type TryParse =
     inherit Default1
-
+#if !FABLE_COMPILER
     static member TryParse (_: decimal       , _: TryParse) = fun x -> Decimal.TryParse (x, NumberStyles.Any, CultureInfo.InvariantCulture) |> tupleToOption : option<decimal>
     static member TryParse (_: float32       , _: TryParse) = fun x -> Single.TryParse  (x, NumberStyles.Any, CultureInfo.InvariantCulture) |> tupleToOption : option<float32>
     static member TryParse (_: float         , _: TryParse) = fun x -> Double.TryParse  (x, NumberStyles.Any, CultureInfo.InvariantCulture) |> tupleToOption : option<float>
@@ -93,7 +95,17 @@ type TryParse =
     static member TryParse (_: int16         , _: TryParse) = fun x -> Int16.TryParse   (x, NumberStyles.Any, CultureInfo.InvariantCulture) |> tupleToOption : option<int16>
     static member TryParse (_: int           , _: TryParse) = fun x -> Int32.TryParse   (x, NumberStyles.Any, CultureInfo.InvariantCulture) |> tupleToOption : option<int>
     static member TryParse (_: int64         , _: TryParse) = fun x -> Int64.TryParse   (x, NumberStyles.Any, CultureInfo.InvariantCulture) |> tupleToOption : option<int64>
-
+#else
+    static member TryParse (_: decimal       , _: TryParse) = fun x -> Decimal.TryParse (x) |> tupleToOption : option<decimal>
+    static member TryParse (_: float32       , _: TryParse) = fun x -> Single.TryParse  (x) |> tupleToOption : option<float32>
+    static member TryParse (_: float         , _: TryParse) = fun x -> Double.TryParse  (x) |> tupleToOption : option<float>
+    static member TryParse (_: uint16        , _: TryParse) = fun x -> UInt16.TryParse  (x) |> tupleToOption : option<uint16>
+    static member TryParse (_: uint32        , _: TryParse) = fun x -> UInt32.TryParse  (x) |> tupleToOption : option<uint32>
+    static member TryParse (_: uint64        , _: TryParse) = fun x -> UInt64.TryParse  (x) |> tupleToOption : option<uint64>
+    static member TryParse (_: int16         , _: TryParse) = fun x -> Int16.TryParse   (x) |> tupleToOption : option<int16>
+    static member TryParse (_: int           , _: TryParse) = fun x -> Int32.TryParse   (x) |> tupleToOption : option<int>
+    static member TryParse (_: int64         , _: TryParse) = fun x -> Int64.TryParse   (x) |> tupleToOption : option<int64>
+#endif
     static member TryParse (_: string        , _: TryParse) = fun x -> Some x                               : option<string>
     static member TryParse (_: StringBuilder , _: TryParse) = fun x -> Some (new StringBuilder (x: string)) : option<StringBuilder>
     static member TryParse (_: DateTime      , _: TryParse) = fun x -> DateTime.TryParseExact       (x, [|"yyyy-MM-ddTHH:mm:ss.fffZ"; "yyyy-MM-ddTHH:mm:ssZ"|], null, DateTimeStyles.RoundtripKind) |> tupleToOption : option<DateTime>
@@ -133,4 +145,3 @@ type Parse =
         let inline call (a: 'a) = fun (x: 'x) -> call_2 (a, Unchecked.defaultof<'r>) x : 'r
         call Unchecked.defaultof<Parse> value
 
-#endif

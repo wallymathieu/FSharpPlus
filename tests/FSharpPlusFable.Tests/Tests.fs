@@ -6,7 +6,7 @@ open Testing
 
 let AllTests =  testList "AllTests" [ExtensionsTest]
 
-#if FABLE_COMPILER
+#if FABLE_COMPILER2
 
 open Fable.Core
 open Fable.Core.JsInterop

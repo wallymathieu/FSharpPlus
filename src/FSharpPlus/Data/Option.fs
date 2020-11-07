@@ -6,7 +6,7 @@ open FSharpPlus.Internals.Prelude
 open FSharpPlus.Control
 
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 /// Additional operations on Option
 [<RequireQualifiedAccess>]

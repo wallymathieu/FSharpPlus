@@ -8,7 +8,7 @@ open System.Runtime.InteropServices
 open FSharpPlus
 open FSharpPlus.Internals
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 
 type OfSeq =
     inherit Default1
@@ -22,21 +22,28 @@ type OfSeq =
     static member        OfSeq ((x: seq<'t>                 , _: ICollection<'t>                 ), _: Default3) = let d = ResizeArray () in Seq.iter d.Add x; d :> ICollection<'t>
     static member        OfSeq ((x: seq<'t>                 , _: IList<'t>                       ), _: Default3) = let d = ResizeArray () in Seq.iter d.Add x; d :> IList<'t>
     static member        OfSeq ((x: seq<'t>                 , _: IList                           ), _: Default3) = let d = ResizeArray () in Seq.iter d.Add x; d :> IList    
+#if !FABLE_COMPILER // readonly dictionary
     static member        OfSeq ((x: seq<'k*'v>              , _: IReadOnlyDictionary<'k,'v>      ), _: Default3) = readOnlyDict x
     static member        OfSeq ((x: seq<KeyValuePair<'k,'v>>, _: IReadOnlyDictionary<'k,'v>      ), _: Default3) = x |> Seq.map (|KeyValue|) |> readOnlyDict
+#endif
     static member        OfSeq ((x: seq<'k*'v>              , _: IDictionary<'k,'v>              ), _: Default3) = dict x
     static member        OfSeq ((x: seq<KeyValuePair<'k,'v>>, _: IDictionary<'k,'v>              ), _: Default3) = x |> Seq.map (|KeyValue|) |> dict
+#if !FABLE_COMPILER // hash table
     static member        OfSeq ((x: seq<'k*'v>              , _: IDictionary                     ), _: Default3) = let d = Hashtable () in x |> Seq.iter d.Add; d :> IDictionary
     static member        OfSeq ((x: seq<KeyValuePair<'k,'v>>, _: IDictionary                     ), _: Default3) = let d = Hashtable () in x |> Seq.iter (function (KeyValue x) -> d.Add x); d :> IDictionary
+#endif
+#if !FABLE_COMPILER // readonly collection
     static member        OfSeq ((x: seq<'t>                 , _: IReadOnlyCollection<'t>         ), _: Default3) = IReadOnlyCollection.ofSeq x
+#endif
 
+#if !FABLE_COMPILER // generic T
     static member inline OfSeq ((x: seq<'t>                 , _: 'F                              ), _: Default2) = let c = new 'F () in (Seq.iter (fun t -> ( ^F : (member Add : 't -> ^R) c, t) |> ignore) x); c
-
     static member        OfSeq ((x: seq<'t>                 , _: 'T when 'T :> ICollection<'t>   ), _: Default1) = let d = new 'T () in x |> Seq.iter d.Add; d
     static member        OfSeq ((x: seq<'k*'v>              , _: 'T when 'T :> IDictionary       ), _: Default1) = let d = new 'T () in x |> Seq.iter d.Add; d
     static member        OfSeq ((x: seq<KeyValuePair<'k,'v>>, _: 'T when 'T :> IDictionary       ), _: Default1) = let d = new 'T () in x |> Seq.iter (function (KeyValue x) -> d.Add x); d
     static member        OfSeq ((x: seq<'k*'v>              , _: 'T when 'T :> IDictionary<'k,'v>), _: OfSeq   ) = let d = new 'T () in x |> Seq.iter d.Add; d
     static member        OfSeq ((x: seq<KeyValuePair<'k,'v>>, _: 'T when 'T :> IDictionary<'k,'v>), _: OfSeq   ) = let d = new 'T () in x |> Seq.iter d.Add; d
+#endif
 
     static member inline OfSeq ((x: seq<'t>                 , _: 'UserType                       ), _: OfSeq   ) = (^UserType : (static member OfSeq : seq<'t> -> ^UserType) x)
     static member inline OfSeq (( _, _: 't when 't : null and 't : struct                        ), _: OfSeq   ) = id
@@ -44,7 +51,9 @@ type OfSeq =
     static member        OfSeq ((x                          , _: 't list                         ), _: OfSeq   ) = List.ofSeq<'t> x
     static member        OfSeq ((x: seq<char>               , _: string                          ), _: OfSeq   ) = String.ofSeq x
     static member        OfSeq ((x: seq<char>               , _: Text.StringBuilder              ), _: OfSeq   ) = (StringBuilder (), x) ||> Seq.fold (fun x -> x.Append)
+#if !FABLE_COMPILER // stack
     static member        OfSeq ((x: seq<'t>                 , _: Stack<'t>                       ), _: OfSeq   ) = Generic.Stack x
+#endif
 
     static member inline Invoke (value: seq<'t>) = 
         let inline call_2 (a: ^a, b: ^b, s) = ((^a or ^b) : (static member OfSeq : (_*_)*_ -> _) (s, b), a)
@@ -64,29 +73,37 @@ type OfList =
     static member        OfList ((x: list<'t>                 , _: ICollection<'t>                 ), _: Default4) = let d = ResizeArray () in List.iter d.Add x; d :> ICollection<'t>
     static member        OfList ((x: list<'t>                 , _: IList<'t>                       ), _: Default4) = let d = ResizeArray () in List.iter d.Add x; d :> IList<'t>
     static member        OfList ((x: list<'t>                 , _: IList                           ), _: Default4) = let d = ResizeArray () in List.iter d.Add x; d :> IList
+#if !FABLE_COMPILER // readonly dictionary
     static member        OfList ((x: list<'k*'v>              , _: IReadOnlyDictionary<'k,'v>      ), _: Default4) = readOnlyDict x
     static member        OfList ((x: list<KeyValuePair<'k,'v>>, _: IReadOnlyDictionary<'k,'v>      ), _: Default4) = x |> List.map (|KeyValue|) |> readOnlyDict
+#endif
     static member        OfList ((x: list<'k*'v>              , _: IDictionary<'k,'v>              ), _: Default4) = dict x
     static member        OfList ((x: list<KeyValuePair<'k,'v>>, _: IDictionary<'k,'v>              ), _: Default4) = x |> List.map (|KeyValue|) |> dict
+#if !FABLE_COMPILER // hashtable
     static member        OfList ((x: list<'k*'v>              , _: IDictionary                     ), _: Default4) = let d = Hashtable () in x |> List.iter d.Add; d :> IDictionary
     static member        OfList ((x: list<KeyValuePair<'k,'v>>, _: IDictionary                     ), _: Default4) = let d = Hashtable () in x |> List.iter (function (KeyValue x) -> d.Add x); d :> IDictionary
+#endif
+#if !FABLE_COMPILER // readonly collection
     static member        OfList ((x: list<'t>                 , _: IReadOnlyCollection<'t>         ), _: Default4) = IReadOnlyCollection.ofSeq x
+#endif
 
     static member inline OfList ((x: list<'t>                 , _: 'F                              ), _: Default2) = let c = new 'F () in (List.iter (fun t -> ( ^F : (member Add : 't -> ^R) c, t) |> ignore) x); c
-
+#if !FABLE_COMPILER // generic T
     static member        OfList ((x: list<'t>                 , _: 'T when 'T :> ICollection<'t>   ), _: Default1) = let d = new 'T () in x |> List.iter d.Add; d
     static member        OfList ((x: list<'k*'v>              , _: 'T when 'T :> IDictionary       ), _: Default1) = let d = new 'T () in x |> List.iter d.Add; d
     static member        OfList ((x: list<KeyValuePair<'k,'v>>, _: 'T when 'T :> IDictionary       ), _: Default1) = let d = new 'T () in x |> List.iter (function (KeyValue x) -> d.Add x); d
     static member        OfList ((x: list<'k*'v>              , _: 'T when 'T :> IDictionary<'k,'v>), _: OfList  ) = let d = new 'T () in x |> List.iter d.Add; d
     static member        OfList ((x: list<KeyValuePair<'k,'v>>, _: 'T when 'T :> IDictionary<'k,'v>), _: OfList  ) = let d = new 'T () in x |> List.iter d.Add; d
-
+#endif
     static member inline OfList ((x: list<'t>                 , _: 'UserType                       ), _: OfList  ) = (^UserType : (static member OfList : list<'t> -> ^UserType) x)
     static member inline OfList (( _, _: 't when 't : null and 't : struct                         ), _: OfList  ) = id
     static member        OfList ((x                           , _: 't []                           ), _: OfList  ) = Array.ofList<'t> x
     static member        OfList ((x                           , _: 't list                         ), _: OfList  ) = x
     static member        OfList ((x: list<char>               , _: string                          ), _: OfList  ) = String.ofList x
     static member        OfList ((x: list<char>               , _: Text.StringBuilder              ), _: OfList  ) = (StringBuilder (), x) ||> List.fold (fun x -> x.Append)
+#if !FABLE_COMPILER // Stack
     static member        OfList ((x: list<'t>                 , _: Stack<'t>                       ), _: OfList  ) = Generic.Stack x
+#endif
 
     static member inline Invoke (value: list<'t>) = 
         let inline call_2 (a: ^a, b: ^b, s) = ((^a or ^b) : (static member OfList : (_*_)*_ -> _) (s, b), a)

@@ -51,7 +51,7 @@ let ExtensionsTest =
                    let r2 = m1 |> Map.unionWith konst m2
                    equalMap r1 r2)
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
       testCase "Bind" 
         (fun () ->  let x = [1;2] >>= fun x -> [string x ; string (x + 1000) ]
                     let y = { Head = 1; Tail = [2] } >>= fun x -> { Head = string x ; Tail = [string (x + 1000)] }
@@ -89,7 +89,7 @@ let ExtensionsTest =
                     equal oneParsed (Result<int, string>.Ok 1)
                     equal tenEncoded "10" )
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
       testCase "Tuple"
         (fun () ->
                    equal (mapItem2 string (1,2,3)) (1,"2",3)

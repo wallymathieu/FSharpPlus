@@ -5,7 +5,7 @@ namespace FSharpPlus.Data
 open System.ComponentModel
 open FSharpPlus
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER2
 open FSharpPlus.Lens
 #endif
 
@@ -39,7 +39,7 @@ module Validation =
     /// <returns>A Success of the function applied to the value when both are Success, or the Failure(s) if more than one, combined with the Semigroup (++) operation of the Error type.</returns>
     let inline apply f x : Validation<'Error,'U> =
         match f, (x: Validation<'Error,'T>) with
-        #if !FABLE_COMPILER
+        #if !FABLE_COMPILER2
         | Failure e1, Failure e2 -> Failure (plus e1 e2)
         #else
         | Failure e1, Failure e2 -> Failure (e1 + e2)
@@ -50,7 +50,7 @@ module Validation =
 
     let inline map2 f x y : Validation<'Error,'V> =
         match (x: Validation<'Error,'T>), (y: Validation<'Error,'U>) with
-        #if !FABLE_COMPILER
+        #if !FABLE_COMPILER2
         | Failure e1, Failure e2 -> Failure (plus e1 e2)
         #else
         | Failure e1, Failure e2 -> Failure (e1 + e2)
@@ -64,7 +64,7 @@ module Validation =
         | Success a -> folder a state
         | Failure _ -> state
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
 
     /// Traverse the Success case with the supplied function.
     let inline traverse (f: 'T->'``Functor<'U>``) (source: Validation<'Error,'T>) : '``Functor<Validation<'Error,'U>>`` =
@@ -165,7 +165,7 @@ module Validation =
     [<System.Obsolete("This function will not be supported in future versions.")>]
     let validate (e: 'e) (p: 'a -> bool) (a: 'a) : Validation<'e,'a> = if p a then Success a else Failure e
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     /// validationNel : Result<'a,'e> -> Validation (NonEmptyList<'e>) a
     /// This is 'liftError' specialized to 'NonEmptyList', since
     /// they are a common semigroup to use.
@@ -183,7 +183,7 @@ module Validation =
             Success (f x)
         with e -> Failure e
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     let inline _Success x = (prism Success <| either Ok (Error << Failure)) x
     let inline _Failure x = (prism Failure <| either (Error << Failure) Ok) x    
     
@@ -198,7 +198,7 @@ type Validation<'err,'a> with
     static member inline (<*>)  (f: Validation<_,'T->'U>, x: Validation<_,'T>) : Validation<_,_> = Validation.apply f x
     static member inline Lift2  (f, x: Validation<_,'T>, y: Validation<_,'U>) : Validation<_,'V> = Validation.map2 f x y
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     // as Alternative (inherits from Applicative)
     static member inline get_Empty () = Failure (getEmpty ())
     static member inline (<|>) (x: Validation<_,_>, y: Validation<_,_>) = Validation.appValidation Control.Append.Invoke x y
@@ -214,7 +214,7 @@ type Validation<'err,'a> with
     [<EditorBrowsable(EditorBrowsableState.Never)>]
     static member Bimap (x: Validation<'T,'V>, f: 'T->'U, g: 'V->'W) : Validation<'U,'W> = Validation.bimap f g x
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
 
     // as Traversable
     [<EditorBrowsable(EditorBrowsableState.Never)>]

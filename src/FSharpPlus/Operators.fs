@@ -22,7 +22,7 @@ module Operators =
     /// <category index="0">Common Combinators</category>
     let inline curry f (x: 'T1) (y: 'T2) : 'Result = f (x, y)
     
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     /// <summary>
     /// Takes a function expecting a tuple of any N number of elements and returns a function expecting N curried arguments.
     /// </summary>
@@ -36,7 +36,7 @@ module Operators =
     /// <category index="0">Common Combinators</category>
     let inline uncurry f (x: 'T1, y: 'T2) : 'Result = f x y
     
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     /// <summary>
     /// Takes a function expecting any N number of curried arguments and returns a function expecting a tuple of N elements.
     /// </summary>
@@ -118,7 +118,7 @@ module Operators =
     let inline tuple8 a b c d e f g h = a,b,c,d,e,f,g,h
 
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
 
     // Functor ----------------------------------------------------------------
 
@@ -225,7 +225,7 @@ module Operators =
     // Monad -----------------------------------------------------------
     
     #endif
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
 
     /// <summary>
     /// Takes a function from a plain type to a monadic value and a monadic value, and returns a new monadic value.
@@ -262,11 +262,11 @@ module Operators =
     /// Flattens two layers of monadic information into one.
     /// </summary>
     /// <category index="3">Monad</category>
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     let inline join (x: '``Monad<Monad<'T>>``) : '``Monad<'T>`` = Join.Invoke x
     #endif
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     /// <summary>
     /// Equivalent to map but only for Monads.
     /// </summary>
@@ -393,7 +393,7 @@ module Operators =
     let inline invmap (f: 'T -> 'U) (g: 'U -> 'T) (source: '``InvariantFunctor<'T>``) = Invmap.Invoke f g source : '``InvariantFunctor<'U>``
 
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
 
     // Category ---------------------------------------------------------------
 
@@ -854,7 +854,7 @@ module Operators =
 
     #endif
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     /// <summary>
     /// Extracts a value from a comonadic context.
     /// </summary>
@@ -878,7 +878,7 @@ module Operators =
     #endif
 
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
 
     // Monad Transformers
 
@@ -1275,7 +1275,7 @@ module Operators =
     /// <category index="20">Tuple</category>
     let inline mapItem1 (mapping: 'T -> 'U) (tuple: '``('T * ..)``) = MapItem1.Invoke mapping tuple : '``('U * ..)``
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     /// <summary>
     /// Maps the second value of a tuple.
     /// </summary>
@@ -1302,7 +1302,7 @@ module Operators =
     let inline mapItem5 (mapping: 'T -> 'U) (tuple: '``('A * 'B * 'C * 'D * 'T * ..)``) = MapItem5.Invoke mapping tuple : '``('A * 'B * 'C * 'D * 'U * ..)``
     
     
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
     
     // Converter
 
@@ -1525,7 +1525,7 @@ module Operators =
     /// <category index="23">Additional Functions</category>
     let dispose (resource: System.IDisposable) = match resource with null -> () | x -> x.Dispose ()
 
-    #if !FABLE_COMPILER
+    #if !FABLE_COMPILER2
 
     /// <summary>Additional operators for Arrows related functions which shadows some F# operators for bitwise functions.</summary>
     module Arrows =
