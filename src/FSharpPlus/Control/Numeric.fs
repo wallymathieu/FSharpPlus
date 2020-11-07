@@ -93,12 +93,14 @@ type FromInt32 =
 
     static member inline InvokeOnInstance (x: int32) : 'Num = (^Num : (static member FromInt32 : _ -> ^Num) x)
 
-
+#endif
 
 
 type One =
     inherit Default1
+#if !FABLE_COMPILER
     static member inline One (_: 't, _: Default1) = FromInt32.Invoke 1            : 't
+#endif
     static member inline One (_: 't, _: One     ) = LanguagePrimitives.GenericOne : 't    
     static member inline One (_: ^t when ^t: null and ^t: struct, _: One) = id
 
@@ -168,24 +170,31 @@ type Zero with
 
     static member inline Zero (_: 'T->'Monoid               , _: Zero) = (fun _ -> Zero.Invoke ()) : 'T->'Monoid
     static member inline Zero (_: Async<'a>                 , _: Zero) = let (v: 'a) = Zero.Invoke () in async.Return v
+    #if !FABLE_COMPILER
     static member inline Zero (_: Expr<'a>                  , _: Zero) = let (v: 'a) = Zero.Invoke () in Expr.Cast<'a>(Expr.Value (v))
+    #endif
     static member inline Zero (_: Lazy<'a>                  , _: Zero) = let (v: 'a) = Zero.Invoke () in lazy v
     static member        Zero (_: Dictionary<'a,'b>         , _: Zero) = Dictionary<'a,'b> ()
     static member        Zero (_: ResizeArray<'a>           , _: Zero) = ResizeArray () : ResizeArray<'a>
 
 type Zero with
+    #if !FABLE_COMPILER
     static member inline Zero (_: ^R                             , _: Default6) = FromInt64.Invoke 0L : ^R
-
+    #endif
     static member inline Zero (_: ^R                             , _: Default5) = Implicit.Invoke 0   : ^R
 
     static member        Zero (_: seq<'a>                        , _: Default4) = Seq.empty      : seq<'a>
+    #if !FABLE_COMPILER
     static member        Zero (_: IEnumerator<'a>                , _: Default4) = FSharpPlus.Enumerator.Empty () : IEnumerator<'a>
+    #endif
     static member        Zero (_: IDictionary<'a,'b>             , _: Default4) = Dictionary<'a,'b> () :> IDictionary<'a,'b>
     static member        Zero (_: IReadOnlyDictionary<'a,'b>     , _: Default4) = Dictionary<'a,'b> () :> IReadOnlyDictionary<'a,'b>
 
     static member inline Zero (_: 't                             , _: Default3) = (^t : (static member Empty: ^t) ()) : 't
 
+    #if !FABLE_COMPILER
     static member inline Zero (_: 't                             , _: Default2) = FromInt32.InvokeOnInstance 0        : 't
+    #endif
     static member inline Zero (_: ^t when ^t: null and ^t: struct, _: Default2) = id
 
     static member inline Zero (_: 't                             , _: Default1) = LanguagePrimitives.GenericZero : 't
@@ -225,9 +234,10 @@ type Signum =
         if x = zero then zero
         else x / Abs.Invoke x :'t
     
+    #if !FABLE_COMPILER
     static member inline Signum (_: ^t when ^t: null and ^t: struct, _: Default1) = id
     static member inline Signum (x: 't                             , _: Default1) = FromInt32.Invoke (sign x) : 't
-
+    #endif
     static member inline Invoke (x: 'Num) : 'Num =
         let inline call_2 (a: ^a, b: ^b) = ((^a or ^b) : (static member Signum : _*_ -> _) b, a)
         call_2 (Unchecked.defaultof<Signum>, x)
@@ -276,7 +286,7 @@ type DivRem =
         let inline call (a: 'a, b: 'b, c: 'c) = call_3 (a, b, c)
         call (Unchecked.defaultof<DivRem>, D, d)
 
-
+#if !FABLE_COMPILER
 
 // Integral class ---------------------------------------------------------
 
@@ -577,4 +587,4 @@ type MaxValue =
     static member inline MaxValue (_: 'a*'b*'c*'d*'e*'f   , _: MaxValue) = (MaxValue.Invoke (), MaxValue.Invoke (), MaxValue.Invoke (), MaxValue.Invoke (), MaxValue.Invoke (), MaxValue.Invoke ())
     static member inline MaxValue (_: 'a*'b*'c*'d*'e*'f*'g, _: MaxValue) = (MaxValue.Invoke (), MaxValue.Invoke (), MaxValue.Invoke (), MaxValue.Invoke (), MaxValue.Invoke (), MaxValue.Invoke (), MaxValue.Invoke ())
 
-    #endif
+#endif

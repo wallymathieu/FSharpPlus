@@ -5,13 +5,13 @@ namespace FSharpPlus
 module IReadOnlyList =
     open System.Collections.Generic
 
-    #if !FABLE_COMPILER2
+    #if !FABLE_COMPILER
     
     let ofArray (source: 'T array) = IList.toIReadOnlyList source
     #endif
     let toArray (source: IReadOnlyList<'T>) = Array.ofSeq source
 
-    #if !FABLE_COMPILER2
+    #if !FABLE_COMPILER
     
     /// Returns a new IReadOnlyList from a given IReadOnlyList, with replaced binding for index.
     let trySetItem i value (source: IReadOnlyList<'T>) =

@@ -1,6 +1,6 @@
 namespace FSharpPlus
 
-#if !FABLE_COMPILER2
+#if !FABLE_COMPILER
 
 /// Additional operations IList<'T>
 [<RequireQualifiedAccess>]

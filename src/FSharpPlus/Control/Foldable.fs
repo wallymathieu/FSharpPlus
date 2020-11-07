@@ -4,8 +4,6 @@
 // Warn FS0077 -> Member constraints with the name 'get_Item' are given special status by the F# compiler as certain .NET types are implicitly augmented with this member. This may result in runtime failures if you attempt to invoke the member constraint from your own code.
 // Those .NET types are string and array. String is explicitely handled here and array through the seq overload.
 
-#if !FABLE_COMPILER2
-
 open FSharpPlus.Control
 
 
@@ -116,16 +114,18 @@ type FoldBack =
         let inline call (a: 'a, b: 'b, f, z) = call_2 (a, b, f, z)
         call (Unchecked.defaultof<FoldBack>, foldable, folder, state)
 
-
 type FoldMap =
     inherit Default1
-
+#if !FABLE_COMPILER // use of Zero
     static member inline FromFoldFoldBack f x = FoldBack.Invoke (Plus.Invoke << f) (Zero.Invoke ()) x
+#endif
 
     static member inline FoldMap (x: option<_>, f, [<Optional>]_impl: FoldMap ) = match x with Some x -> f x | _ -> Zero.Invoke ()
+#if !FABLE_COMPILER // use of Zero
     static member inline FoldMap (x: list<_>  , f, [<Optional>]_impl: FoldMap ) = List.fold  (fun x y -> Plus.Invoke x (f y)) (Zero.Invoke ()) x
     static member inline FoldMap (x: Set<_>   , f, [<Optional>]_impl: FoldMap ) = Seq.fold   (fun x y -> Plus.Invoke x (f y)) (Zero.Invoke ()) x
     static member inline FoldMap (x: _ []     , f, [<Optional>]_impl: FoldMap ) = Array.fold (fun x y -> Plus.Invoke x (f y)) (Zero.Invoke ()) x
+#endif
 
     static member inline Invoke (f: 'T->'Monoid) (x: '``Foldable'<T>``) : 'Monoid =
         let inline call_2 (a: ^a, b: ^b, f) = ((^a or ^b) : (static member FoldMap : _*_*_ -> _) b, f, a)
@@ -133,10 +133,11 @@ type FoldMap =
         call (Unchecked.defaultof<FoldMap>, x, f)
 
 type FoldMap with
+#if !FABLE_COMPILER // use of Zero
     static member inline FoldMap (x: seq<_>          , f, [<Optional>]_impl: Default2) = Seq.fold   (fun x y -> Plus.Invoke x (f y)) (Zero.Invoke ()) x
+#endif
     static member inline FoldMap (x                  , f, [<Optional>]_impl: Default1) = (^F : (static member FoldMap : ^F -> _ -> _) x, f)
     static member inline FoldMap (_: ^t when  ^t: null and ^t: struct, _, _: Default1) = ()
-
 type FoldBack with
     static member inline FromFoldMap f z x = let (f: _Endo<'t>) = FoldMap.Invoke (_Endo << f) x in f.Value z
 
@@ -398,5 +399,3 @@ type Length =
 
 
 type Reduce = static member inline Invoke (f: 'T->'T->'T) (x: '``Reducible<'T>``) : 'T = (^``Reducible<'T>`` : (static member Reduce : _*_ -> _) x, f)
-
-#endif
