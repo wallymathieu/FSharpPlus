@@ -216,11 +216,12 @@ type Abs =
 type Abs' =
     inherit Abs
     static member        Abs (x: byte      , _: Abs') = x
+    #if !FABLE_COMPILER
     static member        Abs (x: uint16    , _: Abs') = x
     static member        Abs (x: uint32    , _: Abs') = x
     static member        Abs (x: uint64    , _: Abs') = x
     static member        Abs (x: unativeint, _: Abs') = x
-
+    #endif
     static member inline Invoke (x: 'Num) : 'Num =
         let inline call_2 (a: ^a, b: ^b) = ((^a or ^b ) : (static member Abs : ^b*_ -> ^t) b, a)
         call_2 (Unchecked.defaultof<Abs'>, x)
@@ -245,11 +246,12 @@ type Signum =
 type Signum' =
     inherit Signum
     static member        Signum (x: byte      , _: Signum') = if x = 0uy then 0uy else 1uy
+    #if !FABLE_COMPILER
     static member        Signum (x: uint16    , _: Signum') = if x = 0us then 0us else 1us
     static member        Signum (x: uint32    , _: Signum') = if x = 0u  then 0u  else 1u
     static member        Signum (x: uint64    , _: Signum') = if x = 0UL then 0UL else 1UL
     static member        Signum (x: unativeint, _: Signum') = if x = 0un then 0un else 1un
-
+    #endif
     static member inline Invoke (x: 'Num) : 'Num =
         let inline call_2 (a: ^a, b: ^b) = ((^a or ^b) : (static member Signum : _*_ -> _) b, a)
         call_2 (Unchecked.defaultof<Signum'>, x)
@@ -264,10 +266,12 @@ type TryNegate =
 
 type TryNegate' =
     static member        TryNegate (x: byte      ) = if x = 0uy then Ok x else Error Errors.exnNoSubtraction
+    #if !FABLE_COMPILER
     static member        TryNegate (x: uint16    ) = if x = 0us then Ok x else Error Errors.exnNoSubtraction
     static member        TryNegate (x: uint32    ) = if x = 0u  then Ok x else Error Errors.exnNoSubtraction
     static member        TryNegate (x: uint64    ) = if x = 0UL then Ok x else Error Errors.exnNoSubtraction
     static member        TryNegate (x: unativeint) = if x = 0un then Ok x else Error Errors.exnNoSubtraction
+    #endif
     static member inline Invoke (x: 'Num) : Result<'Num,exn> =
         let inline call_2 (_: ^a, b: ^b) = ((^a or ^b) : (static member TryNegate : _ -> _) b)
         call_2 (Unchecked.defaultof<TryNegate'>, x)

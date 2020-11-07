@@ -4,8 +4,6 @@
 // Warn FS0077 -> Member constraints with the name 'get_Item' are given special status by the F# compiler as certain .NET types are implicitly augmented with this member. This may result in runtime failures if you attempt to invoke the member constraint from your own code.
 // Those .NET types are string and array but they are explicitely handled here.
 
-#if !FABLE_COMPILER2
-
 open System
 open System.Runtime.InteropServices
 open System.Text
@@ -142,8 +140,6 @@ type TraverseIndexed =
         let inline call (a: 'a, b: 'b, f) = call_3 (a, b, Unchecked.defaultof<'r>, f) : 'r
         call (Unchecked.defaultof<TraverseIndexed>, t, f)
 
-
-
 type FindIndex =
     inherit Default1
     static member        FindIndex (x: string           , p            , [<Optional>]_impl: FindIndex) = String.findIndex p x
@@ -223,4 +219,3 @@ type TryFindSliceIndex =
         let inline call (a: 'a, b: 'b, n) = call_2 (a, b, n)
         call (Unchecked.defaultof<TryFindSliceIndex>, source, slice)
 
-#endif

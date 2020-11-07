@@ -289,8 +289,8 @@ type Contramap =
     static member inline InvokeOnInstance (ab: 'A->'B) (source: '``Profunctor<'B,'C>``) : '``Profunctor<'A,'C>`` =
         (^``Profunctor<'B,'C>`` : (static member Contramap : _*_ -> _) source, ab)
 
-    static member Contramap (k: 'T -> 'C            , f: 'U -> 'T, [<Optional>]_mthd: Contramap) = f >> k : 'U->'C
     #if !FABLE_COMPILER
+    static member Contramap (k: 'T -> 'C            , f: 'U -> 'T, [<Optional>]_mthd: Contramap) = f >> k : 'U->'C
     static member Contramap (k: Func<'T, 'C>        , f: 'U -> 'T, [<Optional>]_mthd: Contramap) = Func<'U, 'C> (f >> k.Invoke)
     static member Contramap (p: Predicate<_>        , f: 'U -> 'T, [<Optional>]_mthd: Contramap) = Predicate (fun x -> p.Invoke (f x))    
     static member Contramap (c: IComparer<_>        , f: 'U -> 'T, [<Optional>]_mthd: Contramap) = { new IComparer<'U> with member __.Compare (x, y) = c.Compare (f x, f y) }

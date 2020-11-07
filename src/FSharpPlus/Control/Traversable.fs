@@ -1,6 +1,5 @@
 ﻿namespace FSharpPlus.Control
 
-#if !FABLE_COMPILER2
 
 open System.Runtime.InteropServices
 open System.ComponentModel
@@ -161,5 +160,3 @@ type Sequence with
         let inline call_3 (a: ^a, b: ^b, c: ^c) = ((^a or ^b or ^c) : (static member Sequence : _*_*_ -> _) b, c, a)
         let inline call (a: 'a, b: 'b) = call_3 (a, b, Unchecked.defaultof<'R>) : 'R
         call (Unchecked.defaultof<Sequence>, t)
-
-#endif

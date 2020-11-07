@@ -1,7 +1,5 @@
 ﻿namespace FSharpPlus.Data
 
-#if !FABLE_COMPILER2
-
 open FSharpPlus
 open FSharpPlus.Internals.Prelude
 
@@ -14,8 +12,6 @@ type Dual<'t> = Dual of 't with
 /// Basic operations on Dual
 [<RequireQualifiedAccess>]
 module Dual = let run (Dual x) = x : 'T
-
-#endif
 
 /// The monoid of endomorphisms under composition.
 [<Struct; NoEquality; NoComparison>]
@@ -40,8 +36,6 @@ type Any = Any of bool with
     static member Zero = Any false
     static member (+) (Any x, Any y) = Any (x || y)
 
-
-#if !FABLE_COMPILER2
 
 /// <summary> The Const functor, defined as Const&lt;&#39;T, &#39;U&gt; where &#39;U is a phantom type. Useful for: Lens getters Its applicative instance plays a fundamental role in Lens.
 /// <para/>   Useful for: Lens getters.
@@ -87,7 +81,6 @@ type Const<'t,'u> = Const of 't with
 module Const =
     let run (Const t) = t
 
-#endif
 
 /// Option<'T> monoid returning the leftmost non-None value.
 [<Struct>]
@@ -103,8 +96,6 @@ type Last<'t> = Last of Option<'t> with
     static member (+) (x, y) = match x, y with l, Last None -> l | _, r -> r  : Last<'t>
     static member run (Last a) = a                                            : 't option
 
-
-#if !FABLE_COMPILER2
 
 /// Numeric wrapper for multiplication monoid (*, 1)
 [<Struct>]
@@ -134,5 +125,3 @@ type Compose<'``functorF<'functorG<'t>>``> = Compose of '``functorF<'functorG<'t
 [<RequireQualifiedAccess>]
 module Compose =
     let run (Compose t) = t
-
-#endif
