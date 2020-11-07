@@ -23,7 +23,6 @@ type Iterate =
     static member Iterate (x: list<'T>   , action) = List.iter action x
     static member Iterate ((_: 'W, a: 'T), action) = action a :unit
     static member Iterate (x: 'T []      , action) = Array.iter   action x
-    #if !FABLE_COMPILER2
     static member Iterate (x: 'T [,]     , action) = Array2D.iter action x
     static member Iterate (x: 'T [,,]    , action) = Array3D.iter action x
     static member Iterate (x: 'T [,,,]   , action) =
@@ -32,7 +31,6 @@ type Iterate =
                             for k = 0 to Array4D.length3 x - 1 do
                                 for l = 0 to Array4D.length4 x - 1 do
                                     action x.[i,j,k,l]
-    #endif
     static member Iterate (x: Async<'T>            , action) = action (Async.RunSynchronously x) : unit
     static member Iterate (x: Result<'T, 'E>       , action) = match x with Ok x         -> action x | _ -> ()
     static member Iterate (x: Choice<'T, 'E>       , action) = match x with Choice1Of2 x -> action x | _ -> ()
