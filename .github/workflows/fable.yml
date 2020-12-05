@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -19,8 +19,8 @@ jobs:
         dotnet-version: 3.1.101
     - name: Restore
       run: git submodule update --init --recursive
-    - name: Build with dotnet
-      run: dotnet build build.proj --configuration Release
+    - name: Restore tools
+      run: dotnet tool restore
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
@@ -28,9 +28,6 @@ jobs:
     - name: Install npm dependencies
       working-directory: tests/FSharpPlusFable.Tests
       run: npm install
-    - name: Build F#+ using Fable
-      working-directory: tests/FSharpPlusFable.Tests
-      run: npm run buildFSharpPlus
     - name: Run Fable tests
       working-directory: tests/FSharpPlusFable.Tests
-      run: npm run test
+      run: dotnet fable . --outDir bin --runScript ./bin 

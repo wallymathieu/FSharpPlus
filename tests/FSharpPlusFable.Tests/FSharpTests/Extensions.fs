@@ -51,7 +51,7 @@ let ExtensionsTest =
                    let r2 = m1 |> Map.unionWith konst m2
                    equalMap r1 r2)
 
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER || FABLE_COMPILER_3
       testCase "Bind" 
         (fun () ->  let x = [1;2] >>= fun x -> [string x ; string (x + 1000) ]
                     let y = { Head = 1; Tail = [2] } >>= fun x -> { Head = string x ; Tail = [string (x + 1000)] }
@@ -88,19 +88,46 @@ let ExtensionsTest =
                     let tenEncoded = StringCodec.encode intCodec 10
                     equal oneParsed (Result<int, string>.Ok 1)
                     equal tenEncoded "10" )
+      #if FABLE_COMPILER_3
 
-#if !FABLE_COMPILER
       testCase "Tuple"
         (fun () ->
                    equal (mapItem2 string (1,2,3)) (1,"2",3)
                    equal (item3 (1,2,3)) 3
                    )
-#endif
-
+      #endif
       testCase "eq on DList 1" (fun () -> equal true  (dlistA = dlistB))
       testCase "eq on DList 2" (fun () -> equal false (dlistA = dlistC))
       testCase "eq on DList 3" (fun () -> equal true  ((dlistA :> obj) = (dlistB :> obj)))
       testCase "eq on DList 4" (fun () -> equal false ((dlistA :> obj) = (dlistC :> obj)))
       testCase "eq on DList 5" (fun () -> equal true  ((dlistA :> obj) = (dlistD :> obj))) // this behavior differs from (non-fable) F# but same way it would be with normal lists.
+      #if FABLE_COMPILER_3
+
+      testCase "semigroups 1"
+        (fun () ->
+            let lzy1 = plus (lazy [1]) (lazy [2;3])
+            let asy1 = plus (async.Return [1]) (async.Return [2;3])
+            
+            let mapA =
+                Map.empty
+                |> Map.add 1 (lazy "Hey")
+                |> Map.add 2 (lazy "Hello")
+
+            let mapB =
+                Map.empty
+                |> Map.add 3 (lazy " You")
+                |> Map.add 2 (lazy " World")
+
+            let mapAB = plus mapA mapB
+            
+            let tup3 = ([1;2], [|1;2|], Some 1) ++ ([3;4], [|3;4|], Some 2)
+            
+            equal [1;2;3] lzy1.Value
+            // equal [1;2;3] (Async.RunSynchronously asy1)  <-- weird runSynchronously error
+            // equal [(1, "Hey"); (2, "Hello World"); (3, " You")] (Map.toList mapAB |> List.map (fun (x, y) -> (x, y.Value))) <-- gets " World" instead of "Hellp World" ???
+            equal ([1; 2; 3; 4], [|1; 2; 3; 4|], Some 3) tup3
+            
+            )
+        #endif
 
 ]
