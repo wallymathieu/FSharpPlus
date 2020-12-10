@@ -11,6 +11,7 @@ open FSharpPlus
 open FSharpPlus.Data
 
 
+[<Sealed>]
 type Apply =
     inherit Default1
  
@@ -64,6 +65,7 @@ type Apply =
 
 #if !FABLE_COMPILER
 
+[<Sealed>]
 type Lift2 =
     inherit Default1
 
@@ -101,6 +103,7 @@ type Lift2 with
     
 
 
+[<Sealed>]
 type IsLeftZero =
     inherit Default1
 

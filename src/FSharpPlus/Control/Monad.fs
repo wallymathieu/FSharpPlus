@@ -14,7 +14,7 @@ open FSharpPlus.Internals.Prelude
 
 
 // Monad class ------------------------------------------------------------
-
+[<Sealed>]
 type Bind =
     static member        (>>=) (source: Lazy<'T>   , f: 'T -> Lazy<'U>    ) = lazy (f source.Value).Value             : Lazy<'U>
     static member        (>>=) (source: seq<'T>    , f: 'T -> seq<'U>     ) = Seq.bind f source                       : seq<'U>
@@ -62,6 +62,7 @@ type Bind =
 
 #if !FABLE_COMPILER
 
+[<Sealed>]
 type Join =
     inherit Default1
     static member inline Join (x: '``Monad<'Monad<'T>>``, [<Optional>]_output: '``Monad<'T>``  , [<Optional>]_mthd: Default2) = Bind.InvokeOnInstance x id : '``Monad<'T>``
@@ -104,6 +105,7 @@ type Join =
 
 #endif
 
+[<Sealed>]
 type Return =
     inherit Default1
     static member inline InvokeOnInstance (x: 'T) = (^``Applicative<'T>`` : (static member Return : ^T -> ^``Applicative<'T>``) x)
@@ -140,6 +142,7 @@ type Return =
     static member        Return (_: 'a Set2        , _: Return  ) = fun (_: 'a  ) -> Set2() : 'a Set2
 
 
+[<Sealed>]
 type Delay =
     inherit Default1
     
@@ -176,6 +179,7 @@ module TryBlock =
 
 open TryBlock
 
+[<Sealed>]
 type TryWith =
     inherit Default1
 
@@ -208,6 +212,7 @@ type TryWith =
         call (Unchecked.defaultof<TryWith>, (fun () -> source), Unchecked.defaultof<'``Monad<'T>``>, f)
 
 
+[<Sealed>]
 type TryFinally =
     inherit Default1
 
@@ -247,6 +252,7 @@ type TryFinally with
     static member inline TryFinally (( _         : unit -> ^t when ^t:null and ^t:struct                  , _           : unit -> unit), _: Default1, _            , _) = ()
 
 
+[<Sealed>]
 type Using =
     inherit Default1
     

@@ -8,6 +8,7 @@ open FSharpPlus.Internals
 
 // ArrowApply class -------------------------------------------------------
 
+[<Sealed>]
 type App =
     inherit Default1
     static member App ([<Optional>]_output:  ('T -> 'U)     * 'T -> 'U, [<Optional>]_mthd: App) =            (fun (f           , x) -> f x)        : ('T -> 'U)     * 'T -> 'U

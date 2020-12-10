@@ -11,6 +11,7 @@ open FSharpPlus.Internals
 
 // ArrowChoice class ------------------------------------------------------
 
+[<Sealed>]
 type Fanin =
     inherit Default1
     static member ``|||`` (f:  'T -> 'V  , g: 'U -> 'V   , [<Optional>]_output: Choice<'U,'T> -> 'V   , [<Optional>]_mthd: Fanin) = Choice.either g f                                        : Choice<'U,'T> -> 'V
@@ -27,6 +28,7 @@ type Fanin with
     static member inline ``|||`` (_: '``ArrowChoice<'T,'V>``, _: '``ArrowChoice<'U,'V>``, _output: ^t when ^t : null and ^t : struct , _mthd: Default1) = id
 
 
+[<Sealed>]
 type AcMerge =
     inherit Default1
     static member ``+++`` (f: 'T1 -> 'U1   , g: 'T2 -> 'U2   , [<Optional>]_output:  Choice<'T2,'T1> ->  Choice<'U2,'U1> , [<Optional>]_mthd: AcMerge) = Fanin.Invoke (Choice2Of2 << f) (Choice1Of2 << g)                                       : Choice<'T2,'T1> ->  Choice<'U2,'U1>
@@ -43,6 +45,7 @@ type AcMerge with
     static member inline ``+++`` (_: '``ArrowChoice<'T1,'U1>``, _: '``ArrowChoice<'T2,'U2>``, _output: ^t when ^t : null and ^t : struct                , _mthd: Default1) = id
 
 
+[<Sealed>]
 type AcLeft =
     inherit Default1
     static member inline Left (f:  'T -> 'U   , [<Optional>]_output:   Choice<'V,'T> -> Choice<'V,'U> , [<Optional>]_mthd: AcLeft) = AcMerge.Invoke f id : Choice<'V,'T> -> Choice<'V,'U>
@@ -59,6 +62,7 @@ type AcLeft with
     static member inline Left (_: '``ArrowChoice<'T,'U>``, _output: ^t when ^t : null and ^t : struct            , _mthd: Default1) = id
 
 
+[<Sealed>]
 type AcRight =
     inherit Default1
     static member inline Right (f:  'T -> 'U   , [<Optional>]_output:   Choice<'T,'V> -> Choice<'U,'V> , [<Optional>]_mthd: AcRight) = AcMerge.Invoke id f : Choice<'T,'V> -> Choice<'U,'V>

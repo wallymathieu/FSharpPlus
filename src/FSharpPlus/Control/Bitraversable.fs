@@ -6,6 +6,7 @@
 open FSharpPlus.Internals
 
 
+[<Sealed>]
 type Bitraverse =
     inherit Default1
 
@@ -23,6 +24,7 @@ type Bitraverse =
 
 
 
+[<Sealed>]
 type Bisequence =
     inherit Default1
 

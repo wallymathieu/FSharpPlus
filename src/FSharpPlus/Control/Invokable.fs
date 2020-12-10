@@ -8,6 +8,7 @@ open FSharpPlus.Internals
 
 // Invokable class --------------------------------------------------------
 
+[<Sealed>]
 type Invoke =
     inherit Default1
 

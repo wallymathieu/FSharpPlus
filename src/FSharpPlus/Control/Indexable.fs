@@ -15,6 +15,7 @@ open FSharpPlus.Internals
 open FSharpPlus.Internals.MonadOps
 
 
+[<Sealed>]
 type Item =
     inherit Default1
     
@@ -34,6 +35,7 @@ type Item =
         call (Unchecked.defaultof<Item>, source, n)
 
 
+[<Sealed>]
 type TryItem =
     inherit Default1
     static member inline TryItem (x: '``Indexable<'T>``, k, [<Optional>]_impl: Default2) =
@@ -62,6 +64,7 @@ type TryItem =
 
 
 
+[<Sealed>]
 type MapIndexed =
     inherit Default1
     static member MapIndexed (x: list<'T>   , f            , [<Optional>]_impl: MapIndexed) = List.mapi  f x
@@ -80,6 +83,7 @@ type MapIndexed =
     static member inline MapIndexed (x: ^``I<'T>``, f: 'K->'T->'U , _impl: Default1) : '``I<'U>`` = MapIndexed.InvokeOnInstance f x
     static member inline MapIndexed (_: ^t when ^t: null and ^t: struct, _: 'K->'T->'U, _mthd: Default1) = ()
 
+[<Sealed>]
 type ChooseIndexed =
     inherit Default1
     static member ChooseIndexed (x: list<'T>          ,  f, [<Optional>]_impl: ChooseIndexed) = List.choosei f x
@@ -98,6 +102,7 @@ type ChooseIndexed =
     static member inline ChooseIndexed (x: ^``I<'T>``, f: 'K->'T->'U option, _impl: Default1) : '``I<'U>`` = ChooseIndexed.InvokeOnInstance f x
     static member inline ChooseIndexed (_: ^t when ^t: null and ^t: struct, _: 'K->'T->'U option, _mthd: Default1) = ()
 
+[<Sealed>]
 type IterateIndexed =
     inherit Default1
     static member IterateIndexed (x: list<'T>  , f             , [<Optional>]_impl: IterateIndexed) = List.iteri  f x
@@ -116,6 +121,7 @@ type IterateIndexed =
 
 
 
+[<Sealed>]
 type FoldIndexed =
     inherit Default1
     static member FoldIndexed (x: list<_>   , f, z, _impl: FoldIndexed) = x |> List.fold  (fun (p, i) t -> (f p i t, i + 1)) (z, 0) |> fst
@@ -133,6 +139,7 @@ type FoldIndexed =
     static member inline FoldIndexed (_: ^t when ^t: null and ^t: struct, _: 'State->'Key->'T->'State, _:'S, _mthd: Default1) = ()
 
 
+[<Sealed>]
 type TraverseIndexed =
     inherit Default1
     static member inline TraverseIndexed (t: list<_>    , f , [<Optional>]_output: 'R, [<Optional>]_impl: TraverseIndexed) : 'R = Traverse.Invoke (fun (i, x) -> f i x) (List.indexed t)
@@ -157,6 +164,7 @@ type TraverseIndexed =
 
 
 
+[<Sealed>]
 type FindIndex =
     inherit Default1
     static member        FindIndex (x: string           , p            , [<Optional>]_impl: FindIndex) = String.findIndex p x
@@ -176,6 +184,7 @@ type FindIndex =
         let inline call (a: 'a, b: 'b, n) = call_2 (a, b, n)
         call (Unchecked.defaultof<FindIndex>, source, p)
 
+[<Sealed>]
 type TryFindIndex =
     inherit Default1
     static member        TryFindIndex (x: string           , p            , [<Optional>]_impl: TryFindIndex) = String.tryFindIndex p x
@@ -196,6 +205,7 @@ type TryFindIndex =
         call (Unchecked.defaultof<TryFindIndex>, source, p)
 
 
+[<Sealed>]
 type FindSliceIndex =
     inherit Default1
     static member        FindSliceIndex (x: string           , e                   , [<Optional>]_impl: FindSliceIndex) = String.findSliceIndex e x    
@@ -216,6 +226,7 @@ type FindSliceIndex =
         let inline call (a: 'a, b: 'b, n) = call_2 (a, b, n)
         call (Unchecked.defaultof<FindSliceIndex>, source, slice)
 
+[<Sealed>]
 type TryFindSliceIndex =
     inherit Default1
     static member        TryFindSliceIndex (x: string           , e                   , [<Optional>]_impl: TryFindSliceIndex) = String.tryFindSliceIndex e x

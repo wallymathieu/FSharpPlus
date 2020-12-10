@@ -10,6 +10,7 @@ type Item4 = static member inline Invoke value = (^t : (member Item4 : _) value)
 type Item5 = static member inline Invoke value = (^t : (member Item5 : _) value)
 
 
+[<Sealed>]
 type MapItem1 =
 
     #if !FABLE_COMPILER
@@ -41,6 +42,7 @@ type MapItem1 =
         let inline call   (a: 'a, b: 'b) = call_2 (a, b)
         call (Unchecked.defaultof<MapItem1>, value)
 
+[<Sealed>]
 type MapItem2 =
 
     #if !FABLE_COMPILER
@@ -72,6 +74,7 @@ type MapItem2 =
         let inline call   (a: 'a, b: 'b) = call_2 (a, b)
         call (Unchecked.defaultof<MapItem2>, value)
 
+[<Sealed>]
 type MapItem3 =
     
     #if !FABLE_COMPILER
@@ -102,6 +105,7 @@ type MapItem3 =
         let inline call   (a: 'a, b: 'b) = call_2 (a, b)
         call (Unchecked.defaultof<MapItem3>, value)
 
+[<Sealed>]
 type MapItem4 =
 
     #if !FABLE_COMPILER
@@ -131,6 +135,7 @@ type MapItem4 =
         let inline call   (a: 'a, b: 'b) = call_2 (a, b)
         call (Unchecked.defaultof<MapItem4>, value)
 
+[<Sealed>]
 type MapItem5 =
 
     #if !FABLE_COMPILER
@@ -164,6 +169,7 @@ type MapItem5 =
 
 open FSharpPlus.Internals.Prelude
 
+[<Sealed>]
 type Curry =
     static member inline Invoke f =
         let inline call_2 (a: ^a, b: ^b) = ((^a or ^b) : (static member Curry: _*_ -> _) b, a)
@@ -182,6 +188,7 @@ type Curry =
     static member Curry ((_, _, _, _, _, _)   , _: Curry) = fun f t1 t2 t3 t4 t5 t6    -> f (t1, t2, t3, t4, t5, t6)
     static member Curry ((_, _, _, _, _, _, _), _: Curry) = fun f t1 t2 t3 t4 t5 t6 t7 -> f (t1, t2, t3, t4, t5, t6, t7)
 
+[<Sealed>]
 type Uncurry =
     static member inline Invoke f t =
         let inline call_2 (a: ^a, b: ^b) = ((^a or ^b) : (static member Uncurry: _*_ -> _) b, a) f
@@ -208,6 +215,7 @@ type Uncurry =
 
 open FSharpPlus.TypeLevel
 
+[<Sealed>]
 type CountTuple =
   static member inline Invoke xs : 'n =
     let inline call_2 (a: ^a, b: ^b) = ((^a or ^b) : (static member CountTuple: _*_ -> _) b, a)
@@ -227,6 +235,7 @@ type CountTuple =
   static member inline CountTuple ((_, _, _, _, _, _), _: CountTuple) = S Z |> S |> S |> S |> S |> S
   static member inline CountTuple ((_, _, _, _, _, _, _), _: CountTuple) = S Z |> S |> S |> S |> S |> S |> S
   
+[<Sealed>]
 type TupleToList =
   static member inline Invoke xs : 'x list =
     let inline call_2 (a: ^a, b: ^b) = ((^a or ^b) : (static member TupleToList: _*_ -> _) b, a)
@@ -245,6 +254,7 @@ type TupleToList =
   static member inline TupleToList ((x1,x2,x3,x4,x5,x6), _: TupleToList) = [x1;x2;x3;x4;x5;x6]
   static member inline TupleToList ((x1,x2,x3,x4,x5,x6,x7), _: TupleToList) = [x1;x2;x3;x4;x5;x6;x7]
 
+[<Sealed>]
 type AssertTupleType =
   static member inline Invoke (xs, ty, n) : unit =
     let inline call_2 (_a: ^a, b: ^b) = ((^a or ^b) : (static member AssertTupleType: _*_*_ -> _) b,ty,n)

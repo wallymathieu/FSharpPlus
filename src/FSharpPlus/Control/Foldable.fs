@@ -40,6 +40,7 @@ open FSharpPlus.Internals.Prelude
 
 
 
+[<Sealed>]
 type ToSeq =
     inherit Default1
     static member ToSeq (x: seq<'T>   , [<Optional>]_impl: ToSeq) = x
@@ -61,6 +62,7 @@ type ToSeq with
     static member inline ToSeq (_: 'T when 'T: null and 'T: struct      ,                 _: Default1) = ()
 
 
+[<Sealed>]
 type ToList =
     inherit Default1    
     static member inline ToList (x                , [<Optional>]_impl: Default3) = x |> ToSeq.Invoke |> Seq.toList
@@ -79,6 +81,7 @@ type ToList =
         call (Unchecked.defaultof<ToList>, value)
 
 
+[<Sealed>]
 type ToArray =
     inherit Default1
     static member inline ToArray (x                , [<Optional>]_impl: Default3) = x |> ToSeq.Invoke |> Seq.toArray
@@ -97,6 +100,7 @@ type ToArray =
         call (Unchecked.defaultof<ToArray>, value)
 
 
+[<Sealed>]
 type FoldBack =
     inherit Default1
     static member inline FoldBack (x: 'F           , f: 'a->'b->'b, z: 'b , [<Optional>]_impl: Default2) = List.foldBack  f (ToList.Invoke x) z
@@ -117,6 +121,7 @@ type FoldBack =
         call (Unchecked.defaultof<FoldBack>, foldable, folder, state)
 
 
+[<Sealed>]
 type FoldMap =
     inherit Default1
 
@@ -141,6 +146,7 @@ type FoldBack with
     static member inline FromFoldMap f z x = let (f: _Endo<'t>) = FoldMap.Invoke (_Endo << f) x in f.Value z
 
 
+[<Sealed>]
 type Fold =
     inherit Default1
 
@@ -161,6 +167,7 @@ type Fold =
         call (Unchecked.defaultof<Fold>, foldable, folder, state)
     
  
+[<Sealed>]
 type Exists =
     inherit Default1
     static member inline Exists (x                   , f          , [<Optional>]_impl: Default2) = Seq.exists f (ToSeq.Invoke x) : bool
@@ -179,6 +186,7 @@ type Exists =
         call (Unchecked.defaultof<Exists>, source, predicate) : bool
  
 
+[<Sealed>]
 type ForAll =
     inherit Default1
     static member inline ForAll (x                   , f          , [<Optional>]_impl: Default2) = Seq.forall    f (ToSeq.Invoke x) : bool
@@ -197,6 +205,7 @@ type ForAll =
         call (Unchecked.defaultof<ForAll>, source, predicate) : bool
 
 
+[<Sealed>]
 type Find =
     inherit Default1
     static member inline Find (x                   , f          , [<Optional>]_impl: Default2) = Seq.find   f (ToSeq.Invoke x) : 'T
@@ -212,6 +221,7 @@ type Find =
         call (Unchecked.defaultof<Find>, source, predicate) : 'T
 
 
+[<Sealed>]
 type TryFind =
     inherit Default1
     static member inline TryFind (x          , f, [<Optional>]_impl: Default1) = Seq.tryFind   f (ToSeq.Invoke x) : 'T option
@@ -226,6 +236,7 @@ type TryFind =
         call (Unchecked.defaultof<TryFind>, source, predicate) : 'T option
 
 
+[<Sealed>]
 type Head =
     inherit Default1
     static member inline Head (x: '``Foldable<'T>``, [<Optional>]_impl: Default2) = Seq.head (ToSeq.Invoke x) : 'T
@@ -243,6 +254,7 @@ type Head =
         let inline call (a: 'a, b: 'b) = call_2 (a, b)
         call (Unchecked.defaultof<Head>, source) : 'T
 
+[<Sealed>]
 type TryHead =
     inherit Default1
     static member inline TryHead (x               , [<Optional>]_impl: Default1) = Seq.tryHead <| ToSeq.Invoke x
@@ -259,6 +271,7 @@ type TryHead =
         let inline call (a: 'a, b: 'b) = call_2 (a, b)
         call (Unchecked.defaultof<TryHead>, source) : 'T option
 
+[<Sealed>]
 type TryLast =
     inherit Default1
     static member inline TryLast (x                 , [<Optional>]_impl: Default1) = Seq.tryLast <| ToSeq.Invoke x
@@ -275,6 +288,7 @@ type TryLast =
         let inline call (a: 'a, b: 'b) = call_2 (a, b)
         call (Unchecked.defaultof<TryLast>, source) : 'T option
 
+[<Sealed>]
 type Pick =
     inherit Default1
     static member inline Pick (x: '``Foldable<'T>``, f: 'T->'U option, [<Optional>]_impl: Default2) = Seq.pick f (ToSeq.Invoke x) : 'U
@@ -290,6 +304,7 @@ type Pick =
         call (Unchecked.defaultof<Pick>, source, chooser) : 'U
 
 
+[<Sealed>]
 type TryPick =
     inherit Default1
     static member inline TryPick (x          , f: _->'U option, [<Optional>]_impl: Default1) = Seq.tryPick   f (ToSeq.Invoke x) : 'U option
@@ -304,6 +319,7 @@ type TryPick =
         call (Unchecked.defaultof<TryPick>, source, chooser) : 'U option
  
 
+[<Sealed>]
 type Nth =
     inherit Default1
     static member inline Nth (x: '``Foldable<'T>``, n, [<Optional>]_impl: Default3) = x |> ToSeq.Invoke |> Seq.skip n |> Seq.head : 'T
@@ -322,6 +338,7 @@ type Nth =
         call (Unchecked.defaultof<Nth>, source, n)
 
 
+[<Sealed>]
 type Max =
     inherit Default1
     static member inline Max (x: '``Foldable<'T>``, [<Optional>]_impl: Default2) = x |> ToSeq.Invoke |> Seq.max : 'T when 'T : comparison
@@ -337,6 +354,7 @@ type Max =
         call (Unchecked.defaultof<Max>, source) : 'T when 'T : comparison
 
 
+[<Sealed>]
 type MaxBy =
     inherit Default1
     static member inline MaxBy (x: '``Foldable<'T>``, f: 'T->'U when 'U : comparison, [<Optional>]_impl: Default2) = x |> ToSeq.Invoke |> Seq.maxBy f : 'T
@@ -352,6 +370,7 @@ type MaxBy =
         call (Unchecked.defaultof<MaxBy>, source, projection) : 'T
 
 
+[<Sealed>]
 type Min =
     inherit Default1
     static member inline Min (x: '``Foldable<'T>``, [<Optional>]_impl: Default2) = x |> ToSeq.Invoke |> Seq.min : 'T when 'T : comparison
@@ -367,6 +386,7 @@ type Min =
         call (Unchecked.defaultof<Min>, source) : 'T when 'T : comparison
 
 
+[<Sealed>]
 type MinBy =
     inherit Default1
     static member inline MinBy (x: '``Foldable<'T>``, f        , [<Optional>]_impl: Default2) = x |> ToSeq.Invoke |> Seq.minBy f : 'T
@@ -382,6 +402,7 @@ type MinBy =
         call (Unchecked.defaultof<MinBy>, source, projection) : 'T
 
 
+[<Sealed>]
 type Length =
     inherit Default1
     static member inline Length (x: '``Foldable<'T>``, [<Optional>]_impl: Default2) = x |> ToSeq.Invoke |> Seq.length

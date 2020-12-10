@@ -10,6 +10,7 @@ open FSharpPlus.Internals
 
 // Comonad class ----------------------------------------------------------
 
+[<Sealed>]
 type Extract =
     static member        Extract (x: Async<'T>    ) = Async.RunSynchronously x
     static member        Extract (x: Lazy<'T>     ) = x.Value
@@ -25,6 +26,7 @@ type Extract =
         let inline call_2 (_mthd: ^M, x: ^I) = ((^M or ^I) : (static member Extract : _ -> _) x)
         call_2 (Unchecked.defaultof<Extract>, x)
 
+[<Sealed>]
 type Extend =
     static member        (=>>) (g: Async<'T>    , f: Async<'T> -> 'U) = async.Return (f g)              : Async<'U>
     static member        (=>>) (g: Lazy<'T>     , f: Lazy<'T> -> 'U ) = Lazy<_>.Create  (fun () -> f g) : Lazy<'U>
@@ -62,6 +64,7 @@ type Extend =
 
 #if !FABLE_COMPILER
 
+[<Sealed>]
 type Duplicate =
     inherit Default1
     static member inline Duplicate (x: '``Comonad<'T>``, [<Optional>]_mthd: Default1 ) = Extend.Invoke id x          : '``Comonad<'Comonad<'T>>``

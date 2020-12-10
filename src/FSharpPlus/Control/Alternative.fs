@@ -13,7 +13,7 @@ open FSharpPlus
 open FSharpPlus.Data
 open FSharpPlus.Internals
 
-
+[<Sealed>]
 type Empty =
     inherit Default1
     static member        Empty ([<Optional>]_output: seq<'T>             , [<Optional>]_mthd: Default2) = Seq.empty    : seq<'T>
@@ -31,7 +31,7 @@ type Empty =
 
     static member inline InvokeOnInstance () : '``Alternative<'T>`` = (^``Alternative<'T>`` : (static member Empty : ^``Alternative<'T>``) ()) : '``Alternative<'T>``
 
-
+[<Sealed>]
 type Append =
     inherit Default1
     static member        ``<|>`` (x: 'T seq              , y              , [<Optional>]_mthd: Default2) = Seq.append   x y
@@ -52,7 +52,7 @@ type Append =
         call (Unchecked.defaultof<Append>, x, y)
 
 
-
+[<Sealed>]
 type IsAltLeftZero =
     inherit Default1
 
@@ -74,6 +74,7 @@ type IsAltLeftZero =
     static member inline InvokeOnInstance (x: '``Applicative<'T>``) : bool = (^``Applicative<'T>`` : (static member IsAltLeftZero : _ -> _) x)
 
 
+[<Sealed>]
 type Choice =
     inherit Default1
 

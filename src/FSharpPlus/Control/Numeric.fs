@@ -9,6 +9,7 @@ open FSharpPlus.Internals
 
 #if !FABLE_COMPILER
 
+[<Sealed>]
 type FromBigInt =
     inherit Default1
     static member inline FromBigInt (_: ^R        , _: Default4  ) = fun (x: bigint) -> Explicit.Invoke x         : ^R
@@ -36,6 +37,7 @@ type FromBigInt =
         let inline call (a: 'a) = fun (x: 'x) -> call_2 (a, Unchecked.defaultof<'r>) x : 'r
         call Unchecked.defaultof<FromBigInt> x
 
+[<Sealed>]
 type FromInt64 =
     inherit Default1
     static member inline FromInt64 (_: ^R        , _: Default4 ) = fun (x: int64) -> Explicit.Invoke x            : ^R
@@ -64,6 +66,7 @@ type FromInt64 =
         call Unchecked.defaultof<FromInt64> x
 
 
+[<Sealed>]
 type FromInt32 =
     inherit Default1
     static member inline FromInt32 (_: ^R        , _: Default4 ) = fun (x: int32) -> Explicit.Invoke x          : ^R
@@ -96,6 +99,7 @@ type FromInt32 =
 
 
 
+[<Sealed>]
 type One =
     inherit Default1
     static member inline One (_: 't, _: Default1) = FromInt32.Invoke 1            : 't
@@ -115,6 +119,7 @@ open Microsoft.FSharp.Quotations
 open FSharpPlus.Internals.Prelude
 
 
+[<Sealed>]
 type Zero =
     inherit Default1
 
@@ -204,6 +209,7 @@ type Abs =
         let inline call_2 (a: ^a, b: ^b) = ((^a or ^b ) : (static member Abs : ^b*_ -> ^t) b, a)
         call_2 (Unchecked.defaultof<Abs>, x)
 
+[<Sealed>]
 type Abs' =
     inherit Abs
     static member        Abs (x: byte      , _: Abs') = x
@@ -232,6 +238,7 @@ type Signum =
         let inline call_2 (a: ^a, b: ^b) = ((^a or ^b) : (static member Signum : _*_ -> _) b, a)
         call_2 (Unchecked.defaultof<Signum>, x)
 
+[<Sealed>]
 type Signum' =
     inherit Signum
     static member        Signum (x: byte      , _: Signum') = if x = 0uy then 0uy else 1uy
@@ -252,6 +259,7 @@ type TryNegate =
         let inline call_2 (_: ^a, b: ^b) = ((^a or ^b) : (static member TryNegate : _ -> _) b)
         call_2 (Unchecked.defaultof<TryNegate>, x)
 
+[<Sealed>]
 type TryNegate' =
     static member        TryNegate (x: byte      ) = if x = 0uy then Ok x else Error Errors.exnNoSubtraction
     static member        TryNegate (x: uint16    ) = if x = 0us then Ok x else Error Errors.exnNoSubtraction
@@ -263,6 +271,7 @@ type TryNegate' =
         call_2 (Unchecked.defaultof<TryNegate'>, x)
 
 
+[<Sealed>]
 type DivRem =
     inherit Default1
     static member inline DivRem (x: ^t when ^t: null and ^t: struct, y: ^t, _thisClass: DivRem) = (x, y)
@@ -280,6 +289,7 @@ type DivRem =
 
 // Integral class ---------------------------------------------------------
 
+[<Sealed>]
 type ToBigInt =
     static member ToBigInt (x: sbyte     ) = bigint (int x)
     static member ToBigInt (x: int16     ) = bigint (int x)
@@ -317,6 +327,7 @@ open FSharpPlus.Internals
 open FSharpPlus.Control
 
 
+[<Sealed>]
 type Pi =
     inherit Default1
     static member inline Pi (_: ^R      , _: Default3) = Implicit.Invoke 3.14159274f    : ^R
@@ -332,6 +343,7 @@ type Pi =
         let inline call (a: 'a) = call_2 (a, Unchecked.defaultof<'r>) :'r
         call Unchecked.defaultof<Pi>
 
+[<Sealed>]
 type Subtract =
     static member inline Subtract (x, y) = x - y    
     static member inline Subtract (x, y) =
@@ -349,6 +361,7 @@ type Subtract =
         let inline call_2 (_: ^a, b: ^b, c: ^b) = ((^a or ^b) : (static member Subtract : _*_ -> _) b, c)
         call_2 (Unchecked.defaultof<Subtract>, x, y)
 
+//[<Sealed>]
 type TrySubtract =
     static member inline TrySubtract (x: 't  , y) = Ok (x - y)
     static member inline TrySubtract (_: ^t when ^t: null and ^t: struct, _: TrySubtract) = id
@@ -366,6 +379,7 @@ type TrySubtract =
 
 
 
+[<Sealed>]
 type Divide =
     static member inline Divide (x, y) = let c = x / y in if c * y = x then c else raise Errors.exnNoDivision
     static member inline Divide (x, y) =
@@ -378,6 +392,7 @@ type Divide =
         let inline call_2 (_: ^a, b: ^b, c: ^b) = ((^a or ^b) : (static member Divide : _*_ -> _) b, c)
         call_2 (Unchecked.defaultof<Divide>, x, y)
 
+[<Sealed>]
 type TryDivide =
     static member inline TryDivide (x, y) =
         if y = Zero.Invoke () then Error Errors.exnDivByZero
@@ -394,6 +409,7 @@ type TryDivide =
 
 
 
+[<Sealed>]
 type TrySqrtRem =
     static member TrySqrtRem (x: bigint    ) = x |> BigInteger.trySqrtRem
     static member TrySqrtRem (x: int16     ) = if x < 0s then Error Errors.exnSqrtOfNegative else let c = x |> float |> sqrt |> int16 in Ok (c, x - c*c)
@@ -412,6 +428,7 @@ type TrySqrtRem =
         call_2 (Unchecked.defaultof<TrySqrtRem>, x)
 
 
+[<Sealed>]
 type TrySqrt =
     static member inline Invoke (x: 'Integral) : Result<'Integral, exn> =
         let inline call_2 (_: ^a, b: ^b) = ((^a or ^b) : (static member TrySqrt : _ -> _) b)
@@ -440,6 +457,7 @@ type TrySqrt =
     static member inline TrySqrt (x: float32  ) = if x < 0.f then Error Errors.exnSqrtOfNegative else let c = sqrt x in Ok c //if Single.IsNaN c then Error exnNoSqrt else Ok c
     static member inline TrySqrt (x: decimal  ) = Decimal.trySqrt x
 
+[<Sealed>]
 type Sqrt =
     inherit Default1
     static member inline Sqrt (x: ^Num, _: Default2) =
@@ -480,6 +498,7 @@ open System
 open FSharpPlus.Internals.Prelude
 // TODO: can we have a (working) default ? It's a field, maybe we should call to a property.
 
+[<Sealed>]
 type MinValue =
     inherit Default1
     static member inline MinValue (_: 't            , _: Default1) = (^t : (static member MinValue : ^t) ()) : 't
@@ -529,6 +548,7 @@ type MinValue =
     static member inline MinValue (_: 'a*'b*'c*'d*'e*'f   , _: MinValue) = (MinValue.Invoke (), MinValue.Invoke (), MinValue.Invoke (), MinValue.Invoke (), MinValue.Invoke (), MinValue.Invoke ())
     static member inline MinValue (_: 'a*'b*'c*'d*'e*'f*'g, _: MinValue) = (MinValue.Invoke (), MinValue.Invoke (), MinValue.Invoke (), MinValue.Invoke (), MinValue.Invoke (), MinValue.Invoke (), MinValue.Invoke ())
 
+[<Sealed>]
 type MaxValue =
     inherit Default1
     static member inline MaxValue (_: 't            , _: Default1) = (^t : (static member MaxValue : ^t) ()) : 't

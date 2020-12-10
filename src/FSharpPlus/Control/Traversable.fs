@@ -12,6 +12,7 @@ open FSharpPlus.Internals.MonadOps
 open FSharpPlus.Extensions
 
 
+[<Sealed>]
 type Sequence =
     inherit Default1
     static member inline InvokeOnInstance (t: '``Traversable<Functor<'T>>``) = (^``Traversable<Functor<'T>>`` : (static member Sequence : _ -> _) t) : '``Functor<'Traversable<'T>>``
@@ -28,6 +29,7 @@ type Sequence =
         Map.Invoke (List.rev >> conversion) r
     
 
+[<Sealed>]
 type Traverse =
     inherit Default1
     static member inline InvokeOnInstance f (t: ^a) = (^a : (static member Traverse : _*_ -> 'R) t, f)

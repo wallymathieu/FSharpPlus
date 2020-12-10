@@ -17,6 +17,7 @@ open FSharpPlus.Data
 
 // Functor class ----------------------------------------------------------
 
+[<Sealed>]
 type Iterate =
     static member Iterate (x: Lazy<'T>   , action) = action x.Value : unit
     static member Iterate (x: seq<'T>    , action) = Seq.iter action x
@@ -52,6 +53,7 @@ type Iterate =
 
 #endif
 
+[<Sealed>]
 type Map =
     inherit Default1
 
@@ -117,6 +119,7 @@ type Map with
     static member inline Map ((_: ^t when ^t: null and ^t: struct, _ ), _mthd: Default1) = ()
 
 
+[<Sealed>]
 type Unzip =
     inherit Default1
     static member inline Unzip ((source: '``Functor<'T * 'U>``             , _output: '``Functor<'T>`` * '``Functor<'U>``                  ) , _mthd: Default2) = Map.InvokeOnInstance fst source, Map.Invoke snd source : '``Functor<'T>`` * '``Functor<'U>``
@@ -166,6 +169,7 @@ type Unzip =
         call (Unchecked.defaultof<Unzip>, source) : '``Functor<'T1>`` * '``Functor<'T2>``
 
 
+[<Sealed>]
 type Zip =
     inherit Default1
 
@@ -200,6 +204,7 @@ type Zip with
 
 // Bifunctor class --------------------------------------------------------
 
+[<Sealed>]
 type Bimap =
     inherit Default1
        
@@ -216,6 +221,7 @@ type Bimap =
         (^``Bifunctor<'T,'V>``: (static member Bimap : _*_*_ -> _) source, f, g)
 
 
+[<Sealed>]
 type MapFirst =
     inherit Default1
 
@@ -251,6 +257,7 @@ type Bimap with
 
 // Profunctor class -------------------------------------------------------
 
+[<Sealed>]
 type Dimap =
     inherit Default1
 
@@ -267,6 +274,7 @@ type Dimap =
 
 // Contravariant class ----------------------------------------------------
 
+[<Sealed>]
 type Contramap =
     inherit Default1
 
@@ -305,4 +313,5 @@ type Dimap with
 
 // Invariant functor
 
+[<Sealed>]
 type Invmap = static member inline Invoke (f: 'T -> 'U) (g: 'U -> 'T) (source: '``InvariantFunctor<'T>``) = (^``InvariantFunctor<'T>`` : (static member Invmap : _*_*_ -> _) source, f, g) : '``InvariantFunctor<'U>``

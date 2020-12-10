@@ -10,6 +10,7 @@ open FSharpPlus.Internals
 
 #if !FABLE_COMPILER
 
+[<Sealed>]
 type OfSeq =
     inherit Default1
     
@@ -52,6 +53,7 @@ type OfSeq =
         call (Unchecked.defaultof<OfSeq>, value)
 
 
+[<Sealed>]
 type OfList =
     inherit Default1
 
@@ -94,6 +96,7 @@ type OfList =
         call (Unchecked.defaultof<OfList>, value)
 
 
+[<Sealed>]
 type Filter =
     inherit Default1
     static member        Filter (x: 't Set           , p, [<Optional>]_impl: Filter) = Set.filter p x
@@ -117,6 +120,7 @@ type Filter with
     static member inline Filter (_: ^t when ^t: null and ^t: struct  , _, _  : Default1) = ()
 
 
+[<Sealed>]
 type Skip =
     inherit Default1
     static member inline Skip (x: '``Foldable<'T>``, n, [<Optional>]_impl: Default1) = x |> ToSeq.Invoke |> Seq.skip n |> OfSeq.Invoke : '``Foldable<'T>``
@@ -133,6 +137,7 @@ type Skip =
         call (Unchecked.defaultof<Skip>, source, n)
 
 
+[<Sealed>]
 type Take =
     inherit Default1
     static member inline Take (x: '``Foldable<'T>``, n, [<Optional>]_impl: Default1) = x |> ToSeq.Invoke |> Seq.take n |> OfSeq.Invoke : '``Foldable<'T>``
@@ -148,6 +153,7 @@ type Take =
         let inline call (a: 'a, b: 'b, n) = call_2 (a, b, n)
         call (Unchecked.defaultof<Take>, source, n)
 
+[<Sealed>]
 type TakeWhile =
     inherit Default1
     static member inline TakeWhile (x: '``Foldable<'T>``, p, [<Optional>]_impl: Default1 ) = x |> ToSeq.Invoke |> Seq.takeWhile p |> OfSeq.Invoke : '``Foldable<'T>``
@@ -162,6 +168,7 @@ type TakeWhile =
         let inline call (a: 'a, b: 'b, n) = call_2 (a, b, n)
         call (Unchecked.defaultof<TakeWhile>, source, predicate)
 
+[<Sealed>]
 type SkipWhile =
     inherit Default1
     static member inline SkipWhile (x: '``Foldable<'T>``, p, [<Optional>]_impl: Default1 ) = x |> ToSeq.Invoke |> Seq.skipWhile p |> OfSeq.Invoke : '``Foldable<'T>``
@@ -176,6 +183,7 @@ type SkipWhile =
         let inline call (a: 'a, b: 'b, n) = call_2 (a, b, n)
         call (Unchecked.defaultof<SkipWhile>, source, predicate)
 
+[<Sealed>]
 type Drop =
     inherit Default1
     static member inline Drop (x: '``Foldable<'T>``, n, [<Optional>]_impl: Default1) = x |> ToSeq.Invoke |> Seq.drop n |> OfSeq.Invoke : '``Foldable<'T>``
@@ -192,6 +200,7 @@ type Drop =
         call (Unchecked.defaultof<Drop>, source, n)
 
 
+[<Sealed>]
 type Limit =
     inherit Default1
     static member inline Limit (x: '``Foldable<'T>``, n, [<Optional>]_impl: Default1) = x |> ToSeq.Invoke |> Seq.truncate n |> OfSeq.Invoke : '``Foldable<'T>``
@@ -208,6 +217,7 @@ type Limit =
         call (Unchecked.defaultof<Limit>, source, n) 
 
 
+[<Sealed>]
 type Choose =
     static member Choose (_: Id<'T>                    , _:  _->'U option, [<Optional>]_impl: Choose) = invalidOp "Choose on ID" :Id<'U>
     static member Choose (x: seq<'T>                   , f:  _->'U option, [<Optional>]_impl: Choose) = Seq.choose   f x
@@ -224,6 +234,7 @@ type Choose =
         call (Unchecked.defaultof<Choose>, source, chooser) : 'Collection'U
 
 
+[<Sealed>]
 type Distinct =
     inherit Default1
 
@@ -242,6 +253,7 @@ type Distinct =
     static member inline Distinct (_: ^t when ^t : null and ^t : struct, _mthd: Default1) = id
 
 
+[<Sealed>]
 type DistinctBy =
     inherit Default1
 
@@ -259,6 +271,7 @@ type DistinctBy =
     static member inline DistinctBy (_:  ^t when ^t : null and ^t : struct, _ : 'T -> 'U, _mthd: Default1) = id
 
 
+[<Sealed>]
 type GroupBy =
     static member GroupBy (x: Id<'T>  , f: 'T->'Key, _: Id<'Key*Id<'T>>    , [<Optional>]_impl: GroupBy) = let a = Id.run x in Id.create (f a, x)
     static member GroupBy (x: seq<'T> , f: 'T->'Key, _: seq<'Key*seq<'T>>  , [<Optional>]_impl: GroupBy) = Seq.groupBy f x
@@ -271,6 +284,7 @@ type GroupBy =
         call (Unchecked.defaultof<GroupBy>, source, projection)
 
 
+[<Sealed>]
 type ChunkBy =
     static member ChunkBy (x: Id<'T>  , f: 'T->'Key, _: Id<'Key*Id<'T>>    , [<Optional>]_impl: ChunkBy) = let a = Id.run x in Id.create (f a, x)
     static member ChunkBy (x: seq<'T> , f: 'T->'Key, _: seq<'Key*seq<'T>>  , [<Optional>]_impl: ChunkBy) = Seq.chunkBy f x |> Seq.map (fun (x,y) -> x, y :> _ seq)
@@ -283,6 +297,7 @@ type ChunkBy =
         call (Unchecked.defaultof<ChunkBy>, source, projection)
 
 
+[<Sealed>]
 type Replace =
     inherit Default1
     static member inline Replace (x: 'Collection  , o: 'Collection  , n: 'Collection  , [<Optional>]_impl: Default1) = x |> ToSeq.Invoke |> Seq.replace (ToSeq.Invoke o) (ToSeq.Invoke n) |> OfSeq.Invoke : 'Collection
@@ -298,6 +313,7 @@ type Replace =
         call (Unchecked.defaultof<Replace>, source) : 'Collection
 
 
+[<Sealed>]
 type Rev =
     inherit Default1
 
@@ -316,6 +332,7 @@ type Rev =
     static member inline Rev (_: ^t when ^t: null and ^t: struct, _mthd: Default1) = id
 
 
+[<Sealed>]
 type Scan =
     static member Scan (x: Id<'T>  , f ,z: 'S, [<Optional>]_output: Id<'S>  , [<Optional>]_impl: Scan) = Id.create (f z x.getValue)
     static member Scan (x: seq<'T> , f ,z: 'S, [<Optional>]_output: seq<'S> , [<Optional>]_impl: Scan) = Seq.scan   f z x
@@ -328,6 +345,7 @@ type Scan =
         call (Unchecked.defaultof<Scan>, source, folder, state) : '``Collection<'State>``
 
 
+[<Sealed>]
 type Sort =
     inherit Default1
 
@@ -346,6 +364,7 @@ type Sort =
     static member inline Sort (_: ^t when ^t: null and ^t: struct, _mthd: Default1) = id
 
 
+[<Sealed>]
 type SortBy =
     inherit Default1
 
@@ -362,6 +381,7 @@ type SortBy =
     static member inline SortBy (x: ^``Collection<'T>``, f        , [<Optional>]_impl: Default1) = (^``Collection<'T>`` : (static member SortBy : _*_->_) f, x) : '``Collection<'T>``
     static member inline SortBy (_: ^t when ^t: null and ^t: struct, _: 'T->'U, _mthd: Default1) = id
 
+[<Sealed>]
 type SortByDescending =
     inherit Default1
 
@@ -378,6 +398,7 @@ type SortByDescending =
     static member inline SortByDescending (x: ^``Collection<'T>``, f        , [<Optional>]_impl: Default1) = (^``Collection<'T>`` : (static member SortByDescending : _*_->_) f, x) : '``Collection<'T>``
     static member inline SortByDescending (_: ^t when ^t: null and ^t: struct, _: 'T->'U, _mthd: Default1) = id
 
+[<Sealed>]
 type Split =
     inherit Default1
     
@@ -410,6 +431,7 @@ type Split =
     static member inline Split ((_: ^t when ^t: null and ^t: struct, _                              ),             _mthd: Default1) = id
 
 
+[<Sealed>]
 type Intersperse =
     inherit Default1
     static member inline Intersperse (x: '``Collection<'T>``, e: 'T, [<Optional>]_impl:Default1   ) = x |> ToSeq.Invoke |> Seq.intersperse e |> OfSeq.Invoke : '``Collection<'T>``
@@ -424,6 +446,7 @@ type Intersperse =
 
 // More Foldables
 
+[<Sealed>]
 type Intercalate =
     inherit Default1
 

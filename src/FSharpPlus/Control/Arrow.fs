@@ -10,6 +10,7 @@ open FSharpPlus.Internals
 
 // Arrow class ------------------------------------------------------------
 
+[<Sealed>]
 type Arr =
     inherit Default1
     static member Arr (f: 'T -> 'U, [<Optional>]_output:  'T-> 'U   , [<Optional>]_mthd: Arr) = f
@@ -26,6 +27,7 @@ type Arr with
     static member inline Arr (_: 'T -> 'U, _output: ^t when ^t : null and ^t : struct, _mthd: Default1) = id
 
 
+[<Sealed>]
 type ArrFirst =
     inherit Default1
     static member First (f: 'T -> 'U   , [<Optional>]_output:   'T*'V -> 'U*'V  , [<Optional>]_mthd: ArrFirst) =            fun (x, y) -> (f x       , y)  : 'U*'V
@@ -42,6 +44,7 @@ type ArrFirst with
     static member inline First (_: ^t when ^t : null and ^t : struct  , _output               , _mthd: Default1) = id
 
 
+[<Sealed>]
 type ArrSecond =
     inherit Default1
     static member Second (f: 'T -> 'U   , [<Optional>]_output:   'V*'T -> 'V*'U  , [<Optional>]_mthd: ArrSecond) =            fun (x, y) -> (x,        f y)  : 'V*'U
@@ -62,6 +65,7 @@ type ArrSecond with
     static member inline Second (_: ^t when ^t : null and ^t : struct  , _output               , _mthd: Default1) = id
 
 
+[<Sealed>]
 type ArrCombine =
     inherit Default1
     static member ``***`` (f: 'T1 -> 'U1   , g: 'T2 -> 'U2   , [<Optional>]_output: 'T1*'T2 -> 'U1*'U2   , [<Optional>]_mthd: ArrCombine) =           (fun (x, y) -> (f x       , g y       )) : 'T1*'T2 -> 'U1*'U2
@@ -80,6 +84,7 @@ type ArrCombine with
     static member inline ``***`` (_: '``Arrow<'T1,'U1>``, _: '``Arrow<'T2,'U2>``, _output: ^t when ^t : null and ^t : struct  , _mthd: Default1) = id
 
 
+[<Sealed>]
 type Fanout =
     inherit Default1
     static member ``&&&`` (f: 'T -> 'U1   , g: 'T -> 'U2   , [<Optional>]_output: 'T -> 'U1*'U2   , [<Optional>]_mthd: Fanout) =            (fun (x, y) -> (f x       , g y       )) << (fun b -> (b, b))  : 'T -> 'U1*'U2

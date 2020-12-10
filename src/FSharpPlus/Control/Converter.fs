@@ -12,6 +12,7 @@ open FSharpPlus.Internals
 open FSharpPlus.Internals.Prelude
 
 
+[<Sealed>]
 type Explicit =
     inherit Default1
     
@@ -38,6 +39,7 @@ type Explicit =
         let inline call (a: 'a) = fun (x: 'x) -> call_2 (a, Unchecked.defaultof<'r>) x : 'r
         call Unchecked.defaultof<Explicit> value
 
+[<Sealed>]
 type OfBytes =
     static member OfBytes (_: bool   , _: OfBytes) = fun (x, i, _) -> BitConverter.ToBoolean(x, i)
 
@@ -60,6 +62,7 @@ type OfBytes =
         call Unchecked.defaultof<OfBytes> (value, startIndex, isLtEndian)
 
 
+[<Sealed>]
 type ToBytes =
     static member ToBytes (x: bool   , _, _: ToBytes) = BitConverter.GetBytes (x)
     static member ToBytes (x: char   , e, _: ToBytes) = BitConverter.GetBytes (x, BitConverter.IsLittleEndian = e)
@@ -81,6 +84,7 @@ type ToBytes =
 
 open System.Globalization
 
+[<Sealed>]
 type TryParse =
     inherit Default1
 
@@ -112,6 +116,7 @@ type TryParse with
     static member inline TryParse (_: ^t when ^t: null and ^t: struct, _: Default1) = id
     static member inline TryParse (_: 'R, _: Default1) = fun x -> (^R: (static member TryParse : string -> 'R option) x)
 
+[<Sealed>]
 type Parse =
     inherit Default1
     static member inline Parse (_: ^R                  , _: Default1) = fun (x:string) -> (^R: (static member Parse : _ -> ^R) x)

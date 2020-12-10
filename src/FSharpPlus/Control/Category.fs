@@ -10,6 +10,7 @@ open FSharpPlus.Internals
 
 // Category class ---------------------------------------------------------
 
+[<Sealed>]
 type Id =
     inherit Default1
     static member Id ([<Optional>]_output:  'T -> 'T  , [<Optional>]_mthd: Id) = id             : 'T -> 'T
@@ -26,6 +27,7 @@ type Id with
     static member inline Id (_output: ^t when ^t:null and ^t:struct, _mthd: Default1) = id                       
 
 
+[<Sealed>]
 type Comp =
     inherit Default1
     static member ``<<<`` (f:  'U -> 'V  , g:  'T -> 'U  , [<Optional>]_output (*: 'T -> 'V   *), [<Optional>]_mthd: Comp) = g >> f : 'T -> 'V
