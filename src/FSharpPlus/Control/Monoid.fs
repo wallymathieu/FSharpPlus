@@ -95,11 +95,10 @@ type Plus with
 #endif
 
 
-#if !FABLE_COMPILER
-type Plus with    
-    
+type Plus with
+    #if !FABLE_COMPILER
     static member inline ``+`` (x: 'a Task, y: 'a Task, [<Optional>]_mthd: Plus) = Task.map2 Plus.Invoke x y
-#endif
+    #endif
 
     static member inline ``+`` (x: Map<'a,'b>             , y                         , [<Optional>]_mthd: Plus) = Map.unionWith Plus.Invoke x y
 
@@ -113,11 +112,11 @@ type Plus with
     static member inline ``+`` (f: 'T->'Monoid, g: 'T->'Monoid, [<Optional>]_mthd: Plus) = (fun x -> Plus.Invoke (f x) (g x)) : 'T->'Monoid
 
     static member inline ``+`` (x: 'S Async   , y: 'S Async   , [<Optional>]_mthd: Plus) = Async.map2 Plus.Invoke x y
-
+    #if !FABLE_COMPILER
     static member inline ``+`` (x: 'a Expr    , y: 'a Expr    , [<Optional>]_mthd: Plus) : 'a Expr =
                     let inline f (x: 'a)  : 'a -> 'a = Plus.Invoke x
                     Expr.Cast<'a> (Expr.Application (Expr.Application (Expr.Value (f), x), y))
-   
+    #endif
 
     static member inline ``+`` (x: 'a Lazy                   , y: 'a Lazy                   , [<Optional>]_mthd: Plus    ) = lazy Plus.Invoke x.Value y.Value
     static member        ``+`` (x: _ ResizeArray             , y: _ ResizeArray             , [<Optional>]_mthd: Plus    ) = ResizeArray (Seq.append x y)
@@ -189,7 +188,7 @@ type Sum with
                     Sum.Invoke (Seq.map (fun (_,x,_,_) -> x) x), 
                     Sum.Invoke (Seq.map (fun (_,_,x,_) -> x) x),
                     Sum.Invoke (Seq.map (fun (_,_,_,x) -> x) x)
-#if !FABLE_COMPILER
+#if !FABLE_COMPILER || FABLE_COMPILER_3
 type Sum with
     static member inline Sum (x: seq< 'a>, [<Optional>]_output: 'a           , _: Default2) = Seq.fold Plus.Invoke (Zero.Invoke ()) x : 'a
 #endif

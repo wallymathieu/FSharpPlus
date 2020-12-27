@@ -134,9 +134,9 @@ type Zero =
 
     #if !FABLE_COMPILER
     static member        Zero (_: System.TimeSpan                , _: Zero    ) = System.TimeSpan ()
-    #endif
     static member        Zero (_: DmStruct                       , _: Zero    ) = Unchecked.defaultof<DmStruct>
     static member        Zero (_: list<'a>                       , _: Zero    ) = []   :   list<'a>
+    #endif
     static member        Zero (_: option<'a>                     , _: Zero    ) = None : option<'a>
     static member        Zero (_: array<'a>                      , _: Zero    ) = [||] :  array<'a>
     static member        Zero (_: string                         , _: Zero    ) = ""
@@ -151,6 +151,7 @@ type Zero =
         let inline call (a: 'a) = call_2 (a, Unchecked.defaultof<'r>) : 'r
         call Unchecked.defaultof<Zero>
 
+#if !FABLE_COMPILER
 type Zero with
     static member inline Zero (t: 't, _:Zero) : 't =
         let _f _ = Constraints.whenNestedTuple t : ('t1*'t2*'t3*'t4*'t5*'t6*'t7*'tr)
@@ -163,18 +164,20 @@ type Zero with
         let (t2: 't2) = Zero.Invoke ()
         let (t1: 't1) = Zero.Invoke ()
         Tuple<_,_,_,_,_,_,_,_> (t1, t2, t3, t4, t5, t6, t7, tr) |> retype : 't
+#endif
 
+#if !FABLE_COMPILER
 type Zero with
     static member inline Zero (_: Tuple<'a>, _: Zero) = Tuple<_> (Zero.Invoke ()) : Tuple<'a>
     static member inline Zero (_: Id<'a>   , _: Zero) = Id<_>    (Zero.Invoke ())
-    
+
 type Zero with static member inline Zero (_: 'a*'b               , _: Zero) = (Zero.Invoke (), Zero.Invoke ()                                                                                ) : 'a*'b
 type Zero with static member inline Zero (_: 'a*'b*'c            , _: Zero) = (Zero.Invoke (), Zero.Invoke (), Zero.Invoke ()                                                                ) : 'a*'b*'c
 type Zero with static member inline Zero (_: 'a*'b*'c*'d         , _: Zero) = (Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke ()                                                ) : 'a*'b*'c*'d
 type Zero with static member inline Zero (_: 'a*'b*'c*'d*'e      , _: Zero) = (Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke ()                                ) : 'a*'b*'c*'d*'e
 type Zero with static member inline Zero (_: 'a*'b*'c*'d*'e*'f   , _: Zero) = (Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke ()                ) : 'a*'b*'c*'d*'e*'f
 type Zero with static member inline Zero (_: 'a*'b*'c*'d*'e*'f*'g, _: Zero) = (Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke (), Zero.Invoke ()) : 'a*'b*'c*'d*'e*'f*'g
-
+#endif
 type Zero with
     #if !FABLE_COMPILER
     static member inline Zero (_: Task<'a>, _: Zero) =
@@ -185,15 +188,19 @@ type Zero with
     #endif
     static member inline Zero (_: 'T->'Monoid               , _: Zero) = (fun _ -> Zero.Invoke ()) : 'T->'Monoid
     static member inline Zero (_: Async<'a>                 , _: Zero) = let (v: 'a) = Zero.Invoke () in async.Return v
+    #if !FABLE_COMPILER
     static member inline Zero (_: Expr<'a>                  , _: Zero) = let (v: 'a) = Zero.Invoke () in Expr.Cast<'a>(Expr.Value (v))
+    #endif
     static member inline Zero (_: Lazy<'a>                  , _: Zero) = let (v: 'a) = Zero.Invoke () in lazy v
     static member        Zero (_: Dictionary<'a,'b>         , _: Zero) = Dictionary<'a,'b> ()
     static member        Zero (_: ResizeArray<'a>           , _: Zero) = ResizeArray () : ResizeArray<'a>
 
 type Zero with
+    #if !FABLE_COMPILER
     static member inline Zero (_: ^R                             , _: Default6) = FromInt64.Invoke 0L : ^R
 
     static member inline Zero (_: ^R                             , _: Default5) = Implicit.Invoke 0   : ^R
+    #endif
 
     static member        Zero (_: seq<'a>                        , _: Default4) = Seq.empty      : seq<'a>
     #if !FABLE_COMPILER
@@ -203,10 +210,14 @@ type Zero with
     #if !FABLE_COMPILER
     static member        Zero (_: IReadOnlyDictionary<'a,'b>     , _: Default4) = Dictionary<'a,'b> () :> IReadOnlyDictionary<'a,'b>
     #endif
+    #if !FABLE_COMPILER
     static member inline Zero (_: 't                             , _: Default3) = (^t : (static member Empty: ^t) ()) : 't
 
     static member inline Zero (_: 't                             , _: Default2) = FromInt32.InvokeOnInstance 0        : 't
     static member inline Zero (_: ^t when ^t: null and ^t: struct, _: Default2) = id
+    #else
+    static member inline Zero (_: 't                             , _: Zero) = (^t : (static member Empty: ^t) ()) : 't
+    #endif
 
     static member inline Zero (_: 't                             , _: Default1) = LanguagePrimitives.GenericZero : 't
     static member inline Zero (_: ^t when ^t: null and ^t: struct, _: Default1) = id
@@ -282,7 +293,6 @@ type TryNegate' =
     static member        TryNegate (x: uint32    ) = if x = 0u  then Ok x else Error Errors.exnNoSubtraction
     static member        TryNegate (x: uint64    ) = if x = 0UL then Ok x else Error Errors.exnNoSubtraction
     #if !FABLE_COMPILER
-
     static member        TryNegate (x: unativeint) = if x = 0un then Ok x else Error Errors.exnNoSubtraction
     #endif
     static member inline Invoke (x: 'Num) : Result<'Num,exn> =

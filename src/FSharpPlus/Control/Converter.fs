@@ -29,7 +29,7 @@ type Explicit =
 #if !FABLE_COMPILER_3
     static member inline Explicit (_: nativeint , _: Explicit) = fun x -> nativeint  (int x)
     static member inline Explicit (_: unativeint, _: Explicit) = fun x -> unativeint (uint32 x)
-#endif    
+#endif
     static member inline Explicit (_: float     , _: Explicit) = fun x -> float           x
     static member inline Explicit (_: float32   , _: Explicit) = fun x -> float32         x    
     static member inline Explicit (_: decimal   , _: Explicit) = fun x -> decimal         x

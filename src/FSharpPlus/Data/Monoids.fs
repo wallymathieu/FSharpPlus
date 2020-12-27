@@ -85,7 +85,7 @@ type Const<'t,'u> = Const of 't with
 /// Basic operations on Const
 [<RequireQualifiedAccess>]
 module Const =
-    let run (Const t) = t
+    let run (Const t) = printfn "Const.run %A" t; t
 
 #endif
 
@@ -94,7 +94,7 @@ module Const =
 type First<'t> = First of Option<'t> with
     static member get_Zero () = First None                                    : First<'t>
     static member (+) (x, y) = match x, y with First None, r -> r | l, _ -> l : First<'t>
-    static member run (First a) = a                                           : 't option
+    static member run x = printfn "First.run %A" x; x |> function | (First a) -> a                                           : 't option
 
 /// Option<'T> monoid returning the rightmost non-None value.
 [<Struct>]

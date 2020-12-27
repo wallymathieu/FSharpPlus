@@ -24,7 +24,7 @@ let lensing = testList "Lensing" [
                     { Book.Title = "Rayuela"
                       Author = { Person.Name = "Julio Cortázar"
                                  DateOfBirth = DateTime (1914, 8, 26) } }
-               equal (view Book._authorName rayuela) "Julio Cortázar"
+               equal "Julio Cortázar" (view Book._authorName rayuela)
                
                // equal None (preview _Ok (Error 1))
                // equal (Some 1) (preview _Ok (Ok 1))
@@ -33,6 +33,38 @@ let lensing = testList "Lensing" [
                )
     #if !FABLE_COMPILER
     testCase "prism1" (fun () -> equal true (Option.isNone (preview _Some None)))
+    testCase "prism4" (fun () -> equal true (Option.isNone (preview _None (Some 1))))
+    #else
+    (*
+Const.run "Julio Cortázar"
+Const.run First None
+First.run First None
+<null>
+Const.run First None
+First.run First None
+<null>
+Const.run First (Some 1)
+First.run First (Some 1)
+Const.run First (Some ())
+First.run First (Some ())
+
+Const.run []
+First.run []
+Const.run []
+First.run []
+Const.run First 1
+First.run First 1
+Const.run First undefined
+First.run First undefined
+    *)
+    testCase "prism1" (fun () ->
+        let v : int option = preview _Some None
+        printfn "%A" v
+        equal true (Option.isNone v))
+    testCase "prism4" (fun () ->
+        let v: unit option = (preview _None (Some 1))
+        printfn "%A" v
+        equal true (Option.isNone v))
     #endif
     testCase "prism2" (fun () -> equal (Some 1) (preview _Some (Some 1)))
     testCase "prism3" (fun () -> equal (Some ()) (preview _None None))

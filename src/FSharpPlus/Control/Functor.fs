@@ -177,7 +177,7 @@ type Unzip =
 
     #if !FABLE_COMPILER
     static member        Unzip ((source: IEnumerator<'T * 'U>              , _output: IEnumerator<'T> * ResizeArray<'U>                    ) , _mthd: Unzip   ) = Map.Invoke fst source, Map.Invoke snd source
-    #endif    
+    #endif
     static member        Unzip ((source: IDictionary<'Key, 'T * 'U>        , _output: IDictionary<_,'T> * IDictionary<_,'U>                ) , _mthd: Unzip   ) = Dict.unzip source
     static member        Unzip ((source: IReadOnlyDictionary<'Key,'T * 'U> , _output: IReadOnlyDictionary<_,'T> * IReadOnlyDictionary<_,'U>) , _mthd: Unzip   ) = IReadOnlyDictionary.unzip source
     static member        Unzip ((source: IObservable<'T * 'U>              , _output: IObservable<'T> * ResizeArray<'U>                    ) , _mthd: Unzip   ) = Map.Invoke fst source, Map.Invoke snd source
