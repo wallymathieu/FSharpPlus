@@ -373,5 +373,27 @@ module FindSliceIndex =
 
 #if FABLE_COMPILER
 exception AggregateException of Exception seq
+module Async=
+    open Fable.Core.JS
+    let RunSynchronouslyJsTimeout (timeout':int) (asyncJob:Async<'t>) =
+        let mutable result = None
+        let t = async {
+            try
+                let! res = asyncJob
+                result <- Some <| Ok res
+            with e -> result <- Some <| Error e
+        }
+        Async.StartImmediate t
+
+        let mutable timeout = None
+        let rec onTimeout () =
+            if timeout.IsSome then clearTimeout timeout.Value
+            if result.IsNone then
+                timeout <- Some <| setTimeout onTimeout timeout'
+        onTimeout()
+        while result.IsNone do ()
+        match result.Value with
+        | Ok v->v
+        | Error e-> raise e
 
 #endif
