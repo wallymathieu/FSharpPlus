@@ -1502,7 +1502,9 @@ module Operators =
     /// <returns>The absolute value of the input.</returns>
     let inline abs' (value: 'Num) : 'Num = Abs'.Invoke value
 
+    #endif
 
+    #if !FABLE_COMPILER || FABLE_COMPILER_3
     // Additional functions
 
     /// <summary>
@@ -1529,7 +1531,10 @@ module Operators =
     /// <category index="23">Additional Functions</category>
     let inline implicit (x: ^T) = ((^R or ^T) : (static member op_Implicit : ^T -> ^R) x) : ^R
 
-    
+    #endif
+
+    #if !FABLE_COMPILER
+
     [<System.Obsolete("Use Parsed instead.")>]
     /// <category index="23">Additional Functions</category>
     let inline (|Parse|_|) str : 'T option = tryParse str
